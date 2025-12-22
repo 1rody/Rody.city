@@ -1,0 +1,124 @@
+@keyframes floating {
+     0%,25% {
+         transform: translateY(0);
+         opacity: 1;
+         padding: .8rem 2rem;
+     }
+     25%, 55% {
+            transform: translateY(20%) ;
+            opacity: 1;
+            padding: .8rem 3rem;
+     }
+     55%, 100% {
+         transform: translateY(0);
+         opacity: 1;
+         padding: .8rem 2rem;
+     }
+}
+@keyframes baunce01 {
+     0%,25% {
+         padding: .2rem 2rem;
+     }
+     25%, 55% {
+            padding: .2rem 3rem;
+     }
+     55%, 100% {
+         padding: .2rem 2rem;
+     }
+}
+@keyframes baunce02 {
+     0%,25% {
+         padding: .2rem .2rem;
+     }
+     25%, 55% {
+            padding: .2rem .5rem;
+     }
+     55%, 100% {
+         padding: .2rem .2rem;
+     }
+}
+@keyframes rolling {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-48.5rem);
+    }
+}
+@keyframes rolling-up {
+     0%,25% {
+         transform: translatey(0);
+     }
+     25%, 55% {
+         transform: translatey(-3rem);
+     }
+     55%, 85% {
+         transform: translatey(-6rem);
+     }
+     85%, 100% {
+         transform: translatey(-9rem); 
+     }
+}
+@keyframes rolling-right {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-48.5rem);
+    }
+}
+@keyframes rolling-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(48.5rem);
+    }
+}
+@keyframes pop-in {
+     0%,25% {
+         opacity: 0.5;
+     }
+     25%, 55% {
+        opacity: 1;
+        transform: scale(1.1);
+     }
+     55%, 100% {
+        transform: scale(1);
+        opacity: 1;
+     }
+}
+@keyframes fade-out {
+    from {
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes auto-show-anim {
+    from {
+        opacity: 0;
+        transform: translatey(-100px) scale(.5);
+    }to {
+        opacity: 1;
+        transform: translatey(0px) scale(1);
+    }
+}
+@keyframes appear {
+    from {
+        opacity: .5;
+        scale: .5;
+    }to {
+        opacity: 1;
+        scale: 2;
+    }
+}
+@keyframes moving-down {
+  from {
+    margin-top: 0;
+  }
+  to {
+    
+  }
+}

@@ -1,0 +1,84 @@
+@import url('../global.css');
+@import url('../themes/void.css');
+@import url('animations.css');
+
+body {
+    background-color: var(--background-secondary);
+}
+
+#terminal {
+    pre {
+        color: var(--accent-color);
+    }
+    .fetch {
+        align-items: center;
+        display: flex;
+        pre {
+            font-size: var(--font-extra-small);
+            color: var(--accent-color);
+        }
+        p {
+            font-size: var(--font-default);
+            color: var(--text-primary);
+        }
+    }
+    p {
+            font-size: var(--font-default);
+            color: var(--text-primary);  
+    }
+    .status-bracket {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        color: rgb(255, 255, 255);
+    }
+    .status-ok {
+        color: rgb(65, 255, 8);
+    }
+}
+
+#landing-load {
+    z-index: 100;
+    height: 100%;
+    background-color: var(--background-secondary);
+    .anim-fade {
+        animation: fade-out .8s ease
+    }
+    .flow-container {
+        position: fixed;
+        z-index: 50;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        width: 2rem;
+    }
+    .loading-bar {
+        border-radius: 1rem;
+        width: 100%;
+        height: 1rem;
+        background-color: var(--background-main);
+        .loaded-content {
+            border-radius: 1rem;
+            margin: .2rem;
+            width: 1%;
+            height: .5rem;
+            background-color: var(--accent-color);
+        }
+    }
+    h1  {
+        font-size: var(--font-medium);
+        font-weight: bolder;
+        color: var(--text-primary);
+        overflow: hidden;
+        max-height: 2.6rem;
+    }
+    .rolling-up {
+        animation: rolling-up 5s infinite;
+    }
+    span {
+        color: var(--accent-color);
+    }
+}
