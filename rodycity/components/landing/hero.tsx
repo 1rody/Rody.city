@@ -1,5 +1,6 @@
 'use client';
 
+
 import './landing_styles/hero.css';
 import Image from 'next/image';
 import { useRef } from 'react'; // Importar o useRef

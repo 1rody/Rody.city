@@ -1,11 +1,13 @@
 'use client';
 
+
 import './landing_styles/footer.css';
 import Image from 'next/image';
 import { useRef } from 'react'; // Importar o useRef
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 import instagram from '@/public/assets/icons8-instagram-logo-50.png'
 import discord from '@/public/assets/icons8-discord-50.png'

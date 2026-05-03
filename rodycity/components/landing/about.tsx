@@ -6,6 +6,7 @@ import './landing_styles/about.css'
 import './landing_styles/prices.css'
 
 //react + gsap
+
 import Image from 'next/image';
 import { useRef } from 'react'; 
 import gsap from 'gsap';

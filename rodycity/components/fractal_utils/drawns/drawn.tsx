@@ -16,7 +16,8 @@ export default function DrawnNumbers() {
     const [resultQuantity, setQuantityNumber] = useState(1);
     const [minNumber, setMinNumber] = useState(0);
     const [maxNumber, setMaxNumber] = useState(100);
-    const [results, setResults] = useState([]);
+    const [results, setResults] = useState<number[]>([]);
+
 
     function handleDraw(e: React.FormEvent) {
 
@@ -61,7 +62,7 @@ export default function DrawnNumbers() {
                 </div>
                 <div className='flex flex-col items-center justify-center'>
                     <Image className="banner-top z-10" width={1000} src={drawnBanner} alt="" />
-                    <form action="post" className='flex items-end flex-col mt-10 mb-5 justify-center gap-4'>
+                    <form className='flex items-end flex-col mt-10 mb-5 justify-center gap-4'>
                         <div className='flex gap-5'>
                             
                             <input value={resultQuantity} onChange={(e) => setQuantityNumber(Number(e.target.value))}  className='text-2xl' id="drawn-results" type="number" minLength={1} maxLength={100} required placeholder="Max Results" />
@@ -81,7 +82,7 @@ export default function DrawnNumbers() {
                                 <div key={index} className='results text-2xl'>
                                     {num}
                                 </div>
-                            ))};
+                            ))}
                         </div>
                     </section>
                 </div>
