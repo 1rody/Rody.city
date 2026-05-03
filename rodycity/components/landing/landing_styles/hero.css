@@ -1,0 +1,44 @@
+
+
+@keyframes rolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+#introduction {
+    
+    h1 {
+        color: var(--text-white);
+        font-size: var(--large-text);
+        line-height: .8;
+    }
+    p {
+        color: var(--text-gray);
+    }
+    button {
+        padding: .3rem .5rem;
+        border-radius: .2rem;
+        background-color: var(--text-white);
+        transition: .2s;
+    }
+    button:active {
+        transform: scale(.9);
+    }
+    button:hover {
+        background-color: var(--accent-primary);
+        color: var(--background);
+    }
+    .banner-top {
+        margin-top: -10rem;
+        z-index: 10;
+    }
+}
+.text-stripe-right {
+    animation: rolling 15s infinite ease-in-out;
+}
+.text-stripe-left {
+    animation: rolling 10s infinite reverse;
+}

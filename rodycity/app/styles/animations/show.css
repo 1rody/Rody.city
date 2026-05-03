@@ -1,0 +1,57 @@
+
+@keyframes start {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes move-up {
+    0% {
+        transform: translateY(0rem);
+    }
+    100% {
+        transform: translateY(-20rem);
+    }
+}
+@keyframes text-glowing {
+    0% {
+            text-shadow: 2px 2px 20px var(--white-light);
+    }
+    50% {
+            text-shadow: 2px 2px 50px var(--white-light);
+    }
+    100% {
+            text-shadow: 2px 2px 20px var(--white-light);
+    }
+}
+
+.floating-anim {
+    animation: move-up ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 30% cover 100%; 
+}
+.start {
+    animation: start .5s ease;
+}
+.fade-show-anim {
+    animation: fade-on ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 5% cover 100%;
+}
