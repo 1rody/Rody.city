@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+
+    --background: #000000;   
+    --foreground: #ffffff;
+    --foreground-secondary: #f6f6f6;
+
+    --text-white: #ffffff;        
+    --text-gray: #8e96a6;         
+    --white-light: #b0b9c8;   
+    --text-black: #000000;   
+    --text-b: #51566029;
+
+    --redirect: #572dff;
+
+    --accent-primary: #ffdb79;    
+    --accent-secondary: #efefef;  
+    --accent-glow: #f9feff94; 
+
+    --large-text: 16rem;
+    --ultra-large-text: 15rem;
+
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-erika: var(--font-erika-one);
+  --font-jetbrains: var(--font-jetbrains-mono);
+}
+@media (min-width: 200px) {
+  :root {
+      --large-text: 6rem;
+      --ultra-large-text: 6rem;
+  }
+  .mr-custom {
+    margin-right: 2rem;
+  }
+  #about {
+    max-width:  50%;
+  }
+}
+@media (min-width: 300px) {
+  :root {
+      --large-text: 8rem;
+      --ultra-large-text: 8rem;
+  }
+  .mr-custom {
+    margin-right: 2rem;
+  }
+  #about {
+    max-width:  50%;
+  }
+}
+@media (min-width: 700px) {
+  :root {
+      --large-text: 11rem;
+      --ultra-large-text: 10rem;
+  }
+  .mr-custom {
+    margin-right: 2rem;
+  }
+  #about {
+    max-width:  50%;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+      --large-text: 16rem;
+      --ultra-large-text: 15rem;
+  }
+  .mr-custom {
+    margin-right: 15rem;
+  }
+}
+
+body {
+  background-size: cover;
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.secondary-bg {
+  background-color: var(--background-secondary);
+}
+.erika-font {
+  font-family: var(--font-erika-one), sans-serif;
+}
+
+.jetbrains-font {
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+
+.title {
+    font-size: var(--ultra-large-text);
+    color: var(--text-white);
+}
+.title-secondary {
+    font-size: var(--ultra-large-text);
+    color: var(--text-black);
+}
+.margin-negative {
+  margin-top: -10rem;
+}
+
