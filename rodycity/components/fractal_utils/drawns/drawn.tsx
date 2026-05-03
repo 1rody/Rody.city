@@ -12,15 +12,13 @@ export default function DrawnNumbers() {
     //value serve para definir qual a constante em que o valor do input sera armazenado;
     // setminnumber em onchange serve para pegar o evendo de change e o valor mudando o numero;
 
-
     //constantes para o sorteio
     const [resultQuantity, setQuantityNumber] = useState(1);
     const [minNumber, setMinNumber] = useState(0);
     const [maxNumber, setMaxNumber] = useState(100);
-
     const [results, setResults] = useState([]);
 
-    function handleDraw(e) {
+    function handleDraw(e: React.FormEvent) {
 
         e.preventDefault();
 
@@ -48,7 +46,6 @@ export default function DrawnNumbers() {
     setResults(newResults);
     console.log(newResults); //checkar se o codigo esta funcionando e se os results estao sendo gerados : ou oq voce ta fazendo no meu codigo? humm seja bem vindo :3
 
-    
     }
 
     return (
