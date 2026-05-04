@@ -11,25 +11,25 @@ export default function topBar() {
                     </li>
                 </ol>
                 <ol>
-                    <p>BETA 1.0 ///</p>
+                    <p>BETA///</p>
                 </ol>
             </nav>
             <nav className="topbar-pc flex">
                 <div className='flex gap-5 justify-center'>
-                    <button className="hidden md:flex">
+                    <button className="hidden nav-button-primary md:flex">
                         <a href="/fractal_tree">Linktree</a>
                     </button>
-                    <button  className="hidden md:flex">
+                    <button  className="hidden nav-button-primary md:flex">
                         <a href="/papers">Papers</a>
                     </button>
-                    <button  className="hidden md:flex">
+                    <button  className="hidden nav-button-primary md:flex">
                         <a href="">Github</a>
                     </button>
                 </div>
             </nav>
             <nav className="topbar-pc ml-10 flex">
                 <div className='flex gap-5 justify-center'>
-                    <button className="discord-btn font-jetbrains">
+                    <button className="hidden nav-button-secondary lg:flex md:flex">
                         <a href="">Discord</a>
                     </button>
                 </div>

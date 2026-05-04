@@ -1,5 +1,5 @@
-import BottomBar from "@/pages/navigation/bottombar/bottomDock";
-import TopBar from "@/pages/navigation/topbar/topbar";
+import BottomBar from "@/components/navigation/bottombar/bottomDock";
+import TopBar from "@/components/navigation/topbar/topbar";
 import Landing from "@/pages/landing/landing";
 
 import './styles/utility/selections.css'
