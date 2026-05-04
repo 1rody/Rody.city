@@ -1,5 +1,5 @@
-import Hero from "@/components/fractal_utils/hero";
-import TopBar from "@/components/navigation/topbar/topbar";
+import Hero from "@/pages/fractal_utils/hero";
+import TopBar from "@/pages/navigation/topbar/topbar";
 export default function linktree() {
     return (
         <>

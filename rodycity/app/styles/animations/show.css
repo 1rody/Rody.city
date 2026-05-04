@@ -10,7 +10,28 @@
         transform: scale(1);
     }
 }
-
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+@keyframes move-rotate {
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+    50% {
+        transform: rotate(20deg) translateY(-1rem);
+    }
+    100% {
+        transform: rotate(00deg) translateY(0);
+    }
+}
 @keyframes floating {
     0% {
         transform: translateY(0);

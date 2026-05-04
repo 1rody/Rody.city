@@ -18,6 +18,7 @@
     --accent-secondary: #efefef;  
     --accent-glow: #f9feff94; 
 
+    --small-text: 1.5rem;
     --large-text: 16rem;
     --ultra-large-text: 15rem;
 
@@ -32,48 +33,134 @@
   --font-jetbrains: var(--font-jetbrains-mono);
 }
 @media (min-width: 200px) {
+  .project-container {
+    .project {
+        width: 280px;
+        height: 180px;
+    }
+  }
+  .small {
+    transform: scale(1);
+  }
+  :root {
+      --large-text: 3rem;
+      --ultra-large-text: 3rem;
+  }
+  .mr-custom {
+    margin-right: .5rem;
+  }
+  #about {
+    max-width:  100%;
+  }
+}
+@media (min-width: 300px) {
+  .container-prices {
+      article {
+          max-width: 95%
+      }
+  }
+  .project-container {
+    .project {
+        width: 280px;
+        height: 180px;
+    }
+  }
+  .small {
+    transform: scale(1);
+  }
   :root {
       --large-text: 6rem;
       --ultra-large-text: 6rem;
   }
   .mr-custom {
-    margin-right: 2rem;
+    margin-right: .5rem;
   }
   #about {
-    max-width:  50%;
-  }
-}
-@media (min-width: 300px) {
-  :root {
-      --large-text: 8rem;
-      --ultra-large-text: 8rem;
-  }
-  .mr-custom {
-    margin-right: 2rem;
-  }
-  #about {
-    max-width:  50%;
+    max-width:  95%;
   }
 }
 @media (min-width: 700px) {
+  #about {
+    max-width:  65%;
+  }
   :root {
-      --large-text: 11rem;
-      --ultra-large-text: 10rem;
+      --large-text: 8rem;
+      --small-text: .8rem; 
+      --ultra-large-text: 8rem;
   }
   .mr-custom {
-    margin-right: 2rem;
+    margin-right: .5rem;
   }
   #about {
     max-width:  50%;
+  }
+}
+@media (min-width: 1100px) {
+  :root {
+      --large-text: 9rem;
+      --ultra-large-text: 9rem;
+  }
+  .mr-custom {
+    margin-right: 3rem;
   }
 }
 @media (min-width: 1200px) {
   :root {
-      --large-text: 16rem;
-      --ultra-large-text: 15rem;
+      --large-text: 9rem;
+      --ultra-large-text: 9rem;
+      --small-text: 1rem;
+  }
+  .mr-custom {
+    margin-right: 5rem;
+  }
+  header {
+    nav {
+      transform: scale(0.8);
+    }
+  }
+  .bottombar-pc {
+    transform: scale(0.8);
+  }
+}
+@media (min-width: 1300px) {
+  :root {
+      --large-text: 9rem;
+      --ultra-large-text: 9rem;
+      --small-text: 1rem;
+  }
+  header {
+    nav {
+      transform: scale(0.8);
+    }
+  }
+  .bottombar-pc {
+    transform: scale(0.8);
+  }
+  .mr-custom {
+    margin-right: 5rem;
+  }
+
+}
+@media (min-width: 1400px) {
+  :root {
+      --large-text: 14rem;
+      --ultra-large-text: 14rem;
   }
   .mr-custom {
     margin-right: 15rem;
+  }
+  header {
+    nav {
+      transform: scale(1);
+    }
+  }
+  .bottombar-pc {
+    transform: scale(1);
+  }
+  .stripes-row {
+    p {
+      transform: scale(1);
+    }
   }
 }
 

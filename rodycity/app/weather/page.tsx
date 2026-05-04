@@ -1,4 +1,4 @@
-import DrawnNumbers from "@/components/fractal_utils/drawns/drawn";
+import DrawnNumbers from "@/pages/fractal_utils/drawns/drawn";
 
 export default function makeAdrawn() {
     return (

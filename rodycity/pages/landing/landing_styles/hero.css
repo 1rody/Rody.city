@@ -1,0 +1,72 @@
+
+
+@keyframes rolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+.cloud {
+    position: absolute;
+    top: 33%;
+    left: 25%;
+    z-index: 500;
+    animation: floating 8s ease infinite;
+}
+.semi {
+    z-index: 500;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    animation: floating 2s ease infinite;
+
+}
+.strokeLine {
+    z-index: 500;
+    position: absolute;
+    top: 78%;
+    left: 22%;
+    transform: rotate(10deg);
+    animation: move-rotate 4s ease infinite;
+
+}
+.sun {
+    z-index: 500;
+    position: absolute;
+    top: 68%;
+    left: 62%;
+    transform: scale(1.2);
+}
+.cataVento {
+    z-index: 500;
+    position: absolute;
+    top: 39%;
+    left: 35%;
+    animation: rotateCircle 2s ease infinite;
+}
+.position-symbols {
+    margin-bottom: -10rem;
+}
+#introduction {
+    
+    h1 {
+        color: var(--text-white);
+        font-size: var(--large-text);
+        line-height: .8;
+    }
+    p {
+        color: var(--text-gray);
+    }
+    .banner-top {
+        margin-top: -10rem;
+        z-index: 10;
+    }
+}
+.text-stripe-right {
+    animation: rolling 15s infinite ease-in-out;
+}
+.text-stripe-left {
+    animation: rolling 10s infinite reverse;
+}
