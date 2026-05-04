@@ -10,4 +10,3 @@ In this version whe have:
 Basic responsivity to ipads and tablets,
 Landing page full desing and animations,
 An simple drawn tool made in typescript,
-

@@ -12,7 +12,6 @@ export default function DrawnNumbers() {
     //value serve para definir qual a constante em que o valor do input sera armazenado;
     // setminnumber em onchange serve para pegar o evendo de change e o valor mudando o numero;
 
-    //constantes para o sorteio
     const [resultQuantity, setQuantityNumber] = useState(1);
     const [minNumber, setMinNumber] = useState(0);
     const [maxNumber, setMaxNumber] = useState(100);
@@ -26,7 +25,7 @@ export default function DrawnNumbers() {
         switch (true) {
             case (resultQuantity > 100):
                 console.log("Muita coisa! Limite de 100.");
-                return; // Para a função aqui
+                return; 
             case (resultQuantity < 1):
                 console.log("Quantidade inválida.");
                 return;

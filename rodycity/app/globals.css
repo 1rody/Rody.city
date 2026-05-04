@@ -32,6 +32,41 @@
   --font-jetbrains: var(--font-jetbrains-mono);
 }
 @media (min-width: 200px) {
+  .project-container {
+    .project {
+        width: 280px;
+        height: 180px;
+    }
+  }
+  .small {
+    transform: scale(1);
+  }
+  :root {
+      --large-text: 3rem;
+      --ultra-large-text: 3rem;
+  }
+  .mr-custom {
+    margin-right: 2rem;
+  }
+  #about {
+    max-width:  100%;
+  }
+}
+@media (min-width: 300px) {
+  .container-prices {
+      article {
+          max-width: 95%
+      }
+  }
+  .project-container {
+    .project {
+        width: 280px;
+        height: 180px;
+    }
+  }
+  .small {
+    transform: scale(1);
+  }
   :root {
       --large-text: 6rem;
       --ultra-large-text: 6rem;
@@ -40,22 +75,13 @@
     margin-right: 2rem;
   }
   #about {
-    max-width:  50%;
-  }
-}
-@media (min-width: 300px) {
-  :root {
-      --large-text: 8rem;
-      --ultra-large-text: 8rem;
-  }
-  .mr-custom {
-    margin-right: 2rem;
-  }
-  #about {
-    max-width:  50%;
+    max-width:  95%;
   }
 }
 @media (min-width: 700px) {
+  #about {
+    max-width:  65%;
+  }
   :root {
       --large-text: 11rem;
       --ultra-large-text: 10rem;
