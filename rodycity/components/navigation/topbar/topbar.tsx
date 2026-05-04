@@ -11,7 +11,7 @@ export default function topBar() {
                     </li>
                 </ol>
                 <ol>
-                    <p>//////</p>
+                    <p>BETA 1.0 ///</p>
                 </ol>
             </nav>
             <nav className="topbar-pc flex">

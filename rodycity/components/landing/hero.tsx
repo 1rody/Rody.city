@@ -1,8 +1,9 @@
 'use client';
 
+
 import './landing_styles/hero.css';
 import Image from 'next/image';
-import { useRef } from 'react'; // Importar o useRef
+import { useRef } from 'react'; 
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -12,7 +13,7 @@ import '@/app/styles/animations/show.css';
 
 
 
-// Registro do plugin
+// reg do plugin
 if (typeof window !== 'undefined') {
     gsap.registerPlugin(ScrollTrigger);
 }
@@ -30,7 +31,7 @@ export default function Introduction() {
             ease: "power3.in"
         });
 
-        // 2. scroll Animation 
+        // 2. scroll  
         gsap.to('.title-group', {
             scrollTrigger: {
                 trigger: "#introduction",
@@ -58,7 +59,7 @@ export default function Introduction() {
             
             <div className='title-group flex flex-col absolute z-10 text-center'>
                 <h1 className="text-center erika-font title z-5 no-event user-select-none">HELLO WORLD</h1>
-                <div className='mt-10 z-50 flex items-center font-jetbrains justify-center gap-5'>
+                <div className='mt-10 flex-wrap z-50 flex items-center font-jetbrains justify-center gap-5'>
                     <button  className="hover:line-through"><a href="https://nextfur.net/">NextFur</a></button>
                     <button className="hover:line-through"><a href="/fractal_utils">COOL TOOLS FOR YOUR DAY</a></button>
                     <button className="hover:line-through"><a href="#whoami">WHOIS RODY</a></button>
