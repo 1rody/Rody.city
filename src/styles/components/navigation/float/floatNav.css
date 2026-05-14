@@ -1,0 +1,12 @@
+.topbar-pc {
+  padding: 1rem;
+   color: var(--text-white);
+    mix-blend-mode: difference;
+    .infos {
+        line-height: .5;
+    }
+}
+.rody-brand {
+  width: 180px;
+}
+
