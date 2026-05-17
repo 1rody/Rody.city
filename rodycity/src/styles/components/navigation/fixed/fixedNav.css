@@ -1,0 +1,17 @@
+.topbar-pc {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.162);
+   color: var(--text-white);
+    margin-top: -.5rem;
+    .infos {
+        line-height: .5;
+    }
+}
+.stroke-white {
+  height: 1px;
+  width: 100px;
+  background-color: var(--text-white);
+}
+.rody-brand {
+  width: 180px;
+}
+
