@@ -1,75 +1,40 @@
-
 #about {
-    p {
-        color: var(--text-gray);
-        font-size: var(--text-sm);
+    background-color: var(--color-red-500);
+    margin-bottom: -15rem;
+    h1 {
+        font-family: var(--font-Handjet);
+        font-size: var(--super-large-text-secondary);
+        color: var(--text-white);
     }
-    button {
-        padding: .3rem .5rem;
-        border-radius: .8rem;
-        background-color: var(--text-white);
-        transition: .2s;
-    }
-    button:active {
-        transform: scale(.9);
-    }
-    button:hover {
-        background-color: var(--accent-primary);
-        color: var(--background);
-    }
-    div {
-        width: 70%;
-        border-radius: 2rem;
-        border: 1px solid var(--background);
-    }
-    .about-rody {
-        border-radius: 2rem;
-        z-index: 12;
-        margin-top: 10rem;
-        padding: 1rem;
+    .card {
+        margin-top: -10rem;
+        background-color: var(--background);
+        max-width: 550px;
+        h1 {
+            font-family: var(--font-Chakra);
+            font-size: var(--large-text);
+            color: var(--text-white);
+        }
         h3 {
+            font-size: var(--small-text);
+            font-family: var(--font-jetbrains-mono);
+            border-top: 1px solid rgba(128, 128, 128, 0.348);
+            border-bottom: 1px solid rgba(128, 128, 128, 0.421);
+        }
+        .tech {
+            font-family: var(--font-jetbrains-mono);
+            padding: .2rem .8rem;
+            border-radius: 2rem;
+            color: rgba(128, 128, 128, 0.371);
+            border: 1px solid rgba(128, 128, 128, 0.371);
+        }
+        .tech-2 {
+            font-family: var(--font-jetbrains-mono);
+            padding: .2rem .8rem;
+            border-radius: 2rem;
             color: var(--background);
-        }
-        p {
-            color: var(--text-gray);
-        }
-        strong {
-            padding: .5rem;
-            border-radius: .3rem;
-            background-color: var(--accent-primary);
+            background-color: #ffff;
+            border: 1px solid rgba(128, 128, 128, 0.371);
         }
     }
-}
-#whoami {
-    margin-top: -8rem;
-}
-.tech-stack {
-    flex-wrap: nowrap;
-    button {
-        width: 100%;
-        padding: .3rem .5rem;
-        border-radius: .2rem;
-        background-color: var(--text-white);
-        transition: .2s;
-    }
-    button:active {
-        transform: scale(.9);
-    }
-    button:hover {
-        background-color: var(--accent-primary);
-        color: var(--background);
-    }
-}
-.select-globe {
-    filter: invert(100);
-    margin-top: -3.5rem;
-}
-.image {
-
-    margin-bottom: 1.5rem;
-}
-.image-secondary {
-    width: 100%;
-    margin-top: 4.5rem;
-    margin-bottom: -2rem;
 }

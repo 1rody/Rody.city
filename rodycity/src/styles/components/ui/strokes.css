@@ -1,0 +1,11 @@
+    .dashed-stroke {
+        border-top: 1px dashed #ffffff48;
+        border-bottom: 1px dashed #ffffff48;
+    }
+    .dashed-stroke-secondary {
+        border-left: 1px dashed #ffffff48;
+        border-right: 1px dashed #ffffff48;
+    }
+    .nav-stroke {
+            border-bottom: 1px solid #ffffff37;
+    }

@@ -1,0 +1,31 @@
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes floating {
+    0% {
+        opacity: 0.5;
+        transform: translateY(-1rem);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0.5;
+        transform: translateY(-1rem);
+    }
+}
+.floating {
+    animation: floating 2s ease infinite;
+}
+.scroll-down-keyframes {
+    animation: scroll-down 5s ease-in-out infinite;
+}

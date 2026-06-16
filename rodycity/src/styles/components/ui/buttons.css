@@ -1,0 +1,22 @@
+.hero-primary {
+    background-color: var(--color-white);
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    font-family: var(--font-jetbrains-mono);
+    color: var(--color-black);
+    transition: .2s;
+}
+.hero-primary:active {
+    transform: scale(0.92);
+}
+.card-btn {
+    background-color: var(--color-red-500);
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    font-family: var(--font-jetbrains-mono);
+    color: var(--color-white);
+    transition: .2s;
+}
+.card-btn:active {
+    transform: scale(0.92);
+}

@@ -1,0 +1,10 @@
+
+#light-foreground {
+    background-color: var(--color-foreground);
+    h3 {
+        color: var(--color-black);
+        font-size: var(--large-text);
+        font-family: var(--font-Handjet);
+        font-size: var(--super-large-text-secondary);
+    }
+}

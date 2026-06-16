@@ -1,0 +1,18 @@
+header {
+    padding: .2rem;
+    transition: .2s;
+
+    ol {
+        font-family: var(--font-jetbrains-mono);
+    }
+    background-color: var(--background);
+}
+header:hover {
+    li {
+        transition: .2s;
+    }
+    li:hover {
+        color: var(--color-red-500);
+        text-decoration: line-through;
+    }
+}
