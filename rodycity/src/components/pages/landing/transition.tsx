@@ -11,7 +11,7 @@ export default function transition() {
     return (
         <>
         <img className="transition-negative z-15" src="/assets/misc/transition-side.svg" alt="Transition minimal" />
-        <section id="light-foreground" className='h-screen'>
+        <section id="light-foreground" className='h-screen material-white '>
             <motion.div  initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}   className="h-screen flex flex-col items-center justify-center">
                 <h3>Commit an new perspective</h3>
                 <div className="image-container">

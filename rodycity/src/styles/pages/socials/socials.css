@@ -1,0 +1,25 @@
+
+.socials {
+    max-width: 500px;
+
+    .banner {
+        overflow: hidden;
+        max-height: 130px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .stacks {
+        img {
+            width: 2rem;
+        }
+    }
+    li {
+        transition: .2s;
+        &:hover {
+            transform: scale(1.05);
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}

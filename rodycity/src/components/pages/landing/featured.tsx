@@ -12,7 +12,7 @@ export default function Featured() {
     return (
         <>
             <img src="/assets/misc/transition-3.svg" alt="Transition triangle" />
-            <section id="featured" className="flex flex-col items-center overflow-hidden pb-50 justify-center">
+            <section id="featured" className="flex  flex-col items-center overflow-hidden pb-50 justify-center">
                 <img src="/assets/misc/Featured.svg" width={1600} height={600} alt="Featured" />
 
                 <div className="container-featured items-center justify-center flex-wrap flex gap-20 sm:flex-wrap md:flex-wrap lg:flex-wrap mt-20">

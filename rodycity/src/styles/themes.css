@@ -9,6 +9,8 @@
   --s-foreground: #171717;
   --glass-foreground: #ffffff36;
 
+  --stroke-glass: #ffffff0e;
+
 }
 @theme inline {
   --color-background: var(--background);

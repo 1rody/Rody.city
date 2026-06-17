@@ -1,0 +1,12 @@
+.material-red {
+    background-color: var(--color-red-500);
+}
+.material-white {
+    background-color: var(--color-foreground);
+
+}
+.glassmorphism {
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid var(--stroke-glass);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+}

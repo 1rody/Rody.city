@@ -7,6 +7,8 @@ import Transition from "@/src/components/pages/landing/transition"
 import Featured from "@/src/components/pages/landing/featured"
 import Footer from "@/src/components/footer/footer";
 
+import '@/src/styles/components/ui/bg.css';
+
 export default function Page() {
   return (
     <>
