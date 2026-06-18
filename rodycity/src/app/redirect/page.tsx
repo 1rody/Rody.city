@@ -27,16 +27,16 @@ export default function Redirect() {
             <h1>{time ? time.toLocaleTimeString() : "--:--:--"}</h1>
         </div>
         <li className="dashed-primary  w-full lg:w-2xl  md:w-xl">
-          <Link href=''>Drawns</Link>
+          <Link href='/pages/draws'>Drawns</Link>
         </li>
         <li className="dashed-primary  w-full  lg:w-2xl  md:w-xl">
-          <Link href=''>weather Monitor</Link>
+          <Link href='/pages/weather'>weather Monitor</Link>
         </li>
         <li className="dashed-primary  w-full  lg:w-2xl  md:w-xl">
           <Link href='/pages/socials'>Linktree</Link>
         </li>
         <li className="dashed-primary  w-full  lg:w-2xl md:w-xl">
-          <Link href=''>Papers</Link>
+          <Link href='/pages/blog'>Papers</Link>
         </li>
       </ol>
 

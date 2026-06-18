@@ -3,6 +3,7 @@ import '@/src/styles/pages/landing/about.css'
 
 import { motion, useScroll, useTransform} from 'framer-motion';
 import Link from 'next/dist/client/link';
+import Image from 'next/image'
 
 export default function About() {
     const { scrollX } = useScroll()
@@ -10,7 +11,7 @@ export default function About() {
 
     return (
         <>
-        <img className='z-10 transition-primary' src="/assets/misc/transition.svg" alt="transition-svg" />
+        <Image width={3000} height={0} className='z-10 transition-primary' src="/assets/misc/transition.svg" alt="transition-svg" />
         <section id="about" className="flex material-red z-10 items-center justify-center flex-col">
             <motion.h1 style={{x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='  text-center mt-30 mb-45'>Design is my language. </motion.h1>
             <div className='w-full flex items-center justify-center'>
