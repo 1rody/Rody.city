@@ -6,8 +6,7 @@ export async function GET() {
     try {
 
         // resumo nesse bloco ai tem a const que fecha a url do discord pegando o token e definindo a const response
-        //depois de definir response = https://etcetctc(bottoken) ele pega a auth do token e revalida a cada 60s
-        const response = await fetch(`https://discord.com/api/v10/invites/${inviteCode}?with_counts=true`
+        const response = await fetch(`https://discord.com/api/v10/invites/${INVITE}?with_counts=true`
 , {
 
             next: {revalidate: 60}
