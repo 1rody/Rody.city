@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
+  experimental: {
+    viewTransitions: true,
+  },
 };
 
 export default nextConfig;

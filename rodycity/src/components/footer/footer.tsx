@@ -27,12 +27,12 @@ export default function Footer() {
                             </ol>
                         </div>
                     </div>
-                    <div>
+                    <div className='text-center md:p-0 lg:p-0 p-10'>
                         <h1>RODY</h1>
                     </div>
-                    <div className='link-section flex w-full items-center dashed mt-5 justify-between gap-10 flex-wrap'>
+                    <div className='link-section text-center md:p-0 lg:p-0 p-10 flex w-full items-center dashed mt-5 justify-between gap-10 flex-wrap'>
                         <p>&copy; {new Date().getFullYear()} RODY. All rights reserved.</p>
-                        <ol className='flex gap-5'>
+                        <ol className='flex gap-5 flex items-center justify-center'>
                             <li><Link href="#"><FaInstagram /></Link></li>
                             <li><Link href="#"><FaXTwitter /></Link></li>
                             <li><Link href="#"><FaPinterest /></Link></li>

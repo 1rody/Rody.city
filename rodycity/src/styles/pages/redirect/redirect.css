@@ -1,0 +1,11 @@
+    h1 {
+        font-size: var(--large-text);
+        line-height: 1.2;
+        font-family: var(--font-Handjet);
+
+    }
+    li {
+        Link {
+            width: 100%;
+        }
+    }

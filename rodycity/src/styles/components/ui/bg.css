@@ -10,3 +10,9 @@
     border: 1px solid var(--stroke-glass);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
+.glassmorphism-secondary {
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid var(--stroke-glass);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: var(--background-code);
+}
