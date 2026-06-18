@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
     root: __dirname,
   },
   experimental: {
-    viewTransitions: true,
+    viewTransition: true,
   },
 };
 
