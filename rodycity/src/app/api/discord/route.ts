@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-    const botToken = "MTUxNjkzNTcyMDM1NzMzNTA5MA.GPeRho.hcN9gQUWNwWpH3mQiZZ9HoOCs9OJWVm4f1mZtU";
+    const botToken = process.env.TOKEN;
     const guildID = "1494761497312755914";
 
     try {
