@@ -1,19 +1,17 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-    const botToken = process.env.TOKEN;
-    const guildID = "1494761497312755914";
+    const INVITE = "WVcRhXG86b";
 
     try {
 
         // resumo nesse bloco ai tem a const que fecha a url do discord pegando o token e definindo a const response
         //depois de definir response = https://etcetctc(bottoken) ele pega a auth do token e revalida a cada 60s
-        const response = await fetch(`https://discord.com/api/v10/guilds/${botToken}?with_counts=true`, {
-            headers: {
-                Authorization: `Bot ${botToken}`,
-            },
+        const response = await fetch(`https://discord.com/api/v10/invites/${inviteCode}?with_counts=true`
+, {
+
             next: {revalidate: 60}
-        });
+        }); 
         if (!response.ok){
             return NextResponse.json({ error: 'Erro ao buscar dados' }, { status: response.status });
         };
