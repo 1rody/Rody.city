@@ -15,7 +15,7 @@ export default function About() {
         <section id="about" className="flex material-red z-10 items-center justify-center flex-col">
             <motion.h1 style={{x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='  text-center mt-30 mb-45'>Design is my language. </motion.h1>
             <div className='w-full flex items-center justify-center'>
-                <motion.article style={{x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='card rounded-xl flex flex-col items-center p-8  gap-8 justify-center'>
+                <motion.article style={{x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='card rounded-xl transition-transform cursor-cell hover:scale-105  flex flex-col items-center p-8  gap-8 justify-center'>
                     <div className='flex flex-col text-center'>
                         <h1 className='font-black lg:text-7xl md:text-3xl'>[RODY]</h1>
                         <h2  className='font-black lg:text-sm md:text-3xl' >[Front-end/ UI/UX ]</h2>
@@ -32,7 +32,7 @@ export default function About() {
                             </button>
                         </div>
                     </div>
-                    <div className='flex flex-wrap items-center justify-center gap-3'>
+                    <div className='flex relative flex-wrap container-stacks items-center justify-center gap-3'>
                         <p className='tech-2'>NextJs</p>
                         <p className='tech-4'>Figma</p>
                         <p className='tech-3 '>React</p>

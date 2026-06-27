@@ -9,6 +9,7 @@
         margin-top: -10rem;
         background-color: var(--background);
         max-width: 550px;
+        height: 800px;
         h1 {
             font-family: var(--font-Chakra);
             font-size: var(--large-text);
@@ -20,6 +21,9 @@
             border-top: 1px solid rgba(128, 128, 128, 0.348);
             border-bottom: 1px solid rgba(128, 128, 128, 0.421);
         }
-    
+        .container-stacks {
+            height: 350px !important;
+            overflow: hidden;
+        }
     }
 }
