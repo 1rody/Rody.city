@@ -48,6 +48,8 @@ export default function About() {
             <motion.h1  style={{x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className=' text-center pb-40'>code is my syntax.</motion.h1>
 
         </section>
+            <Image className="filter-invert-image z-50 " src="/assets/misc/transition-3.svg" alt="Transition triangle" width={3000} height={0}/>
+
         </>
     )
 }

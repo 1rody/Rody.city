@@ -1,35 +1,24 @@
 footer {
     margin-top: 4rem;
-    background-color: var(--foreground);
+    background-color: var(--foreground); 
+    color: var(--background);
     padding: 4rem;
+
     h1 {
         font-size: var(--super-large-text);
         font-weight: bolder;
         line-height: 1.2;
-        color: var(--color-black);
     }
-    div {
-        font-weight: bold;
-        color: var(--color-black);
-    }
+
     .dashed {
-        border: 1px dashed var(--color-black);
+        border: 1px dashed var(--foreground); 
     }
+
     button {
         transition: .2s;
         border-bottom: 1px solid transparent;
         &:hover {
-            border-bottom: 1px solid var(--color-black);
+            border-bottom: 1px solid var(--foreground);
         }
     } 
-    button:active {
-        transform: scale(0.92);
-    }
-    div {
-        ol + ol {
-            padding-left: 1rem;
-            border-left: 1px solid var(--color-black);
-        }
-    }
-
 }

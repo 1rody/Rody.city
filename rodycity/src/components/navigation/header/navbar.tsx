@@ -24,7 +24,7 @@ export default function Navigation() {
                     <li><Link className="text-sm"  href='/redirect'>Tools</Link></li>
                 </ol>
                 <ol>
-                    <li><Link href='/'><img src="/assets/icons/RodyLogo.svg" width={30} alt="RodyLogo" /></Link></li>
+                    <li><Link href='/'><img className="filter-invert-image " src="/assets/icons/RodyLogo.svg" width={30} alt="RodyLogo" /></Link></li>
                 </ol>
                 <ol className="flex items-center justify-center gap-10">
                     <li><Link className="text-sm"  href='/pages/socials'>Socials</Link></li>

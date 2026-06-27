@@ -14,7 +14,6 @@ export default function Page() {
       <Navigation/>
       <Hero/>
       <About/>
-      <Transition/>
       <Featured/>
       <Footer/>
     </>
