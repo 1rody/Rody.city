@@ -29,8 +29,8 @@ export default function socials() {
     }, []); // array vazio pra carregar apenas 1 vez por render
   return (
     <>
-    <section id="socials-container" className="h-screen w-full flex items-center justify-center">
-        <div className="socials glassmorphism items-center justify-center rounded-4xl flex flex-col">
+    <section id="socials-container" className="h-screen theme-force-dark w-full flex items-center justify-center">
+        <div className="socials glassmorphism-secondary items-center justify-center rounded-4xl flex flex-col">
             <div className='flex flex-col w-full items-center justify-center p-3'>
                 <img className="banner rounded-3xl" src="/assets/backgrounds/giphy.gif" alt="Rody" />
                 <div className='text-center p-5 gap-2'>

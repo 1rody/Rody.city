@@ -20,20 +20,6 @@
             border-top: 1px solid rgba(128, 128, 128, 0.348);
             border-bottom: 1px solid rgba(128, 128, 128, 0.421);
         }
-        .tech {
-            font-family: var(--font-jetbrains-mono);
-            padding: .2rem .8rem;
-            border-radius: 2rem;
-            color: rgba(128, 128, 128, 0.371);
-            border: 1px solid rgba(128, 128, 128, 0.371);
-        }
-        .tech-2 {
-            font-family: var(--font-jetbrains-mono);
-            padding: .2rem .8rem;
-            border-radius: 2rem;
-            color: var(--background);
-            background-color: #ffff;
-            border: 1px solid rgba(128, 128, 128, 0.371);
-        }
+    
     }
 }

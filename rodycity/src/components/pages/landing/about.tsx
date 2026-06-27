@@ -27,18 +27,18 @@ export default function About() {
                             Exploring lightweight protocols like HTMX, I build pixel-perfect, high-performance interfaces with clean, purposeful code.
                         </h3>
                         <div className='flex w-full items-center justify-center p-5'>
-                            <button className='hero-primary'>
+                            <button className='dashed-primary'>
                                 <Link href="/assets/docs/curriculum.pdf" download>Download curriculum</Link>
                             </button>
                         </div>
                     </div>
                     <div className='flex flex-wrap items-center justify-center gap-3'>
                         <p className='tech-2'>NextJs</p>
-                        <p className='tech'>Figma</p>
-                        <p className='tech'>React</p>
-                        <p className='tech'>Typescript</p>
+                        <p className='tech-4'>Figma</p>
+                        <p className='tech-3 '>React</p>
+                        <p className='tech-4'>Typescript</p>
                         <p className='tech-2'>Html/CSS</p>
-                        <p className='tech'>JAVA</p>
+                        <p className='tech-5 '>JAVA</p>
                     </div>
                     <div>
 
@@ -48,7 +48,7 @@ export default function About() {
             <motion.h1  style={{x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className=' text-center pb-40'>code is my syntax.</motion.h1>
 
         </section>
-            <Image className="filter-invert-image z-50 " src="/assets/misc/transition-3.svg" alt="Transition triangle" width={3000} height={0}/>
+            <Image className="z-50 " src="/assets/misc/transition-3.svg" alt="Transition triangle" width={3000} height={0}/>
 
         </>
     )

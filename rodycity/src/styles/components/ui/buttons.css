@@ -1,41 +1,56 @@
 .hero-primary {
     background-color: var(--color-white);
     padding: .5rem 1rem;
-    border-radius: .3rem;
+    border-radius: 1rem;
     font-family: var(--font-jetbrains-mono);
     color: var(--color-black);
     transition: .2s;
 
     &:active {
+        border-radius: .5rem;
         transform: scale(0.92);
     }
 }
+
 .dashed-primary {
-    border: 1px dashed #ffffff7b;
+    border: 1px dashed #7575757b;
     padding: .5rem 1rem;
     border-radius: .3rem;
     font-family: var(--font-jetbrains-mono);
     color: var(--text-white);
     transition: .2s;
+
     &:hover {
         background-color: #fff;
         color: var(--color-black);
     }
+
     &:active {
         transform: scale(0.92);
     }
 }
+
 .card-btn {
     background-color: var(--color-red-500);
     padding: .5rem 1rem;
-    border-radius: .3rem;
+    border-radius: 1rem;
     font-family: var(--font-jetbrains-mono);
     color: var(--color-white);
-    transition: .2s;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        transform: scale(0.98);
+    }
+
+    &:active {
+        filter: brightness(0.8);
+        transform: scale(0.95);
+    }
 }
-.card-btn:active {
-    transform: scale(0.92);
-}
+
+
+
 .discord-btn {
     background-color: rgb(75, 39, 255);
     padding: .5rem 1rem;
@@ -43,7 +58,58 @@
     font-family: var(--font-jetbrains-mono);
     color: var(--white-text);
     transition: .2s;
+
     &:active {
-           transform: scale(0.92); 
+        transform: scale(0.92);
     }
 }
+
+[class^="tech-"] {
+    font-family: var(--font-jetbrains-mono);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(128, 128, 128, 0.371);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #888;
+    background-color: transparent;
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+.tech-1:hover {
+        olor: white;
+    background-color: var(--color-red-400);
+    border-color: var(--color-red-400);
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+.tech-2:hover {
+    color: white;
+    background-color: var(--color-blue-400);
+    border-color: var(--color-blue-400);
+    padding: 0.4rem 1.2rem;
+    border-radius: 3rem;
+}
+.tech-3:hover {
+    color: white;
+    background-color: var(--color-green-400);
+    border-color: var(--color-green-400);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.tech-4:hover {
+    color: white;
+    background-color: var(--color-purple-400);
+    border-color: var(--color-purple-400);
+    padding: 1rem .8rem;
+    border-radius: 1.5rem;
+}
+.tech-5:hover {
+    color: white;
+    background-color: var(--color-orange-300);
+    border-color: var(--color-orange-300);
+    padding: 1.2rem 0.6rem;
+    border-radius: 2.5rem;
+}
+

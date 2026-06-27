@@ -12,7 +12,6 @@
   --stroke-glass: #ffffff0e;
   --background-code: #000000e0;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0A0A0C;
@@ -35,8 +34,14 @@
   .filter-invert-image {
     filter: invert(100);
   }
-}
+  :root {
+    --s-background: #e2e2e213;
+    --s-foreground: #f1f1f10c;
 
+    --stroke-glass: #ffffff0e;
+    --background-code: #f1f1f198;
+  }
+}
 body {
   background: var(--background);
   color: var(--foreground);

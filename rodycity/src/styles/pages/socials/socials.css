@@ -1,7 +1,25 @@
-
+@media (prefers-color-scheme: light) {
+  .socials {
+    .banner {
+        filter: invert(100);
+    }
+    .stacks {
+        img {
+            filter: invert(100);
+        }
+    }
+    .hero-primary {
+        background-color: var(--foreground);
+        color: var(--color-white);
+    }
+    .discord-btn {
+        background-color: rgb(75, 39, 255);
+        color: var(--color-white);
+    }
+  }
+}
 .socials {
     max-width: 500px;
-
     .banner {
         overflow: hidden;
         max-height: 130px;
