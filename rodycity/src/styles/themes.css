@@ -19,6 +19,9 @@
     --textblack: #ffffff;
     --glass-foreground: #ffffff36;
   }
+  .nav-mobile {
+    background-color: var(--color-background);
+  }
 }
 
 @theme inline {
@@ -34,6 +37,10 @@
   .filter-invert-image {
     filter: invert(100);
   }
+  .nav-mobile {
+    background-color: var(--color-background);
+  }
+
   :root {
     --s-background: #e2e2e213;
     --s-foreground: #f1f1f10c;

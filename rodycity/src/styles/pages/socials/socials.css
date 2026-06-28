@@ -31,9 +31,6 @@
             width: 2rem;
         }
     }
-    p {
-        font-family: var(--font-jetbrains-mono);
-    }
     li {
         transition: .2s;
         &:hover {

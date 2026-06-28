@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import Link from 'next/dist/client/link'
 
 import '@/src/styles/components/ui/buttons.css'
-import '@/src/styles/pages/redirect/redirect.css'
 
 
 export default function Redirect() {
@@ -24,7 +23,7 @@ export default function Redirect() {
       </div>
       <ol className="flex h-screen w-full p-10 items-center justify-center z-5 flex-col gap-5 text-center">
         <div>
-            <h1>{time ? time.toLocaleTimeString() : "--:--:--"}</h1>
+            <h1 className='text-2xl font-(family-name:--font-Handjet)'>{time ? time.toLocaleTimeString() : "--:--:--"}</h1>
         </div>
         <li className="dashed-primary  w-full lg:w-2xl  md:w-xl">
           <Link href='/pages/draws'>Drawns</Link>

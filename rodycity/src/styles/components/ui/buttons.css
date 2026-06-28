@@ -1,4 +1,4 @@
-.hero-primary {
+.primary {
     background-color: var(--color-white);
     padding: .5rem 1rem;
     border-radius: 1rem;
@@ -12,7 +12,7 @@
     }
 }
 
-.dashed-primary {
+.dashed {
     border: 1px dashed #7575757b;
     padding: .5rem 1rem;
     border-radius: .3rem;

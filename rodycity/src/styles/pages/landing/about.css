@@ -1,23 +1,14 @@
 #about {
 
     h1 {
-        font-family: var(--font-Handjet);
         font-size: var(--super-large-text-secondary);
-        color: var(--text-white);
     }
     .card {
         margin-top: -10rem;
         background-color: var(--background);
         max-width: 550px;
         height: 800px;
-        h1 {
-            font-family: var(--font-Chakra);
-            font-size: var(--large-text);
-            color: var(--text-white);
-        }
         h3 {
-            font-size: var(--small-text);
-            font-family: var(--font-jetbrains-mono);
             border-top: 1px solid rgba(128, 128, 128, 0.348);
             border-bottom: 1px solid rgba(128, 128, 128, 0.421);
         }

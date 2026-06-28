@@ -35,7 +35,7 @@ export default function socials() {
                 <img className="banner rounded-3xl" src="/assets/backgrounds/giphy.gif" alt="Rody" />
                 <div className='text-center p-5 gap-2'>
                     <Link href="/" className='font-black text-5xl'>RODY</Link>
-                    <p><span>Welcome to my social tree!</span></p>
+                    <p className='font-(family-name:--font-jetbrains-mono)'><span>Welcome to my social tree!</span></p>
                 </div>
             </div>
             <article className='p-5'>
@@ -46,22 +46,22 @@ export default function socials() {
                     <img src="/assets/icons/icons8-typescript.svg" alt="Typescript" />
                     <img src="/assets/icons/icons8-javascript.svg" alt="Javascript" />
                 </div>
-                <p className='mt-10 p-5  rounded-2xl glassmorphism-secondary'>
+                <p className='mt-10 p-5 font-(family-name:--font-jetbrains-mono) rounded-2xl glassmorphism-secondary'>
                     Hello, Im <strong>rody</strong>! <br /><br /> im a web developer and designer, I love to create web solutions and functional websites.  <br /> <br />I have a passion for learning new technologies and improving my skills.
                 </p>
             </article>
             <div className='flex mt-5 p-5 items-center justify-center w-full'>
                 <ol className='flex gap-5'>
-                    <li className='hero-primary w-full'>
+                    <li className='primary w-full'>
                         <Link href=''>Instagram</Link>
                     </li>
-                    <li className='hero-primary w-full'>
+                    <li className='primary w-full'>
                         <Link href=''>X</Link>
                     </li>
-                    <li className='hero-primary w-full'>
+                    <li className='primary w-full'>
                         <Link href=''>Github</Link>
                     </li>
-                    <li className='hero-primary w-full'>
+                    <li className='primary w-full'>
                         <Link href=''>Linkedin</Link>
                     </li>
                 </ol>
