@@ -2,11 +2,15 @@
 
 import '@/src/styles/components/footer/footer.css'
 import Link from 'next/dist/client/link'
+import Image from 'next/image'
+
 import { FaInstagram, FaXTwitter,  FaPinterest, FaLinkedin, FaGithub} from 'react-icons/fa6';
 
 export default function Footer() {
     return (
         <>
+            <Image width={3000} height={0} className='z-20 transition-secondary' src="/assets/misc/transition2.svg" alt="transition-svg" />
+
             <footer className="flex flex-col items-center justify-center w-full">
                 <section>
                     <div className='link-section flex w-full items-left justify-between gap-10 flex-wrap'>

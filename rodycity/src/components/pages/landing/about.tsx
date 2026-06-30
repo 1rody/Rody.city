@@ -15,30 +15,30 @@ export default function About() {
         <section id="about" className="flex material-red z-10 items-center justify-center flex-col">
             <motion.h1 style={{x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='text-(length:--super-large-text-secondary)  font-(family-name:--font-Handjet)   text-center mt-30 mb-45'>Design is my language. </motion.h1>
             <div className='w-full flex items-center justify-center'>
-                <motion.article style={{x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='card rounded-xl transition-transform cursor-cell hover:scale-105  flex flex-col items-center p-8  gap-8 justify-center'>
+                <motion.article style={{x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='card rounded-xl transition-transform cursor-cell flex flex-col items-center p-8  gap-8 justify-center'>
                     <div className='flex font-(family-name:--font-Chakra) flex-col text-center'>
                         <h1 className='font-black lg:text-4xl md:text-2xl text-lg sm:text-2xl'>[RODY]</h1>
                         <h2  className='font-black lg:text-sm md:text-sm text-sm sm:text-sm' >[Front-end/ UI/UX ]</h2>
                     </div>
-                    <div>
-                        <h3 className=' text-center p-4 text-(lenght:--small-text) font-(family-name:--font-jetbrains-mono)'>
-                            I am a Software Engineering student at UCSal and a Front-End Developer & UI/UX Designer. <br /><br />
-                            Bridging the gap between clean code and seamless user experiences, I craft modern web applications using using the above technologies.
-                            Exploring lightweight protocols like HTMX, I build pixel-perfect, high-performance interfaces with clean, purposeful code.
-                        </h3>
-                        <div className='flex w-full items-center justify-center p-5'>
-                            <button className='dashed'>
-                                <Link href="/assets/docs/curriculum.pdf" download>Download curriculum</Link>
-                            </button>
-                        </div>
-                    </div>
-                    <div className='flex relative flex-wrap container-stacks items-center justify-center gap-3'>
+                    <div className='flex relative flex-wrap container-stacks items-center justify-center gap-2'>
                         <p className='tech-2'>NextJs</p>
                         <p className='tech-4'>Figma</p>
                         <p className='tech-3 '>React</p>
                         <p className='tech-4'>Typescript</p>
                         <p className='tech-2'>Html/CSS</p>
                         <p className='tech-5 '>JAVA</p>
+                    </div>
+                    <div>
+                        <h3 className=' text-center md:text-left sm:text-left lg:text-left p-4 text-(lenght:--small-text) font-(family-name:--font-jetbrains-mono)'>
+                            I am a Software Engineering student at UCSal and a Front-End Developer & UI/UX Designer. <br /><br />
+                            Bridging the gap between clean code and seamless user experiences, I craft modern web applications using using the above technologies.
+                            Exploring lightweight protocols like HTMX, I build pixel-perfect, high-performance interfaces with clean, purposeful code.
+                        </h3>
+                        <div className='flex w-full items-center justify-center mt-8  p-5'>
+                            <button className='dashed'>
+                                <Link href="/assets/docs/curriculum.pdf" download>Download curriculum</Link>
+                            </button>
+                        </div>
                     </div>
                     <div>
 
@@ -48,7 +48,7 @@ export default function About() {
             <motion.h1  style={{x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='text-(length:--super-large-text-secondary)  font-(family-name:--font-Handjet) text-center pb-40'>code is my syntax.</motion.h1>
 
         </section>
-            <Image className="z-50 " src="/assets/misc/transition-3.svg" alt="Transition triangle" width={3000} height={0}/>
+            <Image className="z-20 no-select transition-tertiary" src="/assets/misc/transition-3.svg" alt="Transition triangle" width={3000} height={0}/>
 
         </>
     )

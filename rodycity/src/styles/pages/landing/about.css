@@ -17,4 +17,18 @@
             overflow: hidden;
         }
     }
+    .card-secondary {
+        margin-top: -10rem;
+        background-color: var(--background);
+        max-width: 650px;
+        height: 800px;
+        h3 {
+            border-top: 1px solid rgba(128, 128, 128, 0.348);
+            border-bottom: 1px solid rgba(128, 128, 128, 0.421);
+        }
+        .container-stacks {
+            height: 350px !important;
+            overflow: hidden;
+        }
+    }
 }

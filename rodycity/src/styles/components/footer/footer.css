@@ -1,5 +1,5 @@
 footer {
-    margin-top: 4rem;
+    margin-top:-4rem;
     background-color: var(--foreground); 
     color: var(--background);
     padding: 4rem;

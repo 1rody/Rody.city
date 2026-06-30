@@ -29,7 +29,7 @@ export default function Navigation() {
                 </ol>
             </nav>
         </header>
-        <header className="flex nav-mobile items-center font-(family-name:--font-jetbrains-mono) justify-around w-full z-50 fixed nav-stroke ">
+        <header className="flex nav-mobile items-center font-(family-name:--font-jetbrains-mono) justify-around w-full z-50 nav-stroke ">
             <nav className="flex items-center justify-around  w-full gap-5">
                 <ol className="flex items-center justify-center gap-10">
                     <li><Link className="text-sm   hover:text-red-500 transition-all duration-120 hover:line-through" href='/redirect'>See more</Link></li>

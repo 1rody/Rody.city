@@ -12,7 +12,7 @@ export default function Featured() {
     
     return (
         <>
-            <section id="featured" className="flex  flex-col items-center overflow-hidden pb-50 justify-center">
+            <section id="featured" className="flex no-select flex-col items-center overflow-hidden pb-50 justify-center">
                 <Image className="filter-invert-image " src="/assets/misc/Featured.svg" width={1600} height={600} alt="Featured" />
 
                 <div className="container-featured items-center justify-center flex-wrap flex gap-20 sm:flex-wrap md:flex-wrap lg:flex-wrap mt-20">

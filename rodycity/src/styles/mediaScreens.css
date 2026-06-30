@@ -81,6 +81,9 @@
     --large-text: 2rem;
     --small-text: 1rem;
   }
+  .transition-tertiary {
+    margin-top: 5rem;
+  }
   #about {
       margin-bottom: -5rem;
   }
@@ -111,10 +114,6 @@
   #about {
       margin-bottom: -5rem;
   }
-  .transition-negative {
-      margin-bottom: -22rem;
-      margin-top: 12rem;
-  }
   #introduction {
       p {
         margin-bottom: -25rem;
@@ -135,12 +134,15 @@
   .transition-negative {
       margin-bottom: 0rem;
   }
+  .footer {
+    margin-top: 20rem !important;
+  }
   .transition-primary {
     margin-bottom:  -.6rem;
     margin-top: -3rem;
   }
   .transition-negative {
-      margin-bottom: -22rem;
+      margin-bottom: -2rem;
       margin-top: 13rem;
   }
   .nav-pc {
