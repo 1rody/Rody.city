@@ -5,15 +5,13 @@ footer {
     padding: 4rem;
 
     h1 {
-        font-size: var(--super-large-text);
+        font-size: var(--footer-large-text);
         font-weight: bolder;
         line-height: 1.2;
     }
-
-    .dashed {
-        border: 1px dashed var(--foreground); 
+    .link-section {
+        border-top: 1px solid var(--background);
     }
-
     button {
         transition: .2s;
         border-bottom: 1px solid transparent;

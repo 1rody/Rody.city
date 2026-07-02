@@ -11,14 +11,14 @@ export default function About() {
 
     return (
         <>
-        <Image width={3000} height={0} className='z-20 transition-primary' src="/assets/misc/transition.svg" alt="transition-svg" />
-        <section id="about" className="flex material-red z-10 items-center justify-center flex-col">
+        <Image width={3000} height={0} className='z-20 transition-primary' src="/assets/misc/transition2.svg" alt="transition-svg" />
+        <section id="about" className="flex z-10 material-white items-center justify-center flex-col">
             <motion.h1 style={{x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='text-(length:--super-large-text-secondary)  font-(family-name:--font-Handjet)   text-center mt-30 mb-45'>Design is my language. </motion.h1>
             <div className='w-full flex items-center justify-center'>
                 <motion.article style={{x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='card rounded-xl transition-transform cursor-cell flex flex-col items-center p-8  gap-8 justify-center'>
                     <div className='flex font-(family-name:--font-Chakra) flex-col text-center'>
-                        <h1 className='font-black lg:text-4xl md:text-2xl text-lg sm:text-2xl'>[RODY]</h1>
-                        <h2  className='font-black lg:text-sm md:text-sm text-sm sm:text-sm' >[Front-end/ UI/UX ]</h2>
+                        <img src="/assets/misc/RodyLogo.png" alt="Profile Image" width="400" height="100" />
+                        <h2  className='font-black lg:text-sm md:text-sm mt-5 text-sm sm:text-sm' >[Front-end/ UI/UX ]</h2>
                     </div>
                     <div className='flex relative flex-wrap container-stacks items-center justify-center gap-2'>
                         <p className='tech-2'>NextJs</p>

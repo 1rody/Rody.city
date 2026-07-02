@@ -2,6 +2,7 @@
 
     h1 {
         font-size: var(--super-large-text-secondary);
+        color: var(--color-background);
     }
     .card {
         margin-top: -10rem;

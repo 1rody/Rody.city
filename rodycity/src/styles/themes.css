@@ -22,7 +22,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0e0e0e;
+    --background: #000000;
     --foreground: #ffffff;
     --textblack: #ffffff;
     --glass-foreground: #ffffff36;
@@ -78,5 +78,9 @@ body {
   -webkit-user-select: none; 
   -moz-user-select: none;    
   -ms-user-select: none;     
+  user-select: none;
+}
+.no-interactions {
+  pointer-events: none;
   user-select: none;
 }

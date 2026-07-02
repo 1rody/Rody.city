@@ -1,5 +1,5 @@
 :root {
-  --super-large-text: 25rem;
+  --super-large-text: 18rem;
   --super-large-text-secondary: 6rem;
 
   /* vars de textp defai;t */
@@ -13,7 +13,8 @@
 
 @media (max-width: 2968px) {
   :root {
-    --super-large-text: 25rem;
+    --footer-large-text: 28rem;
+    --super-large-text: 10rem;
     --super-large-text-secondary: 6rem;
 
   }
@@ -27,7 +28,8 @@
 }
 @media (max-width: 1968px) {
   :root {
-    --super-large-text: 20rem;
+    --footer-large-text: 18rem;
+    --super-large-text: 8rem;
     --super-large-text-secondary: 6rem;
 
   }
@@ -37,9 +39,10 @@
 }
 @media (max-width: 1868px) {
   :root {
-    --super-large-text-secondary: 8rem;
-    --aux-super-text: 1rem;
-    --super-large-text: 15rem;
+    --footer-large-text: 15rem;
+    --super-large-text-secondary: 7rem;
+    --aux-super-text: 4rem;
+    --super-large-text: 5rem;
 
     --large-text: 2rem;
     --small-text: 1rem;
@@ -48,15 +51,16 @@
       margin-bottom: -5rem;
   }
   .transition-negative {
-      margin-bottom: -18rem;
+      margin-bottom: -1rem;
       margin-top: 10rem;
   }
 }
 @media (max-width: 1568px) {
   :root {
-    --super-large-text-secondary: 8rem;
-    --aux-super-text: 1rem;
-    --super-large-text: 15rem;
+    --footer-large-text: 12rem;
+    --super-large-text-secondary: 4rem;
+    --aux-super-text: 3rem;
+    --super-large-text: 5rem;
 
     --large-text: 2rem;
     --small-text: 1rem;
@@ -74,9 +78,10 @@
 }
 @media (max-width: 968px) {
   :root {
-    --super-large-text-secondary: 6rem;
-    --aux-super-text: 1rem;
-    --super-large-text: 8rem;
+    --footer-large-text: 8rem;
+    --super-large-text-secondary: 5rem;
+    --aux-super-text: 5rem;
+    --super-large-text: 4rem;
 
     --large-text: 2rem;
     --small-text: 1rem;
@@ -94,12 +99,19 @@
   .featured-project  {
     transform: scale(0.8);
   }
+  .nav-mobile {
+    display: flex;
+  }
+  .nav-pc {
+    display: none;
+  }
   .large-project {
       transform: scale(1);
   }
 }
 @media (max-width: 668px) {
   :root {
+    --footer-large-text: 4rem;
     --super-large-text-secondary: 3rem;
     --aux-super-text: .7rem;
     --super-large-text: 4rem;
