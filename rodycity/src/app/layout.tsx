@@ -35,7 +35,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Deploy your World.",
+  title: "RODY | DEPLOY YOUR IDEAS",
   description: "Developed by Rodolfo falcao, with figma, nextjs, tailwindcss and other technologies...",
 };
 

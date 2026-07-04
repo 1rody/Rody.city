@@ -13,7 +13,7 @@
 
 @media (max-width: 2968px) {
   :root {
-    --footer-large-text: 28rem;
+    --footer-large-text: 25rem;
     --super-large-text: 10rem;
     --super-large-text-secondary: 6rem;
 
@@ -28,7 +28,7 @@
 }
 @media (max-width: 1968px) {
   :root {
-    --footer-large-text: 18rem;
+    --footer-large-text: 16rem;
     --super-large-text: 8rem;
     --super-large-text-secondary: 6rem;
 
@@ -39,7 +39,7 @@
 }
 @media (max-width: 1868px) {
   :root {
-    --footer-large-text: 15rem;
+    --footer-large-text: 14rem;
     --super-large-text-secondary: 7rem;
     --aux-super-text: 4rem;
     --super-large-text: 5rem;
@@ -57,7 +57,7 @@
 }
 @media (max-width: 1568px) {
   :root {
-    --footer-large-text: 12rem;
+    --footer-large-text: 11rem;
     --super-large-text-secondary: 4rem;
     --aux-super-text: 3rem;
     --super-large-text: 5rem;
@@ -78,7 +78,7 @@
 }
 @media (max-width: 968px) {
   :root {
-    --footer-large-text: 8rem;
+    --footer-large-text: 7rem;
     --super-large-text-secondary: 5rem;
     --aux-super-text: 5rem;
     --super-large-text: 4rem;
