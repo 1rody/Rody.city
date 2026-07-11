@@ -4,3 +4,23 @@
 
 @import "./components/ui/animations.css";
 @import "./components/ui/buttons.css";
+
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+
+::view-transition-old(.page-exit) {
+  animation: fade-out 5s ease-out both;
+}
+::view-transition-new(.page-enter) {
+  animation: fade-in 5s ease-in both;
+}
+
+@keyframes fade-out {
+  to { opacity: 0; transform: translateY(20px); }
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-20px); }
+}

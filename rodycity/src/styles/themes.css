@@ -1,12 +1,12 @@
 :root {
   /* Main page colors */
-  --background: #ffffff;
+  --background: #E9E3DE;
   --foreground: #000000;
   --textblack: #171717;
   --glass-foreground: #ffffff36;
 
   /*social media colors*/
-  --s-background: #ffffff;
+  --s-background: #E9E3DE;
   --s-foreground: #171717;
 
   --stroke-glass: #ffffff0e;
@@ -22,9 +22,9 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
-    --foreground: #ffffff;
-    --textblack: #ffffff;
+    --background: #0e0e0e;
+    --foreground: #E9E3DE;
+    --textblack: #E9E3DE;
     --glass-foreground: #ffffff36;
   }
     .dashed-stroke {
@@ -78,9 +78,5 @@ body {
   -webkit-user-select: none; 
   -moz-user-select: none;    
   -ms-user-select: none;     
-  user-select: none;
-}
-.no-interactions {
-  pointer-events: none;
   user-select: none;
 }
