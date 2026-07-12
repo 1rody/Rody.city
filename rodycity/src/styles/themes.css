@@ -22,7 +22,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0e0e0e;
+    --background: #000000;
     --foreground: #E9E3DE;
     --textblack: #E9E3DE;
     --glass-foreground: #ffffff36;
@@ -34,6 +34,10 @@
     .dashed-stroke-secondary {
         border-left: 1px dashed #ffffff48;
         border-right: 1px dashed #ffffff48;
+    }
+    .dashed-stroke-tertiary {
+        border-left: 1px dashed #00000048;
+        border-right: 1px dashed #00000048;
     }
     .nav-stroke {
             border-bottom: 1px solid #ffffff37;
@@ -59,6 +63,10 @@
     }
     .nav-stroke {
             border-bottom: 1px solid #ffffff37;
+    }
+    .dashed-stroke-tertiary {
+        border-left: 1px dashed #ffffff48;
+        border-right: 1px dashed #ffffff48;
     }
 
   :root {
