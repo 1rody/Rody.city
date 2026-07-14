@@ -30,9 +30,18 @@ export default function About() {
                                 <Link className='text-3xl text-black' href="#">Linkedin</Link>
                             </div>
                             <div className='mb-10  flex flex-col text-black gap-10'>
+                                <details className='modal-group  border-b border-(--background)/20'>
+                                    <summary className='flex  cursor-pointer list-none font-semibold text-lg items-center justify-between w-full'>
+                                        The diferences of UI and UX
+                                        <span className="ml-4 transition-all duration-500  group-open:rotate-45">+</span>
+                                    </summary>
+                                    <p>
+                                        Content
+                                    </p>
+                                </details>
                                 <details className='modal-group border-b border-(--background)/20'>
                                     <summary className='flex cursor-pointer list-none font-semibold text-lg items-center justify-between w-full'>
-                                        Lorem ypsun
+                                        How to setup a MINECRAFT server
                                         <span className="ml-4 transition-all duration-500 group-open:rotate-45">+</span>
                                     </summary>
                                     <p>
@@ -41,16 +50,7 @@ export default function About() {
                                 </details>
                                 <details className='modal-group border-b border-(--background)/20'>
                                     <summary className='flex cursor-pointer list-none font-semibold text-lg items-center justify-between w-full'>
-                                        Lorem ypsun
-                                        <span className="ml-4 transition-all duration-500 group-open:rotate-45">+</span>
-                                    </summary>
-                                    <p>
-                                        Content
-                                    </p>
-                                </details>
-                                <details className='modal-group border-b border-(--background)/20'>
-                                    <summary className='flex cursor-pointer list-none font-semibold text-lg items-center justify-between w-full'>
-                                        Lorem ypsun
+                                        Pricing & Skills
                                         <span className="ml-4 transition-all duration-500 group-open:rotate-45">+</span>
                                     </summary>
                                     <p>

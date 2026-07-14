@@ -7,6 +7,12 @@ import Image from 'next/image'
 import { FaInstagram, FaXTwitter,  FaPinterest, FaLinkedin, FaGithub} from 'react-icons/fa6';
 
 export default function Footer() {
+    const socials: Social[] = [
+            {name: "Github", url: "https://github.com/1rody/"},
+            {name: "X", url: "https://x.com/1R0_DY"},
+            {name: "Linkedin", url: "https://www.linkedin.com/in/rodolfo-falc%C3%A3o-03b27a379/"},
+            {name: "Pintesrest", url: "https://br.pinterest.com/1R0_DY/"},
+    ];
     return (
         <>
             <Image width={3000} height={0} className='z-20 transition-secondary' src="/assets/misc/transition2.svg" alt="transition-svg" />
@@ -18,11 +24,9 @@ export default function Footer() {
                     <div className='link-section p-10 text-center items-center gap-10 flex-wrap justify-between  flex w-full mt-10'>
                         <p>&copy; {new Date().getFullYear()} RODY.CITY All rights reserved.</p>
                             <ol className='flex gap-10 flex-wrap  items-center justify-center'>
-                                <li><Link className='flex items-center gap-2' href="#"><FaInstagram />Instagram</Link></li>
-                                <li><Link className='flex items-center gap-2' href="#"><FaXTwitter />Twitter</Link></li>
-                                <li><Link className='flex items-center gap-2' href="#"><FaPinterest />Pinterest</Link></li>
-                                <li><Link className='flex items-center gap-2' href="#"><FaLinkedin />Linkedin</Link></li>
-                                <li><Link className='flex items-center gap-2' href="#"><FaGithub />Github</Link></li>
+                                {socials.map((s) => (
+                                    <Link key={s.name} href={s.url}>{s.name}</Link>
+                                ))}
                             </ol>
                         <p className='text-center w-full lg:w-fit md:w-fit sm:w-fit'><Link href="/privacy">Privacy Policy</Link></p>
                     </div>

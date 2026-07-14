@@ -37,7 +37,7 @@ export default function Hero() {
                                     <img src="/assets/icons/RodyLogo.svg" className="" width={200} alt="RodyLogo" />
                                     <p className="absolute text-2xl left-5 bottom-15">This site is under deployment.</p>
                                 </div>
-                                    <p className="absolute text-3xl max-w-1/3 left-5 lg:bottom-140 nav-pc">Dive deep into the digital current, transform fluid concepts into pixels, and brace for impact.</p>
+                                    <p className="absolute text-3xl max-w-1/3 left-5  lg:top-100 md:top-80 nav-pc">Dive deep into the digital current, transform fluid concepts into pixels, and brace for impact.</p>
                             </div>
                     </motion.div>
             </section>
