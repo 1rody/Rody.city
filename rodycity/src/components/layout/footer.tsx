@@ -7,6 +7,10 @@ import Image from 'next/image'
 import { FaInstagram, FaXTwitter,  FaPinterest, FaLinkedin, FaGithub} from 'react-icons/fa6';
 
 export default function Footer() {
+    interface Social {
+        name: string;
+        url: string;
+    }
     const socials: Social[] = [
             {name: "Github", url: "https://github.com/1rody/"},
             {name: "X", url: "https://x.com/1R0_DY"},
