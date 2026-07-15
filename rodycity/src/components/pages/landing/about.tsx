@@ -24,12 +24,12 @@ export default function About() {
                                 Bridging the gap between clean code and seamless user experiences, I craft modern web applications using using the above technologies. Exploring lightweight protocols like HTMX, I build pixel-perfect, high-performance interfaces with clean, purposeful code.
                             </p>
                         </article>
-                        <div className='flex flex-col justify-between w-5/5 '>
+                        <div className='flex flex-col justify-between w-5/5  text-[var(--background)]'>
                             <div className='flex mb-20 flex-col gap-5'>
-                                <Link className='text-lg lg:text-3xl w-full text-black ' href="#">Github</Link>
-                                <Link className='text-lg lg:text-3xl w-full text-black' href="#">Linkedin</Link>
+                                <Link className='text-lg lg:text-3xl w-full ' href="#">Github</Link>
+                                <Link className='text-lg lg:text-3xl w-full' href="#">Linkedin</Link>
                             </div>
-                            <div className='mb-10  flex flex-col text-black gap-10'>
+                            <div className='mb-10  flex flex-col  gap-10'>
                                 <details className='modal-group  border-b border-(--background)/20'>
                                     <summary className='flex  cursor-pointer list-none font-semibold text-lg items-center justify-between w-full'>
                                         The diferences of UI and UX
