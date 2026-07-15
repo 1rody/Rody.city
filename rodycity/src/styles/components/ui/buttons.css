@@ -63,53 +63,48 @@
         transform: scale(0.92);
     }
 }
+.tech-group {
+    display: flex;
+    gap: .25rem;
+}
 
 [class^="tech-"] {
     font-family: var(--font-jetbrains-mono);
     padding: .5rem 1rem;
-    border-radius: 2rem;
-    border: 1px solid rgba(128, 128, 128, 0.371);
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    color: #888;
-    background-color: transparent;
+    background-color: var(--background-code);
+    cursor: pointer;
+    white-space: nowrap;
+    transition:
+        padding .3s cubic-bezier(0.34, 1.56, 0.64, 1),
+        border-radius .3s cubic-bezier(0.34, 1.56, 0.64, 1),
+        background-color .2s cubic-bezier(0.2, 0, 0, 1),
+        border-color .2s cubic-bezier(0.2, 0, 0, 1),
+        color .2s cubic-bezier(0.2, 0, 0, 1);
+}
 
-    &:active {
-        transform: scale(0.95);
-    }
+.tech-1 { border-radius: 2rem .35rem .35rem 2rem; }
+.tech-2 { border-radius: .35rem; }
+.tech-3 { border-radius: .35rem; }
+.tech-4 { border-radius: .35rem 2rem 2rem .35rem; }
+
+.tech-group:hover > [class^="tech-"] {
+    padding: .5rem .7rem;
 }
-.tech-1:hover {
-        olor: white;
-    background-color: var(--color-red-400);
-    border-color: var(--color-red-400);
-    padding: 0.8rem;
-    border-radius: 1rem;
+
+[class^="tech-"]:hover {
+    padding: .6rem 1.6rem;
+    border-radius: 2rem;
+    color: #fff;
+    animation: material-expressive-bounce .4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.tech-2:hover {
-    color: white;
-    background-color: var(--color-blue-400);
-    border-color: var(--color-blue-400);
-    padding: 0.4rem 1.2rem;
-    border-radius: 3rem;
-}
-.tech-3:hover {
-    color: white;
-    background-color: var(--color-green-400);
-    border-color: var(--color-green-400);
-    padding: 1rem;
-    border-radius: 0.5rem;
-}
-.tech-4:hover {
-    color: white;
-    background-color: var(--color-purple-400);
-    border-color: var(--color-purple-400);
-    padding: 1rem .8rem;
-    border-radius: 1.5rem;
-}
-.tech-5:hover {
-    color: white;
-    background-color: var(--color-orange-300);
-    border-color: var(--color-orange-300);
-    padding: 1.2rem 0.6rem;
-    border-radius: 2.5rem;
+
+.tech-1:hover { background-color: var(--color-red-400);    border-color: var(--color-red-400); }
+.tech-2:hover { background-color: var(--color-blue-400);   border-color: var(--color-blue-400); }
+.tech-3:hover { background-color: var(--color-green-400);  border-color: var(--color-green-400); }
+.tech-4:hover { background-color: var(--color-purple-400); border-color: var(--color-purple-400); }
+
+[class^="tech-"]:active {
+    transform: scale(0.96);
+    animation: none;
 }
 

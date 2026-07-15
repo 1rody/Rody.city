@@ -4,7 +4,6 @@ import '@/src/styles/components/footer/footer.css'
 import Link from 'next/dist/client/link'
 import Image from 'next/image'
 
-import { FaInstagram, FaXTwitter,  FaPinterest, FaLinkedin, FaGithub} from 'react-icons/fa6';
 
 export default function Footer() {
     interface Social {
@@ -19,9 +18,9 @@ export default function Footer() {
     ];
     return (
         <>
-            <Image width={3000} height={0} className='z-20 transition-secondary' src="/assets/misc/transition2.svg" alt="transition-svg" />
+            <Image width={3000} height={0} className='z-20 transition-secondary' src="/assets/misc/transition2.svg" alt="transition-svg Transicao para a seccao do footer" />
 
-            <footer className="flex flex-col items-center justify-center w-full">
+            <footer className="flex flex-col overflow-hidden items-center justify-center w-full">
                     <div className='text-center md:p-0 lg:p-0 p-10'>
                         <h1>RODY.CITY</h1>
                     </div>

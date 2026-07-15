@@ -7,12 +7,12 @@
 }
 .glassmorphism {
     backdrop-filter: blur(16px) saturate(180%);
-    border: 1px solid rgba(155, 155, 155, 0.178);
+    border: 1px solid rgba(155, 155, 155, 0.062);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
 .glassmorphism-secondary {
     backdrop-filter: blur(16px) saturate(180%);
-    border: 1px solid rgba(155, 155, 155, 0.178);
+    border: 1px solid rgba(155, 155, 155, 0.075);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: var(--background-code);
 }
