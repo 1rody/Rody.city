@@ -33,9 +33,9 @@ export default function Hero() {
                                     </div>
                                 </div>
                                 <div className='flex flex-col z-10 no-interactions justify-center md:mt-100 lg:w-fit lg:mt-0  dashed-stroke-secondary relative lg:h-screen   lg:p-20 sm:p-20 md:p-20 p-5 mt-50 w-full items-center'>
-                                    <Link className="text-5xl anim-wigle nav-pc absolute text-black font-(family-name:--font-Handjet) lg:p-10 md:p-5 sm:p-3 p-3 lg:bottom-25 md:bottom-10 sm:bottom-10 w-full bg-(--foreground) hover:text-red-500 transition-all duration-120 hover:line-through"  href='/'>{time ? time.toLocaleTimeString() : "--:--:--"}  GMT</Link>
+                                    <Link className="text-5xl anim-wigle nav-pc  absolute text-black font-(family-name:--font-Handjet) lg:p-10 md:p-5  sm:p-3 p-3 lg:bottom-25 md:hidden sm:bottom-10 w-full bg-(--foreground) hover:text-red-500 transition-all duration-120 hover:line-through"  href='/'>{time ? time.toLocaleTimeString() : "--:--:--"}  GMT</Link>
                                     <img src="/assets/icons/RodyLogo.svg" className="" width={200} alt="RodyLogo" />
-                                    <p className="absolute text-2xl left-5 bottom-15">This site is under deployment.</p>
+                                    <p className="absolute md:hidden text-2xl left-5 bottom-15">This site is under deployment.</p>
                                 </div>
                                     <p className="absolute text-3xl max-w-1/3 left-5  lg:top-100 md:top-80 nav-pc">Dive deep into the digital current, transform fluid concepts into pixels, and brace for impact.</p>
                             </div>
