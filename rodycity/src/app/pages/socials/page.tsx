@@ -30,8 +30,8 @@ export default function socials() {
   return (
     <>
     <img src="/assets/backgrounds/socials.gif" className='w-full h-screen blur-sm dark:opacity-40' alt="" />
-    <section id="socials-container" className="h-screen absolute z-2 scale-95 lg:scale-100  theme-force-dark w-full flex items-center justify-center">
-        <div className="socials glassmorphism-secondary items-center justify-center rounded-4xl flex flex-col">
+    <section id="socials-container" className="h-screen absolute z-2 scale-95 lg:scale-100 w-full flex items-center justify-center">
+        <div className="socials backdrop-blur-xl glassmorphism-secondary items-center justify-center rounded-4xl flex flex-col">
             <div className='flex flex-col w-full items-center justify-center p-3'>
                 <div className='text-center pt-10 gap-2'>
                     <Link href="/" className='font-black text-5xl'>RODY</Link>
@@ -63,7 +63,7 @@ export default function socials() {
             <div className='discord-container w-full  p-5 '>
                 <div className='flex flex-col p-4 rounded-3xl glassmorphism-secondary gap-5'>
                     <div className='flex gap-2 items-center justify-between'>
-                        <img className='server-pic dark:invert-0 invert-100' src="/assets/icons/RodyLogo.svg" alt="Camel Icon" />
+                        <img className='server-pic ' src="/assets/icons/RodyLogo.svg" alt="Camel Icon" />
                         <div>
                             <h3 className='text-2xl'>LOWN</h3>
                             <div className='online-container flex flex-wrap lg:flex md:flex text-xs gap-3'>

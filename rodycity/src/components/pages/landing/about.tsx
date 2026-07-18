@@ -11,12 +11,12 @@ export default function About() {
 
     return (
         <>
-            <Image width={3000} height={0} className='z-20 transition-primary' src="/assets/misc/transition2.svg" alt="transition-svg" />
-            <section id="about" className="flex z-10 material-white overflow-hidden items-center justify-center flex-col">
-                <div className='flex sm:max-w-4/5 md:max-w-full lg:max-w-4/6 w-full pb-50  flex-col p-10 dashed-stroke-tertiary'>
+            <Image width={3000} height={0} className='z-10 transition-primary dark:invert-0 invert-100' src="/assets/misc/transition2.svg" alt="transition-svg" />
+            <section id="about" className="flex z-15 material-white overflow-hidden items-center justify-center flex-col">
+                <div className='flex sm:max-w-4/5 md:max-w-full overflow-hidden lg:max-w-4/6 w-full pb-50  flex-col p-10 dashed-stroke-tertiary'>
                     <motion.h1 style={{ x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='text-5xl font-(family-name:--font-Handjet)  lg:text-left md:text-left text-center mt-30 mb-5'>Design is my language. </motion.h1>
                     <div className='flex flex-wrap lg:flex-nowrap gap-5 w-full'>
-                        <article className='bg-(--background) lg:p-10 md:p-10 p-5 rounded-3xl '>
+                        <article className='bg-(--background) lg:max-h-96 lg:p-10 md:p-10 p-5 rounded-3xl '>
                             <h2 className='text-(length:--super-large-text-secondary) lg:text-left md:text-left sm:text-left text-center font-black'>RODY</h2>
                             <p className='lg:text-xl md:text-md sm:text-md text-md'>
                                 I am a Software Engineering student at UCSal and a Front-End Developer & UI/UX Designer.
@@ -28,41 +28,66 @@ export default function About() {
                             <div className='flex mb-20 flex-col gap-5'>
                                 <Link className='text-lg lg:text-3xl w-full ' href="#">Github</Link>
                                 <Link className='text-lg lg:text-3xl w-full' href="#">Linkedin</Link>
+                                <Link className='text-lg lg:text-3xl w-full' href="/pages/history/">Landing History</Link>
                             </div>
-                            <div className='mb-10  flex flex-col  gap-10'>
-                                <details className='modal-group  border-b border-(--background)/20'>
-                                    <summary className='flex  cursor-pointer list-none font-semibold text-lg items-center justify-between w-full'>
-                                        The diferences of UI and UX
-                                        <span className="ml-4 transition-all duration-500  group-open:rotate-45">+</span>
-                                    </summary>
+                            <div className="mb-10 flex flex-col gap-10 font-(family-name:--font-jetbrains-mono) lg:h-96 lg:overflow-y-auto lg:pr-2">
+                                <details name="about-faq" className="group modal-group border-b border-(--background)/20">
+                                <summary className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
+                                    The difference between UI and UX
+                                    <span className="ml-4 transition-transform duration-500 group-open:rotate-45">+</span>
+                                </summary>
+                                <div className="pb-4 space-y-2 text-sm">
                                     <p>
-                                        Content
+                                    <strong>UI (user interface)</strong> is what the user sees: the layout, the
+                                    visual design, the components they interact with. It's driven by design.
                                     </p>
+                                    <p>
+                                    <strong>UX (user experience)</strong> is how the interface feels to use:
+                                    the navigation, the accessibility, how easily someone can accomplish what
+                                    they came to do.
+                                    </p>
+                                    <p>
+                                    The two are related but not the same — a site can look good and still be
+                                    frustrating to use. Good UX is also judged against intent: an interface
+                                    built for a specialist audience has different goals than one meant for
+                                    everyone.{" "}
+                                    <Link href="/redirect" className="underline underline-offset-2">
+                                        More in my paper
+                                    </Link>
+                                    .
+                                    </p>
+                                </div>
                                 </details>
-                                <details className='modal-group border-b border-(--background)/20'>
-                                    <summary className='flex cursor-pointer list-none font-semibold text-lg items-center justify-between w-full'>
-                                        How to setup a MINECRAFT server
-                                        <span className="ml-4 transition-all duration-500 group-open:rotate-45">+</span>
-                                    </summary>
-                                    <p>
-                                        Content
-                                    </p>
+                                <details name="about-faq" className="group modal-group border-b border-(--background)/20">
+                                <summary className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
+                                    How to set up a Minecraft server
+                                    <span className="ml-4 transition-transform duration-500 group-open:rotate-45">+</span>
+                                </summary>
+                                <p className="pb-4 text-sm">
+                                    See my write-up on Minecraft server hosting, Velocity, and network management basics —{" "}
+                                    <Link href="/redirect" className="underline underline-offset-2">
+                                    read the paper
+                                    </Link>
+                                </p>
                                 </details>
-                                <details className='modal-group border-b border-(--background)/20'>
-                                    <summary className='flex cursor-pointer list-none font-semibold text-lg items-center justify-between w-full'>
-                                        Pricing & Skills
-                                        <span className="ml-4 transition-all duration-500 group-open:rotate-45">+</span>
-                                    </summary>
-                                    <p>
-                                        Content
-                                    </p>
+                                <details name="about-faq" className="group modal-group border-b border-(--background)/20">
+                                <summary className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
+                                    Pricing &amp; Skills
+                                    <span className="ml-4 transition-transform duration-500 group-open:rotate-45">+</span>
+                                </summary>
+                                <div className="pb-4 space-y-1 text-sm">
+                                    <p><strong>UI/UX consulting</strong> — from $20</p>
+                                    <p><strong>Front-end development (SPA)</strong> — from $40</p>
+                                    <p><strong>Front-end development (MPA)</strong> — $20 per page</p>
+                                    <p><strong>Branding &amp; Guidelines</strong> — from $40 (UI/UX + branding + landing page)</p>
+                                </div>
                                 </details>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <Image className="z-20 no-select transition-tertiary" src="/assets/misc/transition-3.svg" alt="Transition triangle" width={3000} height={3} />
+            <Image className="z-20 no-select transition-tertiary dark:invert-0 invert-100 mt-20 " src="/assets/misc/transition-3.svg" alt="Transition triangle" width={3000} height={300} />
 
         </>
     )

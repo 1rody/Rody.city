@@ -1,24 +1,26 @@
 .featured-project  {
     background-color: var(--foreground);
-    padding: 1rem;
-    border-radius: 2rem;
+    padding: .4rem;
     cursor:context-menu;
     transition: .2s;
     img {width: 440px;  height: 250px; z-index: 2; background-color: var(--glass-foreground) ; border-radius: 1rem;}
+    span {
+        background-color: var(--color-emerald-300);
+        color: black;
+    }
     .container-text {
+        margin-top: -.5rem;
+        margin-left: -1rem;
+        height: 100%;
         position: absolute;
-        bottom: 5;
         z-index: 5;
         line-height: 1;
-        padding: 1rem;
     }
     div {
         margin-top: .8rem;
         transition: .2s;
         opacity: none;
         display: none;
-        h1, p { color: var(--background); } 
-
         h1 {
             font-size: var(--large-text);
         }

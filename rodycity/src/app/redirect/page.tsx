@@ -18,26 +18,10 @@ export default function Redirect() {
   return (
     <>
     <section className="h-screen w-full flex flex-col items-center ">
-      <div className="w-full z-10 top-0 relative items-center">
-        <Link className="w-full fixed text-center font-black dashed-stroke" href='/'>RODY.REDIRECT</Link>
+      <div className="w-full z-10 top-0 relative items-center gap-10 flex  ">
+        <Link className="w-full  text-center font-black dashed-stroke" href='/'>Back to landing </Link>
+        <Link className="w-full  text-center font-black dashed-stroke" href='/socials'>Socials </Link>
       </div>
-      <ol className="flex h-screen w-full p-10 items-center justify-center z-5 flex-col gap-5 text-center">
-        <div>
-            <h1 className='text-2xl font-(family-name:--font-Handjet)'>{time ? time.toLocaleTimeString() : "--:--:--"}</h1>
-        </div>
-        <li className="dashed-primary  w-full lg:w-2xl  md:w-xl">
-          <Link href='/pages/draws'>Drawns</Link>
-        </li>
-        <li className="dashed-primary  w-full  lg:w-2xl  md:w-xl">
-          <Link href='/pages/weather'>weather Monitor</Link>
-        </li>
-        <li className="dashed-primary  w-full  lg:w-2xl  md:w-xl">
-          <Link href='/pages/socials'>Linktree</Link>
-        </li>
-        <li className="dashed-primary  w-full  lg:w-2xl md:w-xl">
-          <Link href='/pages/blog'>Papers</Link>
-        </li>
-      </ol>
 
     </section>
     </>

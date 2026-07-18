@@ -10,11 +10,11 @@ import '@/src/styles/components/ui/bg.css';
 export default function Page() {
   return (
     <>
-      <Navigation/>
-      <Hero/>
-      <About/>
-      <Featured/>
-      <Footer/>
+        <Navigation/>
+        <Hero/>
+        <About/>
+        <Featured/>
+        <Footer/>
     </>
   );
 }

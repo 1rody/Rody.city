@@ -25,6 +25,9 @@
     margin-bottom: -3rem;
     margin-top: 2rem;
   }
+  .transition-tertiary {
+    margin-top: 0;
+  }
 }
 @media (max-width: 1968px) {
   :root {
@@ -35,6 +38,9 @@
   }
   .nav-mobile {
     display: none;
+  }
+  .transition-tertiary {
+    margin-top: 5rem;
   }
 }
 @media (max-width: 1868px) {

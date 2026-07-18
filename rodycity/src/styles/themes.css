@@ -1,31 +1,34 @@
 :root {
   /* Main page colors */
-  --background: #E9E3DE;
+  --background: #F2F0EF;
   --foreground: #000000;
   --textblack: #171717;
   --glass-foreground: #ffffff36;
 
   /*social media colors*/
-  --s-background: #E9E3DE;
+  --s-background: #F2F0EF;
   --s-foreground: #171717;
 
   --stroke-glass: #ffffff0e;
-  --background-code: #000000e0;
+  --background-code: #0000003a;
 }
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-textblack: var(--textblack);
-  --color-glass-foreground: var(--glass-foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
-    --foreground: #E9E3DE;
-    --textblack: #E9E3DE;
-    --glass-foreground: #ffffff36;
+    --foreground: #F2F0EF;
+    --textblack: #F2F0EF;
+    --glass-foreground: #ffffff21;
+  }
+  #landing {
+    background-image: url(/assets/backgrounds/background.svg);
+    background-size: cover;
   }
     .dashed-stroke {
         border-top: 1px dashed #ffffff48;
@@ -54,18 +57,18 @@
     background-color: var(--color-background);
   }
     .dashed-stroke {
-        border-top: 1px dashed #0000009a;
-        border-bottom: 1px dashed #0000008f;
+        border-top: 1px dashed #0000004d;
+        border-bottom: 1px dashed #0000003d;
     }
     .dashed-stroke-secondary {
-        border-left: 1px dashed #00000048;
-        border-right: 1px dashed #00000048;
+        border-left: 1px dashed #0000002a;
+        border-right: 1px dashed #00000023;
     }
     .nav-stroke {
             border-bottom: 1px solid #ffffff37;
     }
     .dashed-stroke-tertiary {
-        border-left: 1px dashed #ffffff48;
+        border-left: 1px dashed #ffffff17;
         border-right: 1px dashed #ffffff48;
     }
 
@@ -73,8 +76,6 @@
     --s-background: #e2e2e213;
     --s-foreground: #f1f1f10c;
 
-    --stroke-glass: #ffffff0e;
-    --background-code: #f1f1f198;
   }
 }
 body {
