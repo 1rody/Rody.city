@@ -1,6 +1,5 @@
 .featured-project  {
-    background-color: var(--foreground);
-    padding: .4rem;
+    background-color: var(--glass-foreground);
     cursor:context-menu;
     transition: .2s;
     img {width: 440px;  height: 250px; z-index: 2; background-color: var(--glass-foreground) ; border-radius: 1rem;}
@@ -16,6 +15,9 @@
         z-index: 5;
         line-height: 1;
     }
+    img {
+        margin: .5rem;
+    }
     div {
         margin-top: .8rem;
         transition: .2s;
@@ -30,6 +32,9 @@
         div {
             opacity: 1;
             display: block;
+        }
+        img {
+            filter: blur(4);
         }
     }
     &:active {

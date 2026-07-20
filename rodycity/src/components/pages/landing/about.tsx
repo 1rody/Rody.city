@@ -16,7 +16,7 @@ export default function About() {
                 <div className='flex sm:max-w-4/5 md:max-w-full overflow-hidden lg:max-w-4/6 w-full pb-50  flex-col p-10 dashed-stroke-tertiary'>
                     <motion.h1 style={{ x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='text-5xl font-(family-name:--font-Handjet)  lg:text-left md:text-left text-center mt-30 mb-5'>Design is my language. </motion.h1>
                     <div className='flex flex-wrap lg:flex-nowrap gap-5 w-full'>
-                        <article className='bg-(--background) lg:max-h-96 lg:p-10 md:p-10 p-5 rounded-3xl '>
+                        <article className='bg-(--background)  lg:p-10 md:p-10 p-5 rounded-3xl '>
                             <h2 className='text-(length:--super-large-text-secondary) lg:text-left md:text-left sm:text-left text-center font-black'>RODY</h2>
                             <p className='lg:text-xl md:text-md sm:text-md text-md'>
                                 I am a Software Engineering student at UCSal and a Front-End Developer & UI/UX Designer.

@@ -89,3 +89,20 @@ body {
   -ms-user-select: none;     
   user-select: none;
 }
+.no-interact {
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.shell-external {
+  border: 8px solid var(--foreground);
+}
+.shell-internal {
+  border-radius: 1.4rem;
+  border: 8px solid var(--foreground);
+}

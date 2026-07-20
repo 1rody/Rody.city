@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
 
-import HeroNav from "../../layout/heronav";
-
 import { useEffect, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
@@ -30,7 +28,6 @@ export default function Hero() {
                                     <motion.h1   initial={{ opacity: 0, y: 40 }}  animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}  className=" w-full  mt-20 z-1 dashed-stroke md:mt-18 lg:mt-15 no-interactions absolute text-(length:--super-large-text) font-black ">DEPLOY IDEAS</motion.h1>
                                     <div className="flex w-full absolute justify-between">
                                         <p className=" text-3xl lg:pl-5 z-4 mb-5 font-(family-name:--font-jetbrains-mono) no-interactions">RODY.CITY</p>
-                                        <HeroNav/>
                                     </div>
                                 </div>
                                 <div className='flex flex-col z-10 no-interactions justify-center md:mt-100 lg:w-fit lg:mt-0  dashed-stroke-secondary relative lg:h-screen   lg:p-20 sm:p-20 md:p-20 p-5 mt-50 w-full items-center'>

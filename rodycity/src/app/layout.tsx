@@ -52,7 +52,9 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${badeenDisplay.variable} ${jetbrainsMono.variable} ${chakraPetch.variable} ${HandjetFont.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <ViewTransition update="page">
-          <SmoothScroll>{children}</SmoothScroll>
+          <SmoothScroll>
+                  {children}
+          </SmoothScroll>
         </ViewTransition>
       </body>
     </html>
