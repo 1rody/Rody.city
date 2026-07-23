@@ -21,10 +21,10 @@ export default function Footer() {
             <Image width={3000} height={0} className='z-20 transition-secondary dark:invert-0 invert-100' src="/assets/misc/transition2.svg" alt="transition-svg Transicao para a seccao do footer" />
 
             <footer className="flex flex-col overflow-hidden items-center justify-center w-full">
-                    <div className='text-center md:p-0 lg:p-0 p-10'>
+                    <div className='text-center text-(--textblack) md:p-0 lg:p-0 p-10'>
                         <h1>RODY.CITY</h1>
                     </div>
-                    <div className='link-section p-10 text-center items-center gap-10 flex-wrap justify-between  flex w-full mt-10'>
+                    <div className='link-section p-10 text-center text-(--textblack) items-center gap-10 flex-wrap justify-between  flex w-full mt-10'>
                         <p>&copy; {new Date().getFullYear()} RODY.CITY All rights reserved.</p>
                             <ol className='flex gap-10 flex-wrap  items-center justify-center'>
                                 {socials.map((s) => (

@@ -3,7 +3,7 @@ import { ViewTransition } from 'react'
 
 import SmoothScroll from '@/src/components/layout/smoohScroll'
 
-import { Geist, Geist_Mono, Badeen_Display, JetBrains_Mono, Chakra_Petch, Handjet } from "next/font/google";
+import { Geist, Geist_Mono, JetBrains_Mono, Chakra_Petch, Handjet, Climate_Crisis } from "next/font/google";
 import "@/src/styles/globals.css";
 
 const chakraPetch = Chakra_Petch({
@@ -17,6 +17,12 @@ const HandjetFont = Handjet({
   subsets: ["latin"],
 });
 
+const climateCrisis = Climate_Crisis({
+  variable: "--font-ClimateCrisis",
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,11 +33,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const badeenDisplay = Badeen_Display({
-  variable: "--font-badeen-display",
-  weight: "400",
-  subsets: ["latin"],
-});
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -49,13 +50,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${badeenDisplay.variable} ${jetbrainsMono.variable} ${chakraPetch.variable} ${HandjetFont.variable} h-full antialiased`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} ${chakraPetch.variable} ${HandjetFont.variable} ${climateCrisis.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <ViewTransition update="page">
           <SmoothScroll>
                   {children}
           </SmoothScroll>
         </ViewTransition>
+        <div className="stars-3d" aria-hidden="true">
+          <div className="stars-3d__layer" />
+          <div className="stars-3d__layer" />
+          <div className="stars-3d__layer" />
+          <div className="stars-3d__layer" />
+        </div>
       </body>
     </html>
   );

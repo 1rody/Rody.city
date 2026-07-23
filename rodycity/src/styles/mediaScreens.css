@@ -14,7 +14,7 @@
 @media (max-width: 2968px) {
   :root {
     --footer-large-text: 25rem;
-    --super-large-text: 10rem;
+    --super-large-text: 20rem;
     --super-large-text-secondary: 6rem;
 
   }
@@ -32,7 +32,7 @@
 @media (max-width: 1968px) {
   :root {
     --footer-large-text: 16rem;
-    --super-large-text: 8rem;
+    --super-large-text: 16rem;
     --super-large-text-secondary: 6rem;
 
   }
@@ -48,7 +48,7 @@
     --footer-large-text: 14rem;
     --super-large-text-secondary: 14rem;
     --aux-super-text: 4rem;
-    --super-large-text: 5rem;
+    --super-large-text: 16rem;
 
     --large-text: 2rem;
     --small-text: 1rem;
@@ -66,7 +66,7 @@
     --footer-large-text: 11rem;
     --super-large-text-secondary: 4rem;
     --aux-super-text: 3rem;
-    --super-large-text: 7rem;
+    --super-large-text: 14rem;
 
     --large-text: 2rem;
     --small-text: 1rem;
@@ -82,12 +82,12 @@
       margin-top: 10rem;
   }
 }
-@media (max-width: 968px) {
+@media (max-width: 999px) {
   :root {
     --footer-large-text: 7rem;
     --super-large-text-secondary: 5rem;
     --aux-super-text: 5rem;
-    --super-large-text: 4rem;
+    --super-large-text: 8rem;
 
     --large-text: 2rem;
     --small-text: 1rem;
@@ -120,7 +120,7 @@
     --footer-large-text: 4rem;
     --super-large-text-secondary: 3rem;
     --aux-super-text: .7rem;
-    --super-large-text: 4rem;
+    --super-large-text: 3rem;
 
 
     --large-text: 1.2rem;
@@ -170,3 +170,4 @@
     display: flex;
   }
 }
+
