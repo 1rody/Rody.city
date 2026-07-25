@@ -11,7 +11,7 @@ export default function About() {
 
     return (
         <>
-            <Image width={3000} height={0} className='z-10  transition-primary dark:invert-0 invert-100' src="/assets/misc/transition2.svg" alt="transition-svg" />
+            <Image width={3000} height={0} className='z-10  transition-primary' src="/assets/misc/transition2.svg" alt="transition-svg" />
             <section id="about" className="flex z-15 pb-20  material-white overflow-hidden items-center justify-center flex-col">
                 <div className='flex sm:max-w-4/5 min-h-screen   md:max-w-full overflow-hidden lg:max-w-4/6 w-full pb-50  flex-col p-10 dashed-stroke-tertiary'>
                     <motion.h1 style={{ x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='text-5xl font-(family-name:--font-Handjet)   lg:text-left md:text-left text-center mt-30 mb-5'>Design is my language. </motion.h1>
@@ -87,7 +87,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <Image className="z-20 no-select transition-tertiary dark:invert-0 invert-100 mt-20 " src="/assets/misc/transition-3.svg" alt="Transition triangle" width={3000} height={300} />
+            <Image className="z-20 no-select transition-tertiary mt-20 " src="/assets/misc/transition-3.svg" alt="Transition triangle" width={3000} height={300} />
 
         </>
     )
