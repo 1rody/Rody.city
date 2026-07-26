@@ -25,12 +25,12 @@ export default function Redirect() {
     <>
       <Sidebar />
       <section className="h-scree font-(family-name:--font-jetbrains-mono) text-indigo-50 flex flex-col items-center">
-        <div className="container-articles max-w-2/5 text-sm h-screen backdrop-blur-3xl items-center justify-center text-left flex flex-col">
-          <nav className='w-full pr-5 pl-5 border-1 bg-indigo-950/30 border-gray-500 border-b-blue-950 flex items-center justify-between'>
-            <p className='text-sm text-indigo-300'>rody.city — ~/papers</p>
-            <p>[ ! ]</p>
+        <div className="container-articles m-2 lg:max-w-2/5 text-sm h-screen backdrop-blur-3xl items-center justify-center text-left flex flex-col">
+          <nav className=' w-full flex-nowrap flex items-center justify-between  lg:pr-5 lg:pl-5 border-1 bg-indigo-950/30 border-gray-500 border-b-blue-950  justify-between '>
+            <p className='text-sm text-indigo-300 text-nowrap'>rody.city — ~/papers</p>
+            <p className='text-nowrap'>[ ! ]</p>
           </nav>
-          <div className='flex  border-1 border-gray-500'>
+          <div className='flex flex-wrap lg:flex-nowrap border-1 border-gray-500'>
             <article className='w-full p-5  gap-5 text-gray-400  flex flex-col'>
               <h2><span className='text-indigo-500'>rody:~$</span> ./Search_papers</h2>
               <pre className='scale-90 text-indigo-600'>{`
@@ -46,7 +46,7 @@ export default function Redirect() {
                 - Welcome :&gt;  to my papers page<br />  <br />  this is my space for sharing knowledge and everything  I learn along my development journey
               </p>
             </article>
-            <ol className="flex gap-3 w-full flex-col paper-cli border-b-1 flex-wrap items-left p-5 ">
+            <ol className="flex gap-3 w-full flex-col scale-75 lg:scale-100 paper-cli border-b-1 flex-wrap items-left p-5 ">
               {papers.map((paper) => (
                 <li key={paper.id}>
                   <Link
