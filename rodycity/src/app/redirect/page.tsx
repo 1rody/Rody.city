@@ -23,7 +23,6 @@ export default function Redirect() {
 
   return (
     <>
-      <Sidebar />
       <section className="h-scree font-(family-name:--font-jetbrains-mono) text-indigo-50 flex flex-col items-center">
         <div className="container-articles m-2 lg:max-w-2/5 text-sm h-screen backdrop-blur-3xl items-center justify-center text-left flex flex-col">
           <nav className=' w-full flex-nowrap flex items-center justify-between  lg:pr-5 lg:pl-5 border-1 bg-indigo-950/30 border-gray-500 border-b-blue-950  justify-between '>
