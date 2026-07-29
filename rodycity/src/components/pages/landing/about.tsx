@@ -11,9 +11,9 @@ export default function About() {
 
     return (
         <>
-            <Image width={3000} height={0} className='z-10  transition-primary' src="/assets/misc/transition2.svg" alt="transition-svg" />
+            <Image width={3000} height={0} className='z-30 bottom-1 sm:bottom-5 absolute transition-primary' src="/assets/misc/transition2.svg" alt="transition-svg" />
             <section id="about" className="flex z-15 pb-20  material-white overflow-hidden items-center justify-center flex-col">
-                <div className='flex sm:max-w-4/5 min-h-screen   md:max-w-full overflow-hidden lg:max-w-4/6 w-full pb-50  flex-col p-10 dashed-stroke-tertiary'>
+                <div className='flex sm:max-w-4/5 min-h-screen   md:max-w-full overflow-hidden lg:max-w-5/6 w-full pb-50  flex-col p-10 dashed-stroke-tertiary'>
                     <motion.h1 style={{ x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='text-5xl font-(family-name:--font-Handjet)   lg:text-left md:text-left text-center mt-30 mb-5'>Design is my language. </motion.h1>
                     <div className='flex flex-wrap lg:flex-nowrap gap-5 w-full'>
                         <article className='bg-(--background)  text-(--foreground) lg:p-10 md:p-10 p-5 rounded-3xl '>
@@ -28,7 +28,6 @@ export default function About() {
                             <div className='flex mb-20 flex-col gap-5'>
                                 <Link className='text-lg lg:text-3xl w-full ' href="#">Github</Link>
                                 <Link className='text-lg lg:text-3xl w-full' href="#">Linkedin</Link>
-                                <Link className='text-lg lg:text-3xl w-full' href="/pages/history/">Landing History</Link>
                             </div>
                             <div className="mb-10 flex flex-col gap-10 font-(family-name:--font-jetbrains-mono) lg:h-96 lg:overflow-y-auto lg:pr-2">
                                 <details name="about-faq" className="group modal-group border-b border-(--background)/20">
@@ -60,26 +59,14 @@ export default function About() {
                                 </details>
                                 <details name="about-faq" className="group modal-group border-b border-(--background)/20">
                                 <summary className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
-                                    How to set up a Minecraft server
-                                    <span className="ml-4 transition-transform duration-500 group-open:rotate-45">+</span>
-                                </summary>
-                                <p className="pb-4 text-sm">
-                                    See my write-up on Minecraft server hosting, Velocity, and network management basics —{" "}
-                                    <Link href="/redirect" className="underline underline-offset-2">
-                                    read the paper
-                                    </Link>
-                                </p>
-                                </details>
-                                <details name="about-faq" className="group modal-group border-b border-(--background)/20">
-                                <summary className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
                                     Pricing &amp; Skills
                                     <span className="ml-4 transition-transform duration-500 group-open:rotate-45">+</span>
                                 </summary>
                                 <div className="pb-4 space-y-1 text-sm">
-                                    <p><strong>UI/UX consulting</strong> — from $20</p>
-                                    <p><strong>Front-end development (SPA)</strong> — from $40</p>
-                                    <p><strong>Front-end development (MPA)</strong> — $20 per page</p>
-                                    <p><strong>Branding &amp; Guidelines</strong> — from $40 (UI/UX + branding + landing page)</p>
+                                    <p><strong>UI/UX consulting</strong> — from $100</p>
+                                    <p><strong>Front-end development (SPA)</strong> — from $200</p>
+                                    <p><strong>Front-end development (MPA)</strong> — $60 per page</p>
+                                    <p><strong>Branding &amp; Guidelines</strong> — from $200 (UI/UX + branding + landing page)</p>
                                 </div>
                                 </details>
                             </div>

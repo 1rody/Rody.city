@@ -14,7 +14,7 @@ export default function Footer() {
             {name: "Github", url: "https://github.com/1rody/"},
             {name: "X", url: "https://x.com/1R0_DY"},
             {name: "Linkedin", url: "https://www.linkedin.com/in/rodolfo-falc%C3%A3o-03b27a379/"},
-            {name: "Pintesrest", url: "https://br.pinterest.com/1R0_DY/"},
+            {name: "Pinterest", url: "https://br.pinterest.com/1R0_DY/"},
     ];
     return (
         <>
@@ -31,7 +31,6 @@ export default function Footer() {
                                     <Link key={s.name} href={s.url}>{s.name}</Link>
                                 ))}
                             </ol>
-                        <p className='text-center w-full lg:w-fit md:w-fit sm:w-fit'><Link href="/privacy">Privacy Policy</Link></p>
                     </div>
             </footer>
         </>

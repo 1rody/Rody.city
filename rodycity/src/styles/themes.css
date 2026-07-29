@@ -64,7 +64,20 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-
+.container-selection {
+  transition: .2s;
+  .selection {
+    opacity: 0;
+    scale: 1.1;
+    transition: .1s;
+  }
+  &:hover {
+  .selection {
+    scale: 1;
+    opacity: 100;
+  }
+  }
+}
 .shell-external {
   border: 8px solid var(--foreground);
 }

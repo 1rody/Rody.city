@@ -4,6 +4,7 @@ import Link from "next/dist/client/link"
 import '@/src/styles/pages/landing/featured.css'
 import Image from 'next/image'
 
+import Arkhan from '@/public/assets/backgrounds/projects/arkhan.png'
 import Karasubanner from '@/public/assets/backgrounds/projects/karasuBanner.png';
 
 import { motion, useScroll, useTransform} from 'framer-motion'
@@ -20,7 +21,7 @@ export default function Featured() {
                 <div className="container-featured  items-center justify-center flex-wrap flex gap-20 sm:flex md:flex lg:flex-nowrap mt-20">
                     <article className=" featured-project flex-col gap-5 flex hover:rounded-4xl rounded-3xl">
                         <Image src={Karasubanner} width={1000} height={50}  className="" alt="Karasu.sh landingpage image" />
-                        <div className="text-left pt-10  p-6 font-bold text-white gap-5 container-text duration-200 transition-all rounded-4xl ">
+                        <div className="text-left pt-10 scale-75  p-6 font-bold text-white gap-5 container-text duration-200 transition-all rounded-4xl ">
                             <h1 className="font-bold">KARASU.SH</h1>
                                 <div>
                                 <p>Karasu is a security company that unifies offense, defense, and intelligence — Red Team, Blue Team, and Intel. One crow, three fronts, where every offensive discovery strengthens the defense. </p>                    
@@ -31,9 +32,9 @@ export default function Featured() {
                         </div>
                     </article>
                     <article className=" featured-project flex-col gap-5 flex hover:rounded-4xl rounded-3xl">
-                        <Image src={Karasubanner} width={1000} height={50}  alt="Project Image" />
-                        <div className="text-left pt-10  p-6 font-bold text-white gap-5 container-text backdrop-blur-sm duration-200 transition-all rounded-4xl ">
-                            <h1 className="font-bold">KARASU.SH</h1>
+                        <Image src={Arkhan} width={1000} height={50}  alt="Project Image" />
+                        <div className="text-left pt-10 scale-75 p-6 font-bold text-white gap-5 container-text backdrop-blur-sm duration-200 transition-all rounded-4xl ">
+                            <h1 className="font-bold">ARKHAN</h1>
                                 <div>
                                 <p>Karasu is a security company that unifies offense, defense, and intelligence — Red Team, Blue Team, and Intel. One crow, three fronts, where every offensive discovery strengthens the defense. </p>                    
                                 <br />
@@ -44,7 +45,7 @@ export default function Featured() {
                     </article>
                     <article className=" featured-project flex-col gap-2 flex hover:rounded-4xl rounded-3xl">
                         <Image src={Karasubanner} width={1000} height={50}  alt="Project Image" className="" />
-                        <div className="text-left pt-10  p-6 font-bold text-white gap-5 container-text backdrop-blur-sm duration-200 transition-all rounded-4xl ">
+                        <div className="text-left pt-10 scale-75 p-6 font-bold text-white gap-5 container-text backdrop-blur-sm duration-200 transition-all rounded-4xl ">
                             <h1 className="font-bold">KARASU.SH</h1>
                                 <div>
                                 <p>Karasu is a security company that unifies offense, defense, and intelligence — Red Team, Blue Team, and Intel. One crow, three fronts, where every offensive discovery strengthens the defense. </p>                    

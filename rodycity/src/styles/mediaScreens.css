@@ -71,9 +71,7 @@
     --large-text: 2rem;
     --small-text: 1rem;
   }
-  .featured-project  {
-    transform: scale(0.8);
-  }
+
   #about {
       margin-bottom: -5rem;
   }
@@ -101,9 +99,6 @@
   .transition-negative {
       margin-bottom: -18rem;
       margin-top: 10rem;
-  }
-  .featured-project  {
-    transform: scale(0.8);
   }
   .nav-mobile {
     display: flex;
@@ -138,7 +133,6 @@
       }
   }
   .featured-project  {
-    scale: 0.8 !important;
     img {width: 340px !important;  height: 180px !important; z-index: 2;}
   }
   .nav-pc {
