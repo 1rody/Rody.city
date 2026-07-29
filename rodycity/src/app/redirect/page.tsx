@@ -1,8 +1,6 @@
 "use client";
 
-import Sidebar from '@/src/components/layout/sidebar';
 import Link from 'next/dist/client/link'
-import Image from 'next/image'
 
   interface Paper {
     name: string;
@@ -59,10 +57,6 @@ export default function Redirect() {
           </div>
         </div>
       </section>
-      <div className="shell-external  h-screen w-full hidden fixed lg:block md:block no-select no-interact">
-        <div className="shell-internal h-screen w-full fixed no-select no-interact">
-        </div>
-      </div>
     </>
   );
 }
