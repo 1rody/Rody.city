@@ -10,7 +10,7 @@ export default function Hero() {
         <section id="introduction" className="hero z-5 no-select h-screen flex flex-col w-full overflow-hidden">
             <div className="hover-show-group text-(--foreground)  text-6xl text-center flex-wrap  flex items-center justify-center absolute w-full h-screen">
                 <h1 className='nav-pc'>ENGINEER </h1>
-                <Image src="/assets/icons/RodyLogo.svg" className="hover:scale-125 duration-300" height={400} width={300} alt="" />
+                <Image src="/assets/icons/RodyLogo.svg" className="hover:scale-125 animate-pulse animate-bounce duration-300" height={400} width={300} alt="" />
                 <h1 className='nav-pc'>WHAT&apos;S NEXT.</h1>
             </div>
 

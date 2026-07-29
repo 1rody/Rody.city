@@ -26,23 +26,23 @@ export default function Navigation() {
                 </ol>
             </nav>
         </header>
-        <header className="nav-pc items-center  1 text-(--color-textblack)">
+        <header className="nav-pc items-center  ">
                 <nav className="container-selection fixed z-50 flex items-center  justify-between  w-full gap-10 mix-blend-difference text-amber-50  p-5">
                     <div className=" font-black flex flex-col  text-amber-50 right-0 p-3  z-50 mix-blend-difference font-(family-name:--font-jetbrains-mono) gap-10 ">
                         <Image  src={Selectionn} width={150} height={50}></Image>
                         <Link href="/" className=" absolute mt-2 text-xl  uppercase font-black z-48 ">- RODY.city -</Link>
                     </div>
-                    <div className="flex font-black items-center  z-50  font-(family-name:--font-jetbrains-mono)  gap-3">
+                    <div className="flex font-black items-center bg-foreground text-black  rounded-lg z-50  font-(family-name:--font-jetbrains-mono)  gap-3">
                         <p className="scale-75">|/|</p>
                         <Link className="text-xs hover:text-red-600 transition-all  duration-120 hover:line-through" href='/redirect'>[Papers]</Link>
                         <Link className="text-xs hover:text-red-600 transition-all  duration-120 hover:line-through"  href='/pages/socials'>[Socials]</Link>
                         <p className="scale-75">|/|</p>
                     </div>
                     <nav className=" font-black flex  text-amber-50 right-0 p-3  z-50 mix-blend-difference font-(family-name:--font-jetbrains-mono) gap-10 ">
-                        <Image className="  absolute top-6 z-45" src={SelectionSecondary} width={160} height={50}></Image>
+                        <Image className="  absolute top-6 z-45" src={SelectionSecondary} width={180} height={50}></Image>
                         <div className=" text-xs ml-4 ">
                             {time ? time.toLocaleTimeString() : "--:--:--"}
-                            <span className="">{temp !== null ? temp : "--"}°C</span>
+                            <span className=""> Temp:{temp !== null ? temp : "--"}°C</span>
                             <div className="flex items-end text-right">
                                 <p className="scale-75">|/|</p>
                                 <p className="scale-75">|O|</p>
