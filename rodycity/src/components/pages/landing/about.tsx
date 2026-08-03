@@ -20,7 +20,7 @@ export default function About() {
                             <p className='lg:text-xl md:text-md sm:text-md text-md'>
                                 I am a Software Engineering student at UCSal and a Front-End Developer & UI/UX Designer.
                                 <br />
-                                Bridging the gap between clean code and seamless user experiences, I craft modern web applications using using the above technologies. Exploring lightweight protocols like HTMX, I build pixel-perfect, high-performance interfaces with clean, purposeful code.
+                                 clean code and user experiences, I craft modern web applications using using the above technologies. Exploring protocols like Svelte or Next.js, I build pixel-perfect, high-performance interfaces with clean, purposeful code.
                             </p>
                         </article>
                         <div className='flex flex-col justify-between text-(--color-textblack) w-5/5  '>
