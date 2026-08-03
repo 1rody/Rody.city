@@ -8,7 +8,7 @@ export default function Hero() {
 
     return (
         <section id="introduction" className="hero z-5 no-select h-screen flex flex-col w-full overflow-hidden">
-            <div className="hover-show-group text-(--foreground) scale-95 md:scale-75 text-center flex-wrap  flex items-center justify-center absolute w-full h-screen">
+            <div className="hover-show-group text-(--foreground) lg:scale-95 md:scale-75 text-center flex-wrap  flex items-center justify-center absolute w-full h-screen">
                 <h1 className='nav-pc mb-46 text-7xl md:text-5xl '>ENGINEER </h1>
                 <h1 className='nav-pc mb-0 absolute mr-150 text-xl'>CREATE </h1>
                 <h1 className='nav-pc mb-0 absolute ml-50 text-xl'>PUSH </h1>
