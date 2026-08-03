@@ -43,12 +43,11 @@ export default function Navigation() {
                         <Image  alt="Selected" src={Selectionn} width={150} height={50}></Image>
                         <Link href="/" className=" absolute mt-2 text-xl ml-5 uppercase font-black z-48 "> RODY.CITY </Link>
                     </section>
-                    <section className="flex font-black items-center hover:scale-105 transition-all duration-75 bg-foreground text-black  rounded-lg z-50  font-(family-name:--font-jetbrains-mono)  gap-3">
+                    <section className="flex font-black items-center hover:opacity-50 transition-all duration-75 text-white  rounded-lg z-50  font-(family-name:--font-jetbrains-mono)  gap-3">
                         <p className="scale-75">|/|</p>
-                        <Link className="text-xs hover:text-red-600 transition-all  duration-120 hover:line-through" href='/redirect'>[PAPERS]</Link>
-                        <Link className="text-xs hover:text-red-600 transition-all  duration-120 hover:line-through" href='#about'>[ABOUT]</Link>
-                        <Link className="text-xs hover:text-red-600 transition-all  duration-120 hover:line-through" href='#history'>[HISTORY]</Link>
-                        <Link className="text-xs hover:text-red-600 transition-all  duration-120 hover:line-through"  href='/pages/socials'>[SOCIALS]</Link>
+                        <Link className="text-xs hover:text-red-600 hover:opacity-150 transition-all  duration-120 hover:line-through" href='/redirect'>[PAPERS]</Link>
+                        <Link className="text-xs hover:text-red-600 hover:opacity-150  transition-all  duration-120 hover:line-through" href='#about'>[ABOUT]</Link>
+                        <Link className="text-xs hover:text-red-600 hover:opacity-150  transition-all  duration-120 hover:line-through"  href='/pages/socials'>[SOCIALS]</Link>
                     </section>
                 </nav>
         </header>

@@ -18,7 +18,7 @@ export default function Footer() {
     ];
     return (
         <>
-            <Image width={3000} height={0} className='z-20 transition-secondary dark:invert-0 invert-100' src="/assets/misc/transition2.svg" alt="transition-svg Transicao para a seccao do footer" />
+            <Image width={3000} height={0} className='z-20 transition-secondary' src="/assets/misc/transition2.svg" alt="transition-svg Transicao para a seccao do footer" />
 
             <footer className="flex flex-col overflow-hidden items-center justify-center w-full">
                     <div className='text-center text-(--textblack) md:p-0 lg:p-0 p-10'>

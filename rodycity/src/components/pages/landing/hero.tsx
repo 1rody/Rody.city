@@ -8,10 +8,14 @@ export default function Hero() {
 
     return (
         <section id="introduction" className="hero z-5 no-select h-screen flex flex-col w-full overflow-hidden">
-            <div className="hover-show-group text-(--foreground)  text-6xl text-center flex-wrap  flex items-center justify-center absolute w-full h-screen">
-                <h1 className='nav-pc'>ENGINEER </h1>
-                <Image src="/assets/icons/RodyLogo.svg" className="hover:scale-125 animate-pulse animate-bounce duration-300" height={400} width={300} alt="" />
-                <h1 className='nav-pc'>WHAT&apos;S NEXT.</h1>
+            <div className="hover-show-group text-(--foreground)   text-center flex-wrap  flex items-center justify-center absolute w-full h-screen">
+                <h1 className='nav-pc mb-50 text-9xl'>ENGINEER </h1>
+                <h1 className='nav-pc mb-0 absolute mr-150 text-2xl'>CREATE </h1>
+                <h1 className='nav-pc mb-0 absolute ml-50 text-2xl'>PUSH </h1>
+                <h1 className='nav-pc mt-0 absolute mr-240 text-2xl'>PLAN </h1>
+                <h1 className='nav-pc  absolute ml-190 text-2xl'>USE </h1>
+                <Image src="/assets/icons/RodyLogo.svg" className=" duration-300" height={400} width={300} alt="" />
+                <h1 className='nav-pc mt-50 text-9xl'>WHAT&apos;S NEXT.</h1>
             </div>
 
             <div className="absolute -bottom-15 lg:bottom-5 md:-bottom-24 w-full lg:-mb-48 mb:-mb-25 sm:-mb-5 flex justify-center overflow-hidden">
