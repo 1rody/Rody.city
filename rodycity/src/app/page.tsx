@@ -6,6 +6,7 @@ import Footer from "@/src/components/layout/footer";
 import Navigation from "@/src/components/layout/navbar"
 
 import '@/src/styles/components/ui/bg.css';
+import Cookies from "../components/layout/cookies";
 
 export default function Page() {
   return (
@@ -19,6 +20,7 @@ export default function Page() {
       <About />
       <Featured />
       <Footer />
+      <Cookies/>
     </>
   );
 }

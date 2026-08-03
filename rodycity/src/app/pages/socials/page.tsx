@@ -31,13 +31,19 @@ export default function socials() {
     <>
     <img src="/assets/backgrounds/socials.gif" className='w-full h-screen blur-sm dark:opacity-40' alt="" />
     <section id="socials-container" className="h-screen absolute z-2 scale-95 lg:scale-100 w-full flex items-center justify-center">
-        <div className="socials backdrop-blur-xl glassmorphism-secondary items-center justify-center rounded-4xl flex flex-col">
+        <div className="socials backdrop-blur-xl hover:scale-110 duration-200 glassmorphism-secondary items-center justify-center rounded-4xl flex flex-col">
             <div className='flex flex-col w-full items-center justify-center p-3'>
                 <div className='text-center pt-10 gap-2'>
-                    <Link href="/" className='font-black text-5xl'>RODY</Link>
+                    <Link href="/" className='font-bold text-5xl font-(family-name:--font-geist)'>RODY</Link>
                     <p className='font-(family-name:--font-jetbrains-mono)'><span>Welcome to my social tree!</span></p>
                 </div>
             </div>
+            <article className='p-3'>
+
+                <p className='mt-10 p-5 font-(family-name:--font-jetbrains-mono) rounded-2xl glassmorphism-secondary'>
+                    Hello, Im <strong>rody</strong>! <br /><br /> im a web developer and designer, I love to create web solutions and functional websites.  <br /> <br />I have a passion for learning new technologies and improving my skills.
+                </p>
+            </article>
             <div className='flex mt-5 p-5 items-center justify-center w-full'>
                 <ol className='flex gap-2'>
                     <li className='tech-1 w-full '>
@@ -54,12 +60,6 @@ export default function socials() {
                     </li>
                 </ol>
             </div>
-            <article className='p-3'>
-
-                <p className='mt-10 p-5 font-(family-name:--font-jetbrains-mono) rounded-2xl glassmorphism-secondary'>
-                    Hello, Im <strong>rody</strong>! <br /><br /> im a web developer and designer, I love to create web solutions and functional websites.  <br /> <br />I have a passion for learning new technologies and improving my skills.
-                </p>
-            </article>
             <div className='discord-container w-full  p-5 '>
                 <div className='flex flex-col p-4 rounded-3xl glassmorphism-secondary gap-5'>
                     <div className='flex gap-2 items-center justify-between'>
@@ -70,9 +70,9 @@ export default function socials() {
                                 {loading ?  ( <span>Carregando...</span> ) :
                                 (
                                     <>
-                                        <span>{discordStatus.online}online</span>
+                                        <span>{discordStatus.online} online</span>
                                         <p>of</p>
-                                        <span>{discordStatus.total}members</span>
+                                        <span>{discordStatus.total} members</span>
                                     </>
                                 )};
                             </div>
@@ -83,6 +83,9 @@ export default function socials() {
                     </div>
                 </div>
             </div>
+        </div>
+        < div className='absolute bottom-10 text-center text-white'>
+            <p className='text-sm'>© {new Date().getFullYear()} RODY LINKTREE. wanna build your own?  <Link className='text-blue-500' href='https://github.com/rodolfoalves/rodycity' target='_blank' rel='noopener noreferrer'>click here</Link></p>
         </div>
     </section>
     </>
