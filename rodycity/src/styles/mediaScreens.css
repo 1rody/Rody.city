@@ -45,7 +45,7 @@
 }
 @media (max-width: 1868px) {
   :root {
-    --footer-large-text: 14rem;
+    --footer-large-text: 16rem;
     --super-large-text-secondary: 14rem;
     --aux-super-text: 4rem;
     --super-large-text: 16rem;
@@ -63,7 +63,7 @@
 }
 @media (max-width: 1568px) {
   :root {
-    --footer-large-text: 11rem;
+    --footer-large-text: 15rem;
     --super-large-text-secondary: 4rem;
     --aux-super-text: 3rem;
     --super-large-text: 14rem;
