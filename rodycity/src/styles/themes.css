@@ -1,3 +1,5 @@
+@plugin "@tailwindcss/typography";
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -7,11 +9,10 @@
 }
 
 :root {
-    --background: #000000;
-    --foreground: #e9e0de;
-    --textblack: #0f0f0f;
-    --glass-foreground: #ffffff21;
-
+  --background: #000000;
+  --foreground: #e9e0de;
+  --textblack: #0f0f0f;
+  --glass-foreground: #ffffff21;
 
   /*social media colors*/
   --s-background: #DFE2F0;
@@ -21,40 +22,64 @@
   --background-code: #0000003a;
 }
 
- #landing {
-    background-image: url(/assets/backgrounds/background.svg);
-    background-size: cover;
-  }
-    .dashed-stroke {
-        border-top: 1px dashed #ffffff48;
-        border-bottom: 1px dashed #ffffff48;
-    }
-    .dashed-stroke-secondary {
-        border-left: 1px dashed #ffffff48;
-        border-right: 1px dashed #ffffff48;
-    }
-    .dashed-stroke-tertiary {
-        border-left: 1px dashed #00000048;
-        border-right: 1px dashed #00000048;
-    }
-    .nav-stroke {
-            border-bottom: 1px solid #ffffff37;
-    }
-  .nav-mobile {
-    background-color: var(--color-background);
-  }
+/*customizando o plugin do tailwind que coloca o .md formatadinho */
+.prose {
+  --tw-prose-body: var(--foreground);
+  --tw-prose-headings: var(--foreground);
+  --tw-prose-links: #bcd2ff;
+  --tw-prose-bold: #ffffff;
+  --tw-prose-code: #bcd2ff;
+  --tw-prose-pre-bg: var(--background-code);
+  font-family: var(--font-jetbrains-mono);
+}
+
+
+
+
+
+
+
+#landing {
+  background-image: url(/assets/backgrounds/background.svg);
+  background-size: cover;
+}
+
+.dashed-stroke {
+  border-top: 1px dashed #ffffff48;
+  border-bottom: 1px dashed #ffffff48;
+}
+
+.dashed-stroke-secondary {
+  border-left: 1px dashed #ffffff48;
+  border-right: 1px dashed #ffffff48;
+}
+
+.dashed-stroke-tertiary {
+  border-left: 1px dashed #00000048;
+  border-right: 1px dashed #00000048;
+}
+
+.nav-stroke {
+  border-bottom: 1px solid #ffffff37;
+}
+
+.nav-mobile {
+  background-color: var(--color-background);
+}
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-.no-select  {
-  -webkit-user-select: none; 
-  -moz-user-select: none;    
-  -ms-user-select: none;     
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
+
 .no-interact {
   inset: 0;
   z-index: 9999;
@@ -64,29 +89,34 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
 }
+
 .container-selection {
   transition: .2s;
+
   .selection {
     opacity: 0;
     scale: 1.1;
     transition: .1s;
   }
+
   &:hover {
-  .selection {
-    scale: 1;
-    opacity: 100;
-  }
+    .selection {
+      scale: 1;
+      opacity: 100;
+    }
   }
 }
+
 .shell-external {
   border: 8px solid var(--foreground);
 }
+
 .shell-internal {
   border-radius: 1.4rem;
   border: 8px solid var(--foreground);
 }
 
- .stars-3d {
+.stars-3d {
   position: fixed;
   inset: 0;
   z-index: -1;
@@ -102,7 +132,7 @@ body {
   width: 200%;
   height: 200%;
   background-repeat: repeat;
-  background-size: 600px 600px;  
+  background-size: 600px 600px;
   background-image:
     radial-gradient(1.5px 1.5px at 30% 20%, #ffffff, transparent),
     radial-gradient(1px 1px at 70% 55%, #bcd2ff, transparent),
@@ -111,18 +141,32 @@ body {
   will-change: transform, opacity;
 }
 
-.stars-3d__layer:nth-child(1) { animation-delay:  0s;    background-position:   0px   0px; }
-.stars-3d__layer:nth-child(2) { animation-delay: -2.25s; background-position: 300px 150px; }
-.stars-3d__layer:nth-child(3) { animation-delay: -4.5s;  background-position: 150px 400px; }
-.stars-3d__layer:nth-child(4) { animation-delay: -6.75s; background-position: 450px 250px; }
-
-@keyframes stars-travel {
-  0%   { transform: translateZ(-900px); opacity: 0; }
-  15%  { opacity: 1; }
-  85%  { opacity: 1; }
-  100% { transform: translateZ(120px);  opacity: 0; }
+.dashed-bottom {
+  border-top: 1px dashed #7575757b;
+  padding: 1rem 1rem;
+  margin: 1rem;
+  border-radius: .3rem;
+  font-family: var(--font-jetbrains-mono);
+  color: var(--text-white);
+  transition: .2s;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .stars-3d__layer { animation: none; opacity: 1; transform: translateZ(-300px); }
+.stars-3d__layer:nth-child(1) {
+  animation-delay: 0s;
+  background-position: 0px 0px;
+}
+
+.stars-3d__layer:nth-child(2) {
+  animation-delay: -2.25s;
+  background-position: 300px 150px;
+}
+
+.stars-3d__layer:nth-child(3) {
+  animation-delay: -4.5s;
+  background-position: 150px 400px;
+}
+
+.stars-3d__layer:nth-child(4) {
+  animation-delay: -6.75s;
+  background-position: 450px 250px;
 }

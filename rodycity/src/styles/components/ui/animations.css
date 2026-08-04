@@ -63,3 +63,31 @@
 .scroll-down-keyframes {
     animation: scroll-down 5s ease-in-out infinite;
 }
+
+@keyframes stars-travel {
+  0% {
+    transform: translateZ(-900px);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateZ(120px);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stars-3d__layer {
+    animation: none;
+    opacity: 1;
+    transform: translateZ(-300px);
+  }
+}
