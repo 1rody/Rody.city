@@ -28,6 +28,9 @@
   .transition-tertiary {
     margin-top: 0;
   }
+  .resp-scale {
+    transform: scale(1.2);
+  }
 }
 @media (max-width: 1968px) {
   :root {
@@ -42,6 +45,9 @@
   .transition-tertiary {
     margin-top: 5rem;
   }
+.resp-scale {
+  transform: scale(1);
+}
 }
 @media (max-width: 1868px) {
   :root {
@@ -79,6 +85,28 @@
       margin-bottom: -18rem;
       margin-top: 10rem;
   }
+}
+@media (max-width: 1268px) {
+  :root {
+    --footer-large-text: 15rem;
+    --super-large-text-secondary: 4rem;
+    --aux-super-text: 3rem;
+    --super-large-text: 14rem;
+
+    --large-text: 2rem;
+    --small-text: 1rem;
+  }
+
+  #about {
+      margin-bottom: -5rem;
+  }
+  .transition-negative {
+      margin-bottom: -18rem;
+      margin-top: 10rem;
+  }
+.resp-scale {
+  transform: scale(.8);
+}
 }
 @media (max-width: 999px) {
   :root {

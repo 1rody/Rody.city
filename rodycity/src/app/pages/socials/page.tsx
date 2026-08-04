@@ -38,9 +38,9 @@ export default function socials() {
                     <p className='font-(family-name:--font-jetbrains-mono)'><span>Welcome to my social tree!</span></p>
                 </div>
             </div>
-            <article className='p-3'>
+            <article className='p-3 items-center justify-center w=full flex flex-col gap-5'>
 
-                <p className='mt-10 p-5 font-(family-name:--font-jetbrains-mono) rounded-2xl glassmorphism-secondary'>
+                <p className='mt-10 text-sm p-5 max-w-4/5 font-(family-name:--font-jetbrains-mono) rounded-2xl glassmorphism-secondary'>
                     Hello, Im <strong>rody</strong>! <br /><br /> im a web developer and designer, I love to create web solutions and functional websites.  <br /> <br />I have a passion for learning new technologies and improving my skills.
                 </p>
             </article>
