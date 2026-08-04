@@ -13,7 +13,8 @@ export default function Redirect() {
 
   const papers: Paper[] = [
     { name: "Why async - renewed", slug: "async2", id: "1", post_date: "01/09/2026" },
-    { name: "Java basics", slug: "java", id: "1", post_date: "11/09/2026" },
+    { name: "Java basics", slug: "java", id: "2", post_date: "11/09/2026" },
+    { name: "Here my friends websites", slug: "friends", id: "3", post_date: "01/08/2026" },
     { name: "How setup a Minecraft server", slug: "mc-server", id: "11", post_date: "30/08/2025" },
     { name: "JS/TS diferences", slug: "js-ts", id: "12", post_date: "30/08/2025" },
     { name: "Why use async functions?", slug: "async", id: "13", post_date: "30/08/2025" },
@@ -70,7 +71,7 @@ export default function Redirect() {
           </nav>
           <div className='flex flex-wrap lg:flex-nowrap w-full'>
             <article className='w-full p-5 gap-5 text-gray-400 dashed-bottom flex flex-col'>
-              <pre className=' text-gray-600 mt-20 '>{`
+              <pre className=' text-gray-600 mt-20 1'>{`
 ██████╗  ██████╗ ██████╗ ██╗   ██╗
 ██╔══██╗██╔═══██╗██╔══██╗╚██╗ ██╔╝
 ██████╔╝██║   ██║██║  ██║ ╚████╔╝ 
