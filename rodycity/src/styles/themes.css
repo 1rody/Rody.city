@@ -142,10 +142,9 @@ body {
   will-change: transform, opacity;
 }
 
-.dashed-bottom {
-  border-top: 1px dashed #7575757b;
-  padding: 1rem 1rem;
-  margin: 1rem;
+.dashed-corners {
+  border-top: 1px dashed #ffffff7b;
+  border-bottom: 1px dashed #ffffff7b;
   border-radius: .3rem;
   color: var(--text-white);
   transition: .2s;

@@ -20,7 +20,7 @@ export default async function PaperPage({
 
     return (
         <article className="prose mx-auto p-8">
-            <Link href="/redirect">Back</Link>
+            <Link href="/homebrew">Back</Link>
             <h1>{data.title}</h1>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
         </article>

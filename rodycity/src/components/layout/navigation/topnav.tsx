@@ -18,8 +18,8 @@ export default function Navigation() {
         <header className="flex nav-mobile items-center font-(family-name:--font-jetbrains-mono) justify-around w-full z-50 nav-stroke ">
             <nav className="flex items-center justify-between px-5 w-full gap-5">
                 <ol className="flex items-center justify-center gap-3">
-                    <li><Link className="text-sm   hover:text-red-500 transition-all duration-120 hover:line-through" href='/redirect'>Papers</Link></li>
-                    <li><Link className="text-sm   hover:text-red-500 transition-all duration-120 hover:line-through" href='/pages/socials'>Socials</Link></li>
+                    <li><Link className="text-sm   hover:text-red-500 transition-all duration-120 hover:line-through" href='/homebrew'>Papers</Link></li>
+                    <li><Link className="text-sm   hover:text-red-500 transition-all duration-120 hover:line-through" href='/socials'>Socials</Link></li>
                 </ol>
                 <ol className="flex items-center justify-center gap-10">
                     <li><Link className="text-sm  hover:text-red-500 transition-all duration-120 hover:line-through"  href='/'>{time ? time.toLocaleTimeString() : "--:--:--"}</Link></li>
@@ -45,9 +45,9 @@ export default function Navigation() {
                     </section>
                     <section className="flex font-black items-center hover:opacity-50 transition-all duration-75 text-white  rounded-lg z-50  font-(family-name:--font-jetbrains-mono)  gap-3">
                         <p className="scale-75">|/|</p>
-                        <Link className="text-xs hover:text-red-600 hover:opacity-150 transition-all  duration-120 hover:line-through" href='/redirect'>[PAPERS]</Link>
+                        <Link className="text-xs hover:text-red-600 hover:opacity-150 transition-all  duration-120 hover:line-through" href='/homebrew'>[PAPERS]</Link>
                         <Link className="text-xs hover:text-red-600 hover:opacity-150  transition-all  duration-120 hover:line-through" href='#about'>[ABOUT]</Link>
-                        <Link className="text-xs hover:text-red-600 hover:opacity-150  transition-all  duration-120 hover:line-through"  href='/pages/socials'>[SOCIALS]</Link>
+                        <Link className="text-xs hover:text-red-600 hover:opacity-150  transition-all  duration-120 hover:line-through"  href='/socials'>[SOCIALS]</Link>
                     </section>
                 </nav>
         </header>

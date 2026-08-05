@@ -14,7 +14,7 @@ export default function Hero() {
                 <h2 className='nav-pc mb-0 absolute translate-x-25 text-sm hover:bg-red-500 active:scale-95'>PUSH </h2>
                 <h2 className='nav-pc mt-0 absolute -translate-x-90 text-sm hover:bg-red-500 duration-200 active:scale-95'>PLAN </h2>
                 <h2 className='nav-pc absolute translate-x-60 text-sm hover:bg-red-500 duration-200 active:scale-95'>USE </h2>
-                <Image src="/assets/icons/RodyLogo.svg" className="hover:scale-110 hover:rotate-12 duration-300" height={400} width={300} alt="" />
+                <Image src="/assets/icons/RodyLogo.svg" className="hover:scale-110 hover:rotate-12 duration-300" height={400} width={300} alt="Rody brand logo" />
                 <h1 className='nav-pc mt-46 lg:text-7xl  md:text-5xl whitespace-nowrap'>WHAT&apos;S NEXT</h1>
             </div>
 
