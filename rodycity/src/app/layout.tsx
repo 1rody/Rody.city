@@ -4,7 +4,14 @@ import { ViewTransition } from 'react'
 import SmoothScroll from '@/src/components/layout/smoohScroll'
 
 import { Geist, Geist_Mono, JetBrains_Mono, Chakra_Petch, Handjet, Climate_Crisis } from "next/font/google";
+import localFont from "next/font/local";
 import "@/src/styles/globals.css";
+
+const departureMono = localFont({
+  src: "./fonts/DepartureMono-Regular.woff2",
+  variable: "--font-departure-mono",
+  display: "swap",
+});
 
 const chakraPetch = Chakra_Petch({
   variable: "--font-Chakra", 
@@ -50,7 +57,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} ${chakraPetch.variable} ${HandjetFont.variable} ${climateCrisis.variable} h-full antialiased`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} ${chakraPetch.variable} ${HandjetFont.variable} ${climateCrisis.variable} ${departureMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <ViewTransition update="page">
           <SmoothScroll>

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from 'next/dist/client/link'
+import Link from 'next/link'
 
 interface Paper {
   name: string;
@@ -24,7 +24,7 @@ export default function Redirect() {
 
   return (
     <>
-    <aside className="fixed top-0 nav-pc font-(family-name:--font-jetbrains-mono) text-gray-50 absolute z-20">
+    <aside className="fixed top-0 nav-pc font-departure text-gray-50 absolute z-20">
       <div className="container-articles m-2  text-sm  backdrop-blur-3xl items-center justify-center text-left flex flex-col">
         <nav className=' w-full flex-nowrap flex items-center justify-between  lg:pr-5 lg:pl-5 border-1 bg-gray-950/30 border-gray-500 border-b-gray-950 '>
           <p className='text-sm text-gray-300 text-nowrap'>rody.city — ~/Discord server</p>
@@ -63,7 +63,7 @@ export default function Redirect() {
         </div>
       </div>
     </aside>
-      <section className=" font-(family-name:--font-jetbrains-mono) w-full overflow-hidden text-gray-50 flex flex-col items-center">
+      <section className=" font-departure w-full overflow-hidden text-gray-50 flex flex-col items-center">
         <div className="container-articles m-2 lg:max-w-2/5 text-sm backdrop-blur-3xl w-full items-center justify-center text-left flex flex-col">
           <nav className=' w-full flex-nowrap flex items-center justify-between lg:pr-5 lg:pl-5 '>
             <p className='text-sm text-gray-300 text-nowrap'>rody.city/homebrew</p>
@@ -71,7 +71,7 @@ export default function Redirect() {
           </nav>
           <div className='flex flex-wrap lg:flex-nowrap w-full'>
             <article className='w-full p-5 gap-5 text-gray-400 dashed-bottom flex flex-col'>
-              <pre className=' text-gray-600 mt-20 1'>{`
+              <pre className='font-departure text-gray-600 mt-20'>{`
 ██████╗  ██████╗ ██████╗ ██╗   ██╗
 ██╔══██╗██╔═══██╗██╔══██╗╚██╗ ██╔╝
 ██████╔╝██║   ██║██║  ██║ ╚████╔╝ 

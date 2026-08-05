@@ -6,6 +6,7 @@
   --color-textblack: var(--textblack);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-departure: var(--font-departure-mono);
 }
 
 :root {
@@ -30,7 +31,7 @@
   --tw-prose-bold: #ffffff;
   --tw-prose-code: #bcd2ff;
   --tw-prose-pre-bg: var(--background-code);
-  font-family: var(--font-jetbrains-mono);
+  font-family: var(--font-departure-mono);
 }
 
 
@@ -146,7 +147,6 @@ body {
   padding: 1rem 1rem;
   margin: 1rem;
   border-radius: .3rem;
-  font-family: var(--font-jetbrains-mono);
   color: var(--text-white);
   transition: .2s;
 }
