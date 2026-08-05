@@ -65,3 +65,16 @@
 ```
 
 - Sou um desenvolvedor de cheats e posto alguns videos.
+
+
+
+## [SHADOWCROP](https://www.youtube.com/@Shadow_Crop/videos)
+```
+                       __
+  _,-=._            /||__|/|
+  `-.}   `=._,.-=-._,  X X ._,
+     `._ _,-.   )      _,.-'
+        `    m.m-"^m`m'    
+```
+
+- Koé! Eu sou o Shadow_Crop, e meu canal é dedicado a grandiosa franquia Five Nights at Freddy's!
