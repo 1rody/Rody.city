@@ -3,20 +3,19 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import PapersNav from "@/src/components/layout/navigation/centerbar"
-import Hero from "@/src/components/pages/papers/hero"
-import PaperSection from '@/src/components/pages/papers/papers';
-import DiscordWindow from '@/src/components/pages/papers/windows/discord';
-import SocialsWindow from '@/src/components/pages/papers/windows/socials';
-
+import Hero from "@/src/components/pages/homebrew/hero"
+import PaperSection from '@/src/components/pages/homebrew/papers';
+import DiscordWindow from '@/src/components/pages/homebrew/windows/discord';
+import SocialsWindow from '@/src/components/pages/homebrew/windows/socials';
+import Profile from '@/src/components/pages/homebrew/profile';
 
 export default function Redirect() {
 
   return (
     <>
+      <Profile/>
       <SocialsWindow/>
       <DiscordWindow/>
-      <PapersNav />
       <Hero/>
       <PaperSection/>
     </>
