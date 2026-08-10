@@ -22,7 +22,7 @@ export default function SocialsWindow() {
   function up() { dragging.current = false; }
    
     return (
-        <div onPointerDown={down} onPointerMove={move} onPointerUp={up}  style={{ transform: `translate(${pos.x}px, ${pos.y}px)` }}  className=" font-departure font-bold z-50  container-articles absolute m-2 text-sm right-50 top-10 backdrop-blur-3xl items-center justify-center text-left flex flex-col">
+        <div onPointerDown={down} onPointerMove={move} onPointerUp={up}  style={{ transform: `translate(${pos.x}px, ${pos.y}px)` }}  className=" font-departure font-bold z-50  container-articles absolute m-2 text-sm right-10 top-10 nav-pc backdrop-blur-3xl md:scale-75 items-center justify-center text-left flex flex-col">
           <nav className='w-full flex-nowrap flex items-center justify-between lg:pr-5 lg:pl-5 border-1 bg-gray-950/30  border-gray-200/10'>
             <p className='text-sm text-gray-300 text-nowrap'>rody.city — ~/Socials</p>
             <div className='flex gap-3'>

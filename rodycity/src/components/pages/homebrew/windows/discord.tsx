@@ -23,7 +23,7 @@ export default function DiscordWindow() {
 
 
     return (
-        <div onPointerDown={down} onPointerMove={move} onPointerUp={up} style={{ transform: `translate(${pos.x}px, ${pos.y}px)` }} className=" font-departure font-bold z-50 container-articles absolute m-2 text-sm backdrop-blur-3xl items-center justify-center text-left flex right-50 top-90 flex-col">
+        <div onPointerDown={down} onPointerMove={move} onPointerUp={up} style={{ transform: `translate(${pos.x}px, ${pos.y}px)` }} className=" font-departure font-bold z-50 container-articles absolute m-2 text-sm backdrop-blur-3xl items-center md:scale-75 justify-center text-left flex lg:right-10 nav-pc top-90 flex-col">
           <nav className='w-full flex-nowrap flex items-center z-50 justify-between lg:pr-5 lg:pl-5 border-1 bg-gray-950/30  border-gray-200/10 border-b-gray-950'>
             <p className='text-sm text-gray-300 text-nowrap'>rody.city — ~/Discord server</p>
             <div className='flex gap-3'>
