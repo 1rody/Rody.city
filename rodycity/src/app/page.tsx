@@ -9,7 +9,6 @@ import '@/src/styles/components/ui/bg.css';
 
 //misc
 import Cookies from "../components/layout/cookies";
-import Shell from "../components/layout/misc/shell";
 import Stars3d from "../components/layout/misc/bg";
 
 export default function Page() {
@@ -21,7 +20,6 @@ export default function Page() {
       <Featured />
       <Footer />
       <Cookies />
-      <Shell/>
       <Stars3d/>
     </>
   );

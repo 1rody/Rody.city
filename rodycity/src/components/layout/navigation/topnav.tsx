@@ -39,7 +39,7 @@ export default function Navigation() {
                             </div>
                         </div>
                     </section>
-                    <section className="container-selection font-black flex flex-col  text-amber-50 right-0 p-3  z-50 mix-blend-difference font-(family-name:--font-jetbrains-mono) gap-10 ">
+                    <section translate="no" className="container-selection font-black flex flex-col  text-amber-50 right-0 p-3  z-50 mix-blend-difference font-(family-name:--font-jetbrains-mono) gap-10 ">
                         <Image  alt="Selected" src={Selectionn} width={200} height={50}></Image>
                         <Link href="/" className=" absolute mt-3 text-xl uppercase ml-5 font-black z-48 font-(family-name:--font-ClimateCrisis)"> RODY.CITY </Link>
                     </section>

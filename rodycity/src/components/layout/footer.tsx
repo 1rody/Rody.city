@@ -26,7 +26,7 @@ export default function Footer() {
                     </div>
                     <div className='link-section p-10 text-center text-(--textblack) items-center gap-10 flex-wrap justify-between  flex w-full mt-10'>
                         <p>&copy; {new Date().getFullYear()} RODY.CITY All rights reserved.</p>
-                            <ol className='flex gap-10 flex-wrap  items-center justify-center'>
+                            <ol translate="no" className='flex gap-10 flex-wrap   items-center justify-center'>
                                 {socials.map((s) => (
                                     <Link key={s.name} href={s.url}>{s.name}</Link>
                                 ))}

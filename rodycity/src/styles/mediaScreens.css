@@ -9,7 +9,27 @@
 
 
 
+@media (max-width: 5968px) {
+  :root {
+    --footer-large-text: 24rem;
+    --super-large-text: 20rem;
+    --super-large-text-secondary: 6rem;
 
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .transition-primary {
+    margin-bottom: -3rem;
+    margin-top: 2rem;
+  }
+  .transition-tertiary {
+    margin-top: 0;
+  }
+  .resp-scale {
+    transform: scale(1.2);
+  }
+}
 
 @media (max-width: 2968px) {
   :root {
