@@ -31,7 +31,7 @@ export default function SocialsWindow() {
             </div>
           </nav>
           <div className='flex flex-wrap p-10 flex-col lg:flex-nowrap border-1 w-full  border-gray-200/10'>
-                    <pre className='font-departure text-xs text-sm/6 text-orange-300 '>{`
+                    <pre className='font-departure text-xs text-sm/6 text-red-500 '>{`
     ██████╗  ██████╗ ██████╗ ██╗   ██╗
     ██╔══██╗██╔═══██╗██╔══██╗╚██╗ ██╔╝
     ██████╔╝██║   ██║██║  ██║ ╚████╔╝   

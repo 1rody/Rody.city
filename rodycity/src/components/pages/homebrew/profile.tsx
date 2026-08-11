@@ -16,7 +16,7 @@ export default function Profile() {
                             <p>ME.jpg</p>
                         </div>
                         <div className='p-3'>
-                            <Image alt='Profilepic' width={300} height={300} src="/assets/icons/pfp.jpg"></Image>
+                            <Image alt='Profilepic' width={300} height={300} src="/assets/icons/pfp2.jpg"></Image>
                         </div>
                     </section>
                 </section>
@@ -40,8 +40,8 @@ export default function Profile() {
                                     <p>
                                         WELCOME TO MY PROFILE! <br /><br />
 
-                                        <Link href='/'>- BACK TO LANDING</Link><br />
-                                        <Link href='/'>- BACK CHECK MY PAPERS</Link>
+                                        <Link className='hover:text-red-500' href='/'>- BACK TO LANDING</Link><br />
+                                        <Link className='hover:text-red-500' href='/'>- BACK CHECK MY PAPERS</Link>
                                     </p>
                                 </div>
                             </article>
@@ -54,7 +54,7 @@ export default function Profile() {
                                     <p>
                                         CHECK MY DISCORD SERVER. <br /><br />
 
-                                        <Link href='/'>- Discord server</Link><br />
+                                        <Link className='hover:text-red-500' href='/'>- Discord server</Link><br />
                                     </p>
                                 </div>
                             </article>
