@@ -114,7 +114,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <Image className="z-20 no-select transition-tertiary mt-20 " src="/assets/misc/transition-3.svg" alt="Transition triangle" width={3000} height={300} />
+            <Image className="z-20 no-select transition-tertiary mt-20 " src="/assets/misc/transition-3.svg" alt="Transition triangle" width={5000} height={300} />
 
         </>
     )
