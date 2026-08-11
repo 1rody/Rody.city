@@ -8,6 +8,7 @@ import PaperSection from '@/src/components/pages/homebrew/papers';
 import DiscordWindow from '@/src/components/pages/homebrew/windows/discord';
 import SocialsWindow from '@/src/components/pages/homebrew/windows/socials';
 import Profile from '@/src/components/pages/homebrew/profile';
+import Me from '@/src/components/pages/homebrew/windows/me';
 
 export default function Redirect() {
 
@@ -15,6 +16,7 @@ export default function Redirect() {
     <>
       <Profile/>
       <SocialsWindow/>
+      <Me/>
       <DiscordWindow/>
       <Hero/>
       <PaperSection/>

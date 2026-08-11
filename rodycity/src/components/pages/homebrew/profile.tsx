@@ -10,16 +10,6 @@ export default function Profile() {
     return (
         <>
             <main className='flex items-center flex-col font-departure font-bold '>
-                <section id='profile-and-more' className='absolute nav-pc left-10 lg:left-10 mt-10'>
-                    <section className='border-1  border-gray-200/10'>
-                        <div className='p-3'>
-                            <p>ME.jpg</p>
-                        </div>
-                        <div className='p-3'>
-                            <Image alt='Profilepic' width={300} height={300} src="/assets/icons/pfp2.jpg"></Image>
-                        </div>
-                    </section>
-                </section>
                     <section id='profile-header' className='flex   lg:w-1/3 w-full  text-5xl items-center justify-center'>
                         <div className='border-b-1 w-2/4 border-b-gray-200/30 p-1'>
 
