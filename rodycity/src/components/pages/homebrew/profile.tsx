@@ -16,7 +16,7 @@ export default function Profile() {
                             <p>ME.jpg</p>
                         </div>
                         <div className='p-3'>
-                            <Image width={300} height={300} src="/assets/icons/pfp.jpg"></Image>
+                            <Image alt='Profilepic' width={300} height={300} src="/assets/icons/pfp.jpg"></Image>
                         </div>
                     </section>
                 </section>
