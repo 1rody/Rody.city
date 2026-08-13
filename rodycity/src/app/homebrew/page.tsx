@@ -7,6 +7,7 @@ import Hero from "@/src/components/pages/homebrew/hero"
 import PaperSection from '@/src/components/pages/homebrew/papers';
 import DiscordWindow from '@/src/components/pages/homebrew/windows/discord';
 import SocialsWindow from '@/src/components/pages/homebrew/windows/socials';
+import StatusWindow from '@/src/components/pages/homebrew/windows/status';
 import Profile from '@/src/components/pages/homebrew/profile';
 import Me from '@/src/components/pages/homebrew/windows/me';
 
@@ -16,6 +17,7 @@ export default function Redirect() {
     <>
       <Profile/>
       <SocialsWindow/>
+      <StatusWindow/>
       <Me/>
       <DiscordWindow/>
       <Hero/>

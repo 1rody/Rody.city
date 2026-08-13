@@ -19,7 +19,7 @@ export default function Profile() {
 
                         </div>
                     </section>
-                    <section id='profile-content' className='flex mb-50 mt-20 w-full items-center justify-center '>
+                    <section id='profile-content' className='flex mb-10 mt-20 w-full items-center justify-center '>
                         <div className='flex gap-10 flex-col items-center justify-center lg:w-1/3 w-full'>
                             <article className='border-1 w-full border-gray-200/10 flex flex-col '>
                                 <div className='flex  border-b-1 border-b-gray-200/10 p-3 mb-5 justify-between w-full'>
