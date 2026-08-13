@@ -63,7 +63,7 @@
     display: none;
   }
   .transition-tertiary {
-    margin-top: 5rem;
+    margin-top: 0rem;
   }
 .resp-scale {
   transform: scale(1);
