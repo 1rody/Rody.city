@@ -1,31 +1,4 @@
-@media (prefers-color-scheme: light) {
-  .socials {
-    .discord-btn {
-        background-color: rgb(75, 39, 255);
-        color: var(--color-white);
-    }
-  }
-}
-.socials {
-    color: white;
-    max-width: 480px;
 
-    .stacks {
-        img {
-            width: 2rem;
-        }
-    }
-    li {
-        transition: .2s;
-        &:hover {
-            transform: scale(1.05);
-        }
-        &:active {
-            transform: scale(0.95);
-        }
-    }
-    .server-pic {
-        width:4rem;
-        height: 4rem;
-    }
+.socials {
+    max-width: 420px;
 }
