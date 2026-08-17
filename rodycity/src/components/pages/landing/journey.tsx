@@ -8,11 +8,11 @@ export default function Journey() {
             <Stripes />
             <section id="journey" className='flex lg:gap-40 gap-5 pt-50 bg-black pb-50 flex-wrap  lg:mt-300 md:mt-320 mt-300 z-10 overflow-hidden justify-center  w-full'>
                 <div  className="mt-50">
-                    <h2 className="text-white text-9xl">making</h2>
-                    <h2 className="text-white text-9xl">systems</h2>
-                    <h2 className="text-white text-9xl">that</h2>
-                    <h2 className="text-white text-9xl">addapt</h2>
-                    <h2 className="text-white text-9xl">for you</h2>
+                    <h2 className="text-white text-8xl">making</h2>
+                    <h2 className="text-white text-8xl">systems</h2>
+                    <h2 className="text-white text-8xl">that</h2>
+                    <h2 className="text-white text-8xl">addapt</h2>
+                    <h2 className="text-white text-8xl">for you</h2>
                 </div>
                 <div className="lg:mt-80  md:mt-80  mt-20 flex text-white/50 flex-wrap lg:flex-nowrap gap-5">
                     <div className='flex  flex-col  w-5/5  '>
