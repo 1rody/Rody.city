@@ -36,7 +36,7 @@
     --footer-large-text: 24rem;
     --super-large-text: 21rem;
     --super-large-text-secondary: 6rem;
-    --aux-super-text: 14rem;
+    --aux-super-text: 10rem;
   }
   .nav-mobile {
     display: none;
@@ -57,7 +57,7 @@
     --footer-large-text: 19rem;
     --super-large-text: 14rem;
     --super-large-text-secondary: 6rem;
-    --aux-super-text: 14rem;
+    --aux-super-text: 10rem;
   }
   .nav-mobile {
     display: none;
@@ -73,7 +73,7 @@
   :root {
     --footer-large-text: 18rem;
     --super-large-text-secondary: 14rem;
-    --aux-super-text: 14rem;
+    --aux-super-text: 10rem;
     --super-large-text: 16rem;
 
     --large-text: 2rem;
@@ -87,7 +87,7 @@
       margin-top: 10rem;
   }
 }
-@media (max-width: 1568px) {
+@media (max-width: 1768px) {
   :root {
     --footer-large-text: 15rem;
     --super-large-text-secondary: 4rem;
@@ -106,11 +106,11 @@
       margin-top: 10rem;
   }
 }
-@media (max-width: 1268px) {
+@media (max-width: 1468px) {
   :root {
     --footer-large-text: 15rem;
     --super-large-text-secondary: 4rem;
-    --aux-super-text: 3rem;
+    --aux-super-text: 8rem;
     --super-large-text: 11rem;
 
     --large-text: 2rem;

@@ -75,7 +75,7 @@ export default function About() {
                         </div>
                     </article>
                 </section>
-                <section className=" lg:scale-75 h-screen scale-130 pb-50 lg:-mt-20 mt-5 items-center justify-center flex flex-col gap-2 ">
+                <section className=" lg:scale-75 pt-50 scale-130 pb-50 lg:-mt-20 mt-5 items-center justify-center flex flex-col gap-2 ">
                     <article className="featured-project  flex-col gap-5 flex hover:rounded-4xl rounded-3xl">
                         <Image src={Karasubanner} width={1000} height={50} className="" alt="Karasu.sh landingpage image" />
                         <div className="text-left pt-10 scale-75  p-6 font-bold text-white gap-5 container-text duration-200 transition-all rounded-4xl ">
