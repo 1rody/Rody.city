@@ -83,7 +83,7 @@ export default function About() {
                             <div>
                                 <p>Karasu is a security company that unifies offense, defense, and intelligence — Red Team, Blue Team, and Intel. One crow, three fronts, where every offensive discovery strengthens the defense. </p>
                                 <br />
-                                <button className="card-btn"><Link href="/pages/concepts/karasu/">Concept </Link></button>
+                                <button className="card-btn"><a href="/projectDownloads/Karasu.zip" download={1}>Concept </a></button>
                                 <button className="card-btn"><Link href="https://www.karasu.sh/">VISIT THE WEBSITE </Link></button>
                             </div>
                         </div>
