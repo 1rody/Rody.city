@@ -11,7 +11,7 @@ export default function Journey() {
                     <h2 className="text-white text-8xl">making</h2>
                     <h2 className="text-white text-8xl">systems</h2>
                     <h2 className="text-white text-8xl">that</h2>
-                    <h2 className="text-white text-8xl">addapt</h2>
+                    <h2 className="text-white text-8xl">adapt</h2>
                     <h2 className="text-white text-8xl">for you</h2>
                 </div>
                 <div className="lg:mt-70  md:mt-70  mt-20 flex text-white/50 flex-wrap lg:flex-nowrap gap-5">
