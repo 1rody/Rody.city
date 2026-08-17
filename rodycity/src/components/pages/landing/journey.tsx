@@ -22,7 +22,7 @@ export default function Journey() {
                             <h2>2026 — NOW</h2>
                             <p>
                                 <strong className="text-white">Working on Jurasolvo, staff member at NEXTFUR (commissions open), and studying at UCSAL</strong> <br />
-                                Currently studying Software Engineering at UCSAL and working as an intern with automations and front-end at Jurasolvo.
+                                Currently studying Software Engineering at UCSAL and working as  <br />an intern with automations and front-end at Jurasolvo.
                             </p>
                         </div>
                         <div className='border-l-white  border-l-10 flex   p-2'>
