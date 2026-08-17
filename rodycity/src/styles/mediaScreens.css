@@ -14,7 +14,7 @@
     --footer-large-text: 24rem;
     --super-large-text: 20rem;
     --super-large-text-secondary: 6rem;
-
+    --aux-super-text: 14rem;
   }
   .nav-mobile {
     display: none;
@@ -34,9 +34,9 @@
 @media (max-width: 2968px) {
   :root {
     --footer-large-text: 24rem;
-    --super-large-text: 20rem;
+    --super-large-text: 21rem;
     --super-large-text-secondary: 6rem;
-
+    --aux-super-text: 14rem;
   }
   .nav-mobile {
     display: none;
@@ -55,9 +55,9 @@
 @media (max-width: 1968px) {
   :root {
     --footer-large-text: 19rem;
-    --super-large-text: 16rem;
+    --super-large-text: 14rem;
     --super-large-text-secondary: 6rem;
-
+    --aux-super-text: 14rem;
   }
   .nav-mobile {
     display: none;
@@ -73,7 +73,7 @@
   :root {
     --footer-large-text: 18rem;
     --super-large-text-secondary: 14rem;
-    --aux-super-text: 4rem;
+    --aux-super-text: 14rem;
     --super-large-text: 16rem;
 
     --large-text: 2rem;
@@ -91,8 +91,8 @@
   :root {
     --footer-large-text: 15rem;
     --super-large-text-secondary: 4rem;
-    --aux-super-text: 3rem;
-    --super-large-text: 14rem;
+    --aux-super-text: 10rem;
+    --super-large-text: 12rem;
 
     --large-text: 2rem;
     --small-text: 1rem;
@@ -111,7 +111,7 @@
     --footer-large-text: 15rem;
     --super-large-text-secondary: 4rem;
     --aux-super-text: 3rem;
-    --super-large-text: 14rem;
+    --super-large-text: 11rem;
 
     --large-text: 2rem;
     --small-text: 1rem;
@@ -127,13 +127,24 @@
 .resp-scale {
   transform: scale(.8);
 }
+}@media (max-width: 1088px) {
+  :root {
+    --footer-large-text: 15rem;
+    --super-large-text-secondary: 4rem;
+    --aux-super-text: 7rem;
+    --super-large-text: 9rem;
+
+    --large-text: 2rem;
+    --small-text: 1rem;
+  }
+
 }
 @media (max-width: 999px) {
   :root {
     --footer-large-text: 7rem;
     --super-large-text-secondary: 5rem;
     --aux-super-text: 5rem;
-    --super-large-text: 10rem;
+    --super-large-text: 8rem;
 
     --large-text: 2rem;
     --small-text: 1rem;
@@ -162,8 +173,8 @@
   :root {
     --footer-large-text: 4rem;
     --super-large-text-secondary: 3rem;
-    --aux-super-text: .7rem;
-    --super-large-text: 5rem;
+    --aux-super-text: 5rem;
+    --super-large-text: 6rem;
 
 
     --large-text: 1.2rem;

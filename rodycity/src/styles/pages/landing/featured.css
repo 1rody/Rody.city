@@ -1,6 +1,7 @@
 .featured-project  {
     background-color: var(--glass-foreground);
     cursor:context-menu;
+    max-height: 20rem;
     transition: .2s;
     img {width: 440px;  height: 250px; z-index: 2; background-color: var(--glass-foreground) ; border-radius: 1rem;}
     span {

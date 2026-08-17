@@ -18,10 +18,9 @@ export default function Footer() {
     ];
     return (
         <>
-            <Image width={5000} height={0} className='z-20 transition-secondary' src="/assets/misc/transition2.svg" alt="transition-svg for footer section" />
 
-            <footer className="flex flex-col overflow-hidden items-center justify-center w-full">
-                    <div className='text-center text-(--textblack) md:p-0 lg:p-0 p-10'>
+            <footer className="flex flex-col overflow-hidden z-20 items-center justify-center w-full">
+                    <div className='text-center text-black md:p-0 lg:p-0 p-10'>
                         <h1>RODY.CITY</h1>
                     </div>
                     <div className='link-section p-10 text-center text-(--textblack) items-center gap-10 flex-wrap justify-between  flex w-full mt-10'>

@@ -82,6 +82,17 @@
     transform: translateZ(120px);
     opacity: 0;
   }
+}@keyframes anim-scrolling {
+      from{
+        transform: translatey(0rem);
+        transform: translatex(0rem);
+    }
+    to {
+        transform: translatex(-200rem);
+    }
+}
+.anim-scrolling {
+  animation: anim-scrolling 50s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

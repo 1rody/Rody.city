@@ -11,7 +11,8 @@
 
 :root {
   --background: #000000;
-  --foreground: #e9e0de;
+  --foreground: #ffffff;
+
   --textblack: #0f0f0f;
   --glass-foreground: #ffffff21;
 
@@ -38,7 +39,9 @@
 
 
 
-
+.bg-transition {
+  background: linear-gradient(to top, var(--foreground), var(--background));
+}
 
 #landing {
   background-image: url(/assets/backgrounds/background.svg);

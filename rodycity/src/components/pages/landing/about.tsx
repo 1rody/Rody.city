@@ -1,121 +1,119 @@
-'use client';
-import '@/src/styles/pages/landing/about.css'
+'use client'
 
-import { motion, useScroll, useTransform } from 'framer-motion';
-import Link from 'next/dist/client/link';
+import Link from "next/dist/client/link"
 import Image from 'next/image'
 
+import Arkhan from '@/public/assets/backgrounds/projects/arkhan.png'
+import Karasubanner from '@/public/assets/backgrounds/projects/karasuBanner.png';
+
+import '@/src/styles/pages/landing/featured.css'
+
 export default function About() {
-    const { scrollX } = useScroll()
-    const x = useTransform(scrollX, [0, 1000], [0, 550]);
 
     return (
         <>
-            <section id="about" className="flex z-15 pb-20  material-white overflow-hidden items-center justify-center flex-col">
-                <div className='flex sm:max-w-4/5  md:max-w-full overflow-hidden lg:max-w-5/6 w-full flex-col p-10 dashed-stroke-tertiary'>
-                    <motion.h1 style={{ x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='text-5xl font-(family-name:--font-Handjet)   lg:text-left md:text-left text-center mt-30 mb-5'>Design is my language. </motion.h1>
-                    <div className='flex flex-wrap lg:flex-nowrap gap-5 w-full'>
-                        <article className='bg-(--background)  text-(--foreground) lg:p-10 md:p-10 p-5 rounded-3xl '>
-                            <h2 className='text-(length:--super-large-text-secondary) lg:text-left md:text-left sm:text-left text-center font-black'>RODY</h2>
-                            <p className='lg:text-xl md:text-md sm:text-md text-md'>
-                                I am a Software Engineering student at UCSal and a Front-End Developer & UI/UX Designer.
-                                <br />
-                                 clean code and user experiences, I craft modern web applications using using the above technologies. Exploring protocols like Svelte or Next.js, I build pixel-perfect, high-performance interfaces with clean, purposeful code.
+            <div className="w-full z-19 lg:-mb-8 -mb-2 bg-background overflow-hidden">
+                <Image alt="transition" src='/assets/misc/transition2.svg' width={15000} height={100}></Image>
+            </div>
+            <section id='about' className='flex bg-white z-20 pt-20 flex-wrap justify-center '>
+                <section className='xl:w-2/5 lg:max-1/2 w-full font-black text-black text-center lg:text-left items-center'>
+                    <h2 className=' text-(length:--aux-super-text)'>WHOAMI</h2>
+                    <article className="text-black">
+                        <div >
+                            <p >
+                                Software Engineering student at UCSal, Front-End Developer, and UI/UX Designer.
                             </p>
-                        </article>
-                        <div className='flex flex-col justify-between text-(--color-textblack) w-5/5  '>
-                            <div className='flex mb-20 flex-col gap-5'>
-                                <Link className='text-lg lg:text-3xl w-full ' href="#">Github</Link>
-                                <Link className='text-lg lg:text-3xl w-full' href="#">Linkedin</Link>
-                            </div>
-                            <div className="mb-10 flex flex-col gap-10 font-(family-name:--font-jetbrains-mono) lg:h-96 lg:overflow-y-auto lg:pr-2">
-                                <details name="about-faq" className="group modal-group border-b border-(--background)/20">
-                                    <summary className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
-                                        The difference between UI and UX
-                                        <span className="ml-4 transition-transform duration-500 group-open:rotate-45">+</span>
-                                    </summary>
-                                    <div className="pb-4 space-y-2 text-sm">
-                                        <p>
-                                            <strong>UI (user interface)</strong> is what the user sees: the layout, the
-                                            visual design, the components they interact with. It's driven by design.
-                                        </p>
-                                        <p>
-                                            <strong>UX (user experience)</strong> is how the interface feels to use:
-                                            the navigation, the accessibility, how easily someone can accomplish what
-                                            they came to do.
-                                        </p>
-                                        <p>
-                                            The two are related but not the same — a site can look good and still be
-                                            frustrating to use. Good UX is also judged against intent: an interface
-                                            built for a specialist audience has different goals than one meant for
-                                            everyone.{" "}
-                                            <Link href="/redirect" className="underline underline-offset-2">
-                                                More in my paper
-                                            </Link>
-                                            .
-                                        </p>
-                                    </div>
-                                </details>
-                                <details name="about-faq" className="group modal-group border-b border-(--background)/20">
-                                    <summary className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
-                                        Pricing &amp; Skills
-                                        <span className="ml-4 transition-transform duration-500 group-open:rotate-45">+</span>
-                                    </summary>
-                                    <div className="pb-4 space-y-1 text-sm">
-                                        <p><strong>UI/UX consulting</strong> — from $100</p>
-                                        <p><strong>Front-end development (SPA)</strong> — from $200</p>
-                                        <p><strong>Front-end development (MPA)</strong> — $60 per page</p>
-                                        <p><strong>Branding &amp; Guidelines</strong> — from $200 (UI/UX + branding + landing page)</p>
-                                    </div>
-                                </details>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='flex sm:max-w-4/5  md:max-w-full overflow-hidden lg:max-w-5/6 w-full flex-col p-10 dashed-stroke-tertiary'>
-                    <motion.h1 style={{ x }} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='text-5xl font-(family-name:--font-geist) font-black lg:text-left md:text-left text-center mt-30 mb-5'>My journey so far.</motion.h1>
-                    <div className='flex flex-wrap lg:flex-nowrap gap-5 w-full'>
-                        <div className='flex  flex-col justify-between text-(--color-textblack) w-5/5  '>
-                            <div className='border-l-black border-l-1 ml-1 p-4'>
-                                <h2>2026 — NOW</h2>
-                                <p>
-                                    <strong>Working on Jurasolvo, staff member at NEXTFUR (commissions open), and studying at UCSAL</strong> <br />
-                                    Currently studying Software Engineering at UCSAL and working as an intern with automations and front-end at Jurasolvo.
-                                </p>
-                            </div>
-                            <div className='border-l-blue-700 border-l-10 flex   p-2'>
-                            </div>
-                            <div className='border-l-black border-l-1 ml-1 p-4'>
-                                <h2>2025 — 2026</h2>
-                                <p>
-                                    <strong>Working as a freelancer and studying at Rocketseat</strong> <br />
-                                    Studying at Rocketseat — Next.js course — and finishing the Prompt Engineering course.
-                                </p>
-                            </div>
-                            <div className='border-l-blue-700 border-l-10 flex   p-2'>
-                            </div>
-                            <div className='border-l-black border-l-1 ml-1 p-4'>
-                                <h2>2023 — 2025</h2>
-                                <p>
-                                    <strong>Working with Minecraft server management and deployment, and studying at Origamid</strong> <br />
-                                    Studying at Origamid — UI and UX.
-                                </p>
-                            </div>
-                            <div className='border-l-blue-700 border-l-10 flex   p-2'>
-                            </div>
-                            <div className='border-l-black border-l-1 ml-1 p-4'>
-                                <h2>2021 — 2023</h2>
-                                <p>
-                                    <strong>My first contact with the development world, studying at Origamid</strong> <br />
-                                    Studying at Origamid — HTML, CSS and JS basics.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <Image className="z-20 no-select transition-tertiary " src="/assets/misc/transition-3.svg" alt="Transition triangle" width={5000} height={300} />
 
+                            <p>
+                                Focused on writing clean code and shaping modern user experiences, I build pixel-perfect, high-performance web applications. I bridge the gap between design systems and complex front-end architectures—leveraging modern frameworks like Next.js and Svelte to craft interfaces that are as fast as they are functional.
+                            </p>
+
+                            <p className=" mt-10 mb-30 text-gray-400 font-(family-name:--font-jetbrains-mono)">
+                                  rody.city — engineered for performance, designed with purpose.
+                            </p>
+                        </div>
+                        <div className="mt-10 flex flex-col gap-10 font-(family-name:--font-jetbrains-mono) lg:overflow-y-auto lg:pr-2">
+                            <details name="about-faq" className="group modal-group border-b border-(--background)/20">
+                                <summary className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
+                                    The difference between UI and UX
+                                    <span className="ml-4 transition-transform duration-500 group-open:rotate-45">+</span>
+                                </summary>
+                                <div className="pb-4 space-y-2 text-sm">
+                                    <p>
+                                        <strong>UI (user interface)</strong> is what the user sees: the layout, the
+                                        visual design, the components they interact with. It s driven by design.
+                                    </p>
+                                    <p>
+                                        <strong>UX (user experience)</strong> is how the interface feels to use:
+                                        the navigation, the accessibility, how easily someone can accomplish what
+                                        they came to do.
+                                    </p>
+                                    <p>
+                                        The two are related but not the same — a site can look good and still be
+                                        frustrating to use. Good UX is also judged against intent: an interface
+                                        built for a specialist audience has different goals than one meant for
+                                        everyone.{" "}
+                                        <Link href="/redirect" className="underline underline-offset-2">
+                                            More in my paper
+                                        </Link>
+                                        .
+                                    </p>
+                                </div>
+                            </details>
+                            <details name="about-faq" className="group modal-group border-b border-(--background)/20">
+                                <summary className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
+                                    Pricing &amp; Skills
+                                    <span className="ml-4 transition-transform duration-500 group-open:rotate-45">+</span>
+                                </summary>
+                                <div className="pb-4 space-y-1 text-sm">
+                                    <p><strong>UI/UX consulting</strong> — from $100</p>
+                                    <p><strong>Front-end development (SPA)</strong> — from $200</p>
+                                    <p><strong>Front-end development (MPA)</strong> — $60 per page</p>
+                                    <p><strong>Branding &amp; Guidelines</strong> — from $200 (UI/UX + branding + landing page)</p>
+                                </div>
+                            </details>
+                        </div>
+                    </article>
+                </section>
+                <section className=" lg:scale-75 h-screen scale-130 pb-50 lg:-mt-20 mt-5 items-center justify-center flex flex-col gap-2 ">
+                    <article className="featured-project  flex-col gap-5 flex hover:rounded-4xl rounded-3xl">
+                        <Image src={Karasubanner} width={1000} height={50} className="" alt="Karasu.sh landingpage image" />
+                        <div className="text-left pt-10 scale-75  p-6 font-bold text-white gap-5 container-text duration-200 transition-all rounded-4xl ">
+                            <h1 className="font-bold">KARASU.SH</h1>
+                            <div>
+                                <p>Karasu is a security company that unifies offense, defense, and intelligence — Red Team, Blue Team, and Intel. One crow, three fronts, where every offensive discovery strengthens the defense. </p>
+                                <br />
+                                <button className="card-btn"><Link href="/pages/concepts/karasu/">Concept </Link></button>
+                                <button className="card-btn"><Link href="https://www.karasu.sh/">VISIT THE WEBSITE </Link></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article className=" featured-project flex-col gap-5 flex hover:rounded-4xl rounded-3xl">
+                        <Image src={Arkhan} width={1000} height={50} alt="Project Image" />
+                        <div className="text-left pt-10 scale-75 p-6 font-bold text-white gap-5 container-text backdrop-blur-sm duration-200 transition-all rounded-4xl ">
+                            <h1 className="font-bold">ARKHAN</h1>
+                            <div>
+                                <p>Karasu is a security company that unifies offense, defense, and intelligence — Red Team, Blue Team, and Intel. One crow, three fronts, where every offensive discovery strengthens the defense. </p>
+                                <br />
+                                <button className="card-btn"><Link href="/pages/concepts/karasu/">Concept </Link></button>
+                                <button className="card-btn"><Link href="https://www.karasu.sh/">VISIT THE WEBSITE </Link></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article className=" featured-project flex-col gap-2 flex hover:rounded-4xl rounded-3xl">
+                        <Image src={Karasubanner} width={1000} height={50} alt="Project Image" className="" />
+                        <div className="text-left pt-10 scale-75 p-6 font-bold text-white gap-5 container-text backdrop-blur-sm duration-200 transition-all rounded-4xl ">
+                            <h1 className="font-bold">KARASU.SH</h1>
+                            <div>
+                                <p>Karasu is a security company that unifies offense, defense, and intelligence — Red Team, Blue Team, and Intel. One crow, three fronts, where every offensive discovery strengthens the defense. </p>
+                                <br />
+                                <button className="card-btn"><Link href="/pages/concepts/karasu/">Concept </Link></button>
+                                <button className="card-btn"><Link href="https://www.karasu.sh/">VISIT THE WEBSITE </Link></button>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </section>
         </>
     )
 }
