@@ -4,7 +4,6 @@ import Link from 'next/dist/client/link';
 import Image from 'next/image'
 
 import '@/src/styles/components/ui/bg.css'
-import '@/src/styles/pages/socials/socials.css';
 
 export default function socials() {
 
@@ -13,7 +12,7 @@ export default function socials() {
         <>
             <Image width={0} height={0} src="/assets/backgrounds/social.gif" className='w-full h-screen blur-sm dark:opacity-40' alt="Background image" />
             <section id="socials-container" className="h-screen absolute z-2 scale-95 lg:scale-100 w-full flex items-center justify-center">
-                <div className="socials backdrop-blur-xl max-w-2xl   duration-200 glassmorphism-secondary items-center justify-center rounded-4xl flex flex-col">
+                <div className=" backdrop-blur-xl lg:w-1/5 md:w-1/4 sm:w-1/3 w-full duration-200 glassmorphism-secondary items-center justify-center rounded-4xl flex flex-col">
                     <div className='flex flex-col w-full items-center justify-center p-5'>
                         <div className='text-center  gap-2'>
                             <Image width={430} height={10} src="/assets/backgrounds/giphy.gif" className='relative -mb-22 h-28 z-10 rounded-2xl' alt="Banner image" />
