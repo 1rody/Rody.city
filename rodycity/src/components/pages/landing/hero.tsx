@@ -12,7 +12,7 @@ export default function Hero() {
     // e depois de definir isso eu mapeio a rolagem com a const abaixo usando o scroll lido acima
     const y = useTransform(scrollYProgress, [0, 0.2], [0, 150]);
     return (
-        <section id="introduction" className="hero  fixed z-5 no-select h-screen  w-full flex flex-col w-full items-center overflow-x-hidden">
+        <section id="introduction" className="hero  z-5 no-select h-screen  w-full flex flex-col w-full items-center overflow-x-hidden">
             <div className="hover-show-group  text-center relative overflow-x-hidden flex items-center justify-center h-screen w-full p-10">
                 <motion.h1
                     initial={{ opacity: 0, y: 40 }}

@@ -6,7 +6,7 @@ export default function Journey() {
     return (
         <>
             <Stripes />
-            <section id="journey" className='flex lg:gap-30 gap-5 pt-50 bg-black pb-50 flex-wrap  lg:mt-300 md:mt-320 mt-300 z-10 overflow-hidden justify-center  w-full'>
+            <section id="journey" className='flex lg:gap-30 gap-5 pt-50 bg-black pb-50 flex-wrap  z-10 overflow-hidden justify-center  w-full'>
                 <div  className="mt-60">
                     <h2 className="text-white text-8xl">making</h2>
                     <h2 className="text-white text-8xl">systems</h2>
