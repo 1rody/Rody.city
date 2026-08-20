@@ -24,14 +24,14 @@ export default function Me() {
 
     return (
         <div onPointerDown={down} onPointerMove={move} onPointerUp={up} style={{ transform: `translate(${pos.x}px, ${pos.y}px)` }} className="absolute top-10  nav-pc left-10 lg:left-10 mt-10">
-                    <section className='border-1  border-gray-200/10'>
-                        <div className='p-3'>
-                            <p>ME.jpg</p>
-                        </div>
-                        <div className='p-3'>
-                            <Image alt='Profilepic' width={300} height={300} src="/assets/icons/pfp2.jpg"></Image>
-                        </div>
-                    </section>
+            <section className='border-1  border-gray-200/10'>
+                <div className='p-3'>
+                    <p>ME.jpg</p>
+                </div>
+                <div className='p-3'>
+                    <Image alt='Profilepic' width={300} height={300} src="/assets/icons/pfp2.jpg"></Image>
+                </div>
+            </section>
         </div>
     )
 }

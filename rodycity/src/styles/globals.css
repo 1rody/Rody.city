@@ -2,8 +2,6 @@
 @import "./themes.css";
 @import "./mediaScreens.css";
 
-@plugin "@tailwindcss/typography";
-
 @import "./components/ui/animations.css";
 @import "./components/ui/buttons.css";
 
