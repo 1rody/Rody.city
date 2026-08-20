@@ -29,7 +29,7 @@ export default function About() {
                             </p>
 
                             <p className=" mt-10 mb-30 text-gray-400 font-(family-name:--font-jetbrains-mono)">
-                                  rody.city — engineered for performance, designed with purpose.
+                                rody.city — engineered for performance, designed with purpose.
                             </p>
                         </div>
                         <div className="mt-10 flex flex-col gap-10 font-(family-name:--font-jetbrains-mono) lg:overflow-y-auto lg:pr-2">
@@ -93,10 +93,13 @@ export default function About() {
                         <div className="text-left pt-10 scale-75 p-6 font-bold text-white gap-5 container-text backdrop-blur-sm duration-200 transition-all rounded-4xl ">
                             <h1 className="font-bold">ARKHAN</h1>
                             <div>
-                                <p>Karasu is a security company that unifies offense, defense, and intelligence — Red Team, Blue Team, and Intel. One crow, three fronts, where every offensive discovery strengthens the defense. </p>
+                                <p>
+                                    Arkhan team operates as a specialized cybersecurity division within NextFur.
+                                    Our mission focuses on safeguarding digital infrastructure and mitigating emerging threats. 
+                                </p>
                                 <br />
-                                <button className="card-btn"><Link href="/pages/concepts/karasu/">Concept </Link></button>
-                                <button className="card-btn"><Link href="https://www.arkhan.team/">VISIT THE WEBSITE </Link></button>
+                                <button className="card-btn"><Link href="#">Concept </Link></button>
+                                <button className="card-btn"><Link href="https://www.arkhan.fun/">VISIT THE WEBSITE </Link></button>
                             </div>
                         </div>
                     </article>
