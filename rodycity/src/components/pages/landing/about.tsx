@@ -96,7 +96,7 @@ export default function About() {
                                 <p>Karasu is a security company that unifies offense, defense, and intelligence — Red Team, Blue Team, and Intel. One crow, three fronts, where every offensive discovery strengthens the defense. </p>
                                 <br />
                                 <button className="card-btn"><Link href="/pages/concepts/karasu/">Concept </Link></button>
-                                <button className="card-btn"><Link href="https://www.karasu.sh/">VISIT THE WEBSITE </Link></button>
+                                <button className="card-btn"><Link href="https://www.arkhan.team/">VISIT THE WEBSITE </Link></button>
                             </div>
                         </div>
                     </article>
