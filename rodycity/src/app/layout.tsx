@@ -3,7 +3,7 @@ import { ViewTransition } from 'react'
 
 import SmoothScroll from '@/src/components/layout/smoohScroll'
 
-import { Geist, Geist_Mono, JetBrains_Mono, Chakra_Petch, Handjet, Climate_Crisis } from "next/font/google";
+import { Geist, Geist_Mono, JetBrains_Mono, Chakra_Petch, Handjet, Climate_Crisis, Archivo_Black,  } from "next/font/google";
 import localFont from "next/font/local";
 import "@/src/styles/globals.css";
 
@@ -28,6 +28,12 @@ const climateCrisis = Climate_Crisis({
   variable: "--font-ClimateCrisis",
   weight: ["400"],
   subsets: ["latin"],
+});
+
+const ArchivoBlack = Archivo_Black({
+  variable: "--font-archivo",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 const geistSans = Geist({
@@ -57,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} ${chakraPetch.variable} ${HandjetFont.variable} ${climateCrisis.variable} ${departureMono.variable} h-full antialiased`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} ${chakraPetch.variable} ${HandjetFont.variable} ${climateCrisis.variable} ${departureMono.variable}  ${ArchivoBlack.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <ViewTransition update="page">
           <SmoothScroll>
