@@ -20,7 +20,7 @@ export default function Hero() {
                     transition={{ duration: 0.6 }}
                     className=" no-interactions text-(length:--super-large-text) font-(family-name:--font-archivo) w-full h-full flex rounded-2xl justify-center items-center lg:border border-amber-50/20 font-black leading-none"
                 >
-                    <motion.span  style={{y}}>DEPLOY</motion.span>
+                    <motion.span  style={{y}}>RODY</motion.span>
                 </motion.h1>
 
             <div className="absolute hidden lg:flex font-(family-name:--font-geist)  font-black bottom-15 right-15 text-right gap-10">
