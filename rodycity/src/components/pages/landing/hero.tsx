@@ -18,7 +18,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 40  }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className=" no-interactions text-(length:--super-large-text) font-(family-name:--font-archivo) w-full h-full flex rounded-2xl justify-center items-center lg:border border-amber-50/20 font-black leading-none"
+                    className=" no-interactions text-(length:--super-large-text) font-(family-name:--font-ClimateCrisis) w-full h-full flex rounded-2xl justify-center items-center lg:border border-amber-50/20 font-black leading-none"
                 >
                     <motion.span  style={{y}}>RODY</motion.span>
                 </motion.h1>
