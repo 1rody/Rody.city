@@ -4,10 +4,14 @@ import Link from 'next/link'
 
 const playHover = () => {
     const audio = new Audio("/assets/sounds/hover.mp3"); 
-    audio.volume = 0.2;
+    audio.volume = 0.1;
     audio.play().catch(() => {});
 };
-
+const playSwoosh = () => {
+    const audio = new Audio("/assets/sounds/swoosh.mp3"); 
+    audio.volume = 0.1;
+    audio.play().catch(() => {});
+};
 export default function Profile() {
 
     return (
@@ -33,8 +37,8 @@ export default function Profile() {
                                     <p>
                                         WELCOME TO MY PROFILE! <br /><br />
 
-                                        <Link onMouseEnter={playHover} className='hover:text-red-500' href='/'>- BACK TO LANDING</Link><br />
-                                        <Link onMouseEnter={playHover} className='hover:text-red-500' href='/'>- BACK CHECK MY PAPERS</Link>
+                                        <Link onClick={playSwoosh} onMouseEnter={playHover} className='hover:text-red-500' href='/'>- BACK TO LANDING</Link><br />
+                                        <Link onClick={playSwoosh} onMouseEnter={playHover} className='hover:text-red-500' href='/'>- BACK CHECK MY PAPERS</Link>
                                     </p>
                                 </div>
                             </article>
@@ -47,7 +51,7 @@ export default function Profile() {
                                     <p>
                                         CHECK MY DISCORD SERVER. <br /><br />
 
-                                        <Link className='hover:text-red-500' href='/'>- Discord server</Link><br />
+                                        <Link onClick={playSwoosh} onMouseEnter={playHover} className='hover:text-red-500' href='/'>- Discord server</Link><br />
                                     </p>
                                 </div>
                             </article>

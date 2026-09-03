@@ -5,6 +5,11 @@ import { useWeather } from '@/src/hooks/useWeather';
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 
+const playSwoosh = () => {
+    const audio = new Audio("/assets/sounds/swoosh.mp3"); 
+    audio.volume = 0.1;
+    audio.play().catch(() => {});
+};
 
 import Selectionn from "@/public/assets/misc/Selection.svg"
 
@@ -17,11 +22,11 @@ export default function Navigation() {
             <header className="flex fixed bg-background nav-mobile items-center font-(family-name:--font-jetbrains-mono) justify-around w-full z-50 nav-stroke ">
                 <nav className="flex items-center justify-between px-5 w-full gap-5">
                     <ol className="flex items-center justify-center gap-3">
-                        <li><Link className="text-sm   hover:text-red-500 transition-all duration-120 hover:line-through" href='/homebrew'>Papers</Link></li>
-                        <li><Link className="text-sm   hover:text-red-500 transition-all duration-120 hover:line-through" href='/socials'>Socials</Link></li>
+                        <li><Link onClick={playSwoosh} className="text-sm   hover:text-red-500 transition-all duration-120 hover:line-through" href='/homebrew'>Papers</Link></li>
+                        <li><Link onClick={playSwoosh} className="text-sm   hover:text-red-500 transition-all duration-120 hover:line-through" href='/socials'>Socials</Link></li>
                     </ol>
                     <ol className="flex items-center justify-center gap-10">
-                        <li><Link className="text-sm  hover:text-red-500 transition-all duration-120 hover:line-through" href='/'>{time ? time.toLocaleTimeString() : "--:--:--"}</Link></li>
+                        <li><Link onClick={playSwoosh} className="text-sm  hover:text-red-500 transition-all duration-120 hover:line-through" href='/'>{time ? time.toLocaleTimeString() : "--:--:--"}</Link></li>
                     </ol>
                 </nav>
             </header>
@@ -41,7 +46,7 @@ export default function Navigation() {
 
                     <section className="flex font-black items-center px-10 transition-all duration-75  rounded-lg z-50  font-(family-name:--font-jetbrains-mono)  gap-3">
                         <section translate="no" className="container-selection font-black flex flex-col text-foreground  right-0 p-3  z-50 mix-blend-difference font-(family-name:--font-jetbrains-mono) gap-10 ">
-                            <Link href="/" className="  text-2xl mt-3 uppercase font-black z-28 font-(family-name:--font-ClimateCrisis)"> RODY.CITY </Link>
+                            <Link onClick={playSwoosh} href="/" className="  text-2xl mt-3 uppercase font-black z-28 font-(family-name:--font-ClimateCrisis)"> RODY.CITY </Link>
                         </section>
                     </section>
                 </nav>

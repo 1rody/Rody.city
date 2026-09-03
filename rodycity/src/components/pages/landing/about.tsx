@@ -48,7 +48,7 @@ export default function About() {
                         </div>
                         <div className="mt-10 flex flex-col gap-10 font-(family-name:--font-jetbrains-mono) lg:overflow-y-auto lg:pr-2">
                             <details onClick={playClick} name="about-faq" className="group modal-group  border-b border-(--background)/20">
-                                <summary className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
+                                <summary onMouseEnter={playHover} className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
                                     The difference between UI and UX
                                     <span className="ml-4 transition-transform duration-500 group-open:rotate-45">+</span>
                                 </summary>
@@ -75,7 +75,7 @@ export default function About() {
                                 </div>
                             </details>
                             <details onClick={playClick} name="about-faq" className="group modal-group  border-b border-(--background)/20">
-                                <summary className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
+                                <summary onMouseEnter={playHover}  className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
                                     Pricing &amp; Skills
                                     <span className="ml-4 transition-transform duration-500 group-open:rotate-45">+</span>
                                 </summary>

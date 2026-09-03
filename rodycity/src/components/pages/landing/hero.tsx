@@ -7,7 +7,11 @@ const playHover = () => {
     audio.volume = 0.2;
     audio.play().catch(() => {});
 };
-
+const playSwoosh = () => {
+    const audio = new Audio("/assets/sounds/swoosh.mp3"); 
+    audio.volume = 0.1;
+    audio.play().catch(() => {});
+};
 export default function Hero() {
 
     //resumo para o rody do futuro (no motion0 pra criar o efeito parlax do h1 isei a const Scrollyprogress chavrada peganod os atributos do useScroll do motion)
@@ -29,9 +33,9 @@ export default function Hero() {
                 </motion.h1>
 
             <div className="absolute hidden lg:flex font-(family-name:--font-geist)  font-black bottom-15 right-15 text-right gap-10">
-                <Link onMouseEnter={playHover} className="text-lg hover:scale-95 hover:text-black hover:bg-white p-2 rounded-4xl active:border-b-1 hover:opacity-150 transition-all  duration-120 " href='/homebrew'>PAPERS</Link>
-                <Link onMouseEnter={playHover} className="text-lg hover:scale-95 hover:text-black hover:bg-white p-2 rounded-4xl active:border-b-1 hover:opacity-150 transition-all  duration-120 " href='#about'>ABOUT</Link>
-                <Link onMouseEnter={playHover} className="text-lg hover:scale-95 hover:text-black hover:bg-white p-2 rounded-4xl active:border-b-1  hover:opacity-150 transition-all  duration-120 " href='/socials'>SOCIALS</Link>
+                <Link onMouseEnter={playHover} onClick={playSwoosh} className="text-lg hover:scale-95 hover:text-black hover:bg-white p-2 rounded-4xl active:border-b-1 hover:opacity-150 transition-all  duration-120 " href='/homebrew'>PAPERS</Link>
+                <Link onMouseEnter={playHover} onClick={playSwoosh} className="text-lg hover:scale-95 hover:text-black hover:bg-white p-2 rounded-4xl active:border-b-1 hover:opacity-150 transition-all  duration-120 " href='#about'>ABOUT</Link>
+                <Link onMouseEnter={playHover} onClick={playSwoosh} className="text-lg hover:scale-95 hover:text-black hover:bg-white p-2 rounded-4xl active:border-b-1  hover:opacity-150 transition-all  duration-120 " href='/socials'>SOCIALS</Link>
             </div>
 
             </div>
