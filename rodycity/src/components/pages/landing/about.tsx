@@ -3,11 +3,25 @@
 import Link from "next/dist/client/link"
 import Image from 'next/image'
 
+import { motion} from 'framer-motion';
+
 import Arkhan from '@/public/assets/backgrounds/projects/arkhan.png'
 import Karasubanner from '@/public/assets/backgrounds/projects/karasuBanner.png';
 
 import '@/src/styles/pages/landing/featured.css'
 
+
+
+const playHover = () => {
+    const audio = new Audio("/assets/sounds/hover.mp3"); 
+    audio.volume = 0.2;
+    audio.play().catch(() => {});
+};
+const playClick = () => {
+    const audio = new Audio("/assets/sounds/click.mp3");
+    audio.volume = 0.1;
+    audio.play().catch(() => {});
+};
 export default function About() {
 
     return (
@@ -17,8 +31,8 @@ export default function About() {
             </div>
             <section id='about' className='flex bg-white z-20 pt-20 flex-wrap justify-center '>
                 <section className='xl:w-2/5 lg:max-1/2 w-full font-black text-black text-center lg:text-left items-center'>
-                    <h2 className=' text-(length:--aux-super-text)'>WHOAMI</h2>
-                    <article className="text-black">
+                    <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1}} className=' text-(length:--aux-super-text)'>WHOAMI</motion.h2>
+                    <motion.article initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-black">
                         <div >
                             <p >
                                 Software Engineering student at UCSal, Front-End Developer, and UI/UX Designer.
@@ -33,7 +47,7 @@ export default function About() {
                             </p>
                         </div>
                         <div className="mt-10 flex flex-col gap-10 font-(family-name:--font-jetbrains-mono) lg:overflow-y-auto lg:pr-2">
-                            <details name="about-faq" className="group modal-group border-b border-(--background)/20">
+                            <details onClick={playClick} name="about-faq" className="group modal-group  border-b border-(--background)/20">
                                 <summary className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
                                     The difference between UI and UX
                                     <span className="ml-4 transition-transform duration-500 group-open:rotate-45">+</span>
@@ -60,7 +74,7 @@ export default function About() {
                                     </p>
                                 </div>
                             </details>
-                            <details name="about-faq" className="group modal-group border-b border-(--background)/20">
+                            <details onClick={playClick} name="about-faq" className="group modal-group  border-b border-(--background)/20">
                                 <summary className="flex cursor-pointer list-none items-center justify-between w-full font-semibold text-lg">
                                     Pricing &amp; Skills
                                     <span className="ml-4 transition-transform duration-500 group-open:rotate-45">+</span>
@@ -73,10 +87,10 @@ export default function About() {
                                 </div>
                             </details>
                         </div>
-                    </article>
+                    </motion.article>
                 </section>
-                <section className=" lg:scale-75 pt-50 scale-130 pb-50 lg:-mt-20 mt-5 items-center justify-center flex flex-col gap-2 ">
-                    <article className="featured-project  flex-col gap-5 flex hover:rounded-4xl rounded-3xl">
+                <motion.section initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className=" lg:scale-75 pt-50 scale-130 pb-50 lg:-mt-20 mt-5 items-center justify-center flex flex-col gap-2 ">
+                    <article  onMouseEnter={playHover} className="featured-project  flex-col gap-5 flex hover:rounded-4xl rounded-3xl">
                         <Image src={Karasubanner} width={1000} height={50} className="" alt="Karasu.sh landingpage image" />
                         <div className="text-left pt-10 scale-75  p-6 font-bold text-white gap-5 container-text duration-200 transition-all rounded-4xl ">
                             <h1 className="font-bold">KARASU.SH</h1>
@@ -88,7 +102,7 @@ export default function About() {
                             </div>
                         </div>
                     </article>
-                    <article className=" featured-project flex-col gap-5 flex hover:rounded-4xl rounded-3xl">
+                    <article  onMouseEnter={playHover} className=" featured-project flex-col gap-5 flex hover:rounded-4xl rounded-3xl">
                         <Image src={Arkhan} width={1000} height={50} alt="Project Image" />
                         <div className="text-left pt-10 scale-75 p-6 font-bold text-white gap-5 container-text backdrop-blur-sm duration-200 transition-all rounded-4xl ">
                             <h1 className="font-bold">ARKHAN</h1>
@@ -103,7 +117,7 @@ export default function About() {
                             </div>
                         </div>
                     </article>
-                    <article className=" featured-project flex-col gap-2 flex hover:rounded-4xl rounded-3xl">
+                    <article  onMouseEnter={playHover} className=" featured-project flex-col gap-2 flex hover:rounded-4xl rounded-3xl">
                         <Image src={Karasubanner} width={1000} height={50} alt="Project Image" className="" />
                         <div className="text-left pt-10 scale-75 p-6 font-bold text-white gap-5 container-text backdrop-blur-sm duration-200 transition-all rounded-4xl ">
                             <h1 className="font-bold">KARASU.SH</h1>
@@ -115,7 +129,7 @@ export default function About() {
                             </div>
                         </div>
                     </article>
-                </section>
+                </motion.section>
             </section>
         </>
     )

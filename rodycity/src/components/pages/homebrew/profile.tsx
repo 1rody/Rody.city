@@ -1,9 +1,12 @@
 "use client";
 
 import Link from 'next/link'
-import Image from 'next/image'
 
-
+const playHover = () => {
+    const audio = new Audio("/assets/sounds/hover.mp3"); 
+    audio.volume = 0.2;
+    audio.play().catch(() => {});
+};
 
 export default function Profile() {
 
@@ -30,8 +33,8 @@ export default function Profile() {
                                     <p>
                                         WELCOME TO MY PROFILE! <br /><br />
 
-                                        <Link className='hover:text-red-500' href='/'>- BACK TO LANDING</Link><br />
-                                        <Link className='hover:text-red-500' href='/'>- BACK CHECK MY PAPERS</Link>
+                                        <Link onMouseEnter={playHover} className='hover:text-red-500' href='/'>- BACK TO LANDING</Link><br />
+                                        <Link onMouseEnter={playHover} className='hover:text-red-500' href='/'>- BACK CHECK MY PAPERS</Link>
                                     </p>
                                 </div>
                             </article>
