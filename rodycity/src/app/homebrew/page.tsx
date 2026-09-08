@@ -1,7 +1,4 @@
-"use client";
-
-import Link from 'next/link'
-import Image from 'next/image'
+'use client';
 
 import Hero from "@/src/components/pages/homebrew/hero"
 import PaperSection from '@/src/components/pages/homebrew/papers';

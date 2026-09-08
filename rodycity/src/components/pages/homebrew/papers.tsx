@@ -14,11 +14,6 @@ const playHover = () => {
     audio.volume = 0.2;
     audio.play().catch(() => {});
 };
-const playClick = () => {
-    const audio = new Audio("/assets/sounds/click.mp3");
-    audio.volume = 0.1;
-    audio.play().catch(() => {});
-};
 const playSwoosh = () => {
     const audio = new Audio("/assets/sounds/swoosh.mp3"); 
     audio.volume = 0.1;

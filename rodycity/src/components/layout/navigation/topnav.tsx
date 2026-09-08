@@ -4,15 +4,13 @@ import Link from "next/link";
 import { useClock } from '@/src/hooks/useClock';
 import { useWeather } from '@/src/hooks/useWeather';
 
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const playSwoosh = () => {
     const audio = new Audio("/assets/sounds/swoosh.mp3"); 
     audio.volume = 0.1;
     audio.play().catch(() => {});
 };
-
-import Selectionn from "@/public/assets/misc/Selection.svg"
 
 export default function Navigation() {
     const time = useClock();
