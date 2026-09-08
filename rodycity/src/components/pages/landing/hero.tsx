@@ -1,4 +1,5 @@
-"use client";
+'use client'
+
 import Link from "next/link";
 import { motion, useScroll, useTransform } from 'framer-motion'
 
@@ -14,12 +15,9 @@ const playSwoosh = () => {
 };
 export default function Hero() {
 
-    //resumo para o rody do futuro (no motion0 pra criar o efeito parlax do h1 isei a const Scrollyprogress chavrada peganod os atributos do useScroll do motion)
-    //lendo o scroll
     const  { scrollYProgress } = useScroll();
-
-    // e depois de definir isso eu mapeio a rolagem com a const abaixo usando o scroll lido acima
     const y = useTransform(scrollYProgress, [0, 0.2], [0, 300]);
+
     return (
         <section id="introduction" className="hero  z-5 no-select h-screen  w-full flex flex-col w-full items-center overflow-x-hidden">
             <div className="hover-show-group  text-center relative overflow-x-hidden flex items-center justify-center h-screen w-full p-10">
@@ -39,7 +37,7 @@ export default function Hero() {
             </div>
 
             </div>
-            <div className="absolute -bottom-14 lg:bottom-8 md:-bottom-24 w-full lg:-mb-42 mb:-mb-25 sm:-mb-5 flex justify-center overflow-hidden">
+                <div className="absolute -bottom-14 lg:bottom-8 md:-bottom-24 w-full lg:-mb-42 mb:-mb-25 sm:-mb-5 flex justify-center overflow-hidden">
             </div>
         </section>
     )

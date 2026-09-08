@@ -1,7 +1,7 @@
 'use client'
 
 import Stripes from '@/src/components/layout/misc/stripes'
-import { motion } from 'motion/react'
+import { motion } from 'framer-motion'
 
 export default function Journey() {
     return (

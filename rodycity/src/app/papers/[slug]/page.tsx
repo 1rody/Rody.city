@@ -1,16 +1,11 @@
+
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { notFound } from 'next/navigation';
-import Link from 'next/dist/client/link'
-
-const playSwoosh = () => {
-    const audio = new Audio("/assets/sounds/swoosh.mp3"); 
-    audio.volume = 0.1;
-    audio.play().catch(() => {});
-};
+import Link from 'next/link'
 
 export default async function PaperPage({
     params,
@@ -26,7 +21,7 @@ export default async function PaperPage({
 
     return (
         <article className="prose mx-auto p-8">
-            <Link onClick={playSwoosh} href="/homebrew">Back</Link>
+            <Link href="/homebrew">Back</Link>
             <h1>{data.title}</h1>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
         </article>

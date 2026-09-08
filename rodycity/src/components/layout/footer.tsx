@@ -1,9 +1,7 @@
-' use client'
+'use client'
 
 import '@/src/styles/components/footer/footer.css'
 import Link from 'next/dist/client/link'
-import Image from 'next/image'
-
 
 export default function Footer() {
     interface Social {

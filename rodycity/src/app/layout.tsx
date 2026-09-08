@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ViewTransition } from 'react'
 
-import SmoothScroll from '@/src/components/layout/smoohScroll'
+import SmoothScroll from '@/src/components/layout/smoothScroll'
 
 import { Geist, Geist_Mono, JetBrains_Mono, Chakra_Petch, Handjet, Climate_Crisis, Archivo_Black,  } from "next/font/google";
 import localFont from "next/font/local";

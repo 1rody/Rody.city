@@ -117,18 +117,6 @@ export default function About() {
                             </div>
                         </div>
                     </article>
-                    <article  onMouseEnter={playHover} className=" featured-project flex-col gap-2 flex hover:rounded-4xl rounded-3xl">
-                        <Image src={Karasubanner} width={1000} height={50} alt="Project Image" className="" />
-                        <div className="text-left pt-10 scale-75 p-6 font-bold text-white gap-5 container-text backdrop-blur-sm duration-200 transition-all rounded-4xl ">
-                            <h1 className="font-bold">KARASU.SH</h1>
-                            <div>
-                                <p>Karasu is a security company that unifies offense, defense, and intelligence — Red Team, Blue Team, and Intel. One crow, three fronts, where every offensive discovery strengthens the defense. </p>
-                                <br />
-                                <button className="card-btn"><Link href="/pages/concepts/karasu/">Concept </Link></button>
-                                <button className="card-btn"><Link href="https://www.karasu.sh/">VISIT THE WEBSITE </Link></button>
-                            </div>
-                        </div>
-                    </article>
                 </motion.section>
             </section>
         </>

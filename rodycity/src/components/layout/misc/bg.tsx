@@ -1,3 +1,5 @@
+'use client'
+
 export default function Stars3d() {
     return (
       <div className="stars-3d" aria-hidden="true">
