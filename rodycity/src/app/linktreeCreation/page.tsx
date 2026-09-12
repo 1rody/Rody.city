@@ -3,6 +3,7 @@
 import Link from 'next/dist/client/link';
 import Image from 'next/image'
 
+import Sidebar from '@/src/components/layout/navigation/sidebar';
 import '@/src/styles/components/ui/bg.css'
 
 export default function socials() {
@@ -46,6 +47,7 @@ export default function socials() {
 
     return (
         <>
+            <Sidebar/>
             <Image width={0} height={0} src={bgInage} className='w-full h-screen blur-sm dark:opacity-40' alt="Background image" />
             <section id="socials-container" className="h-screen absolute z-2 scale-95 lg:scale-100 w-full flex items-center justify-center">
                 <div className=" backdrop-blur-xl w-100 duration-200 glassmorphism-secondary items-center justify-center rounded-4xl flex flex-col">
