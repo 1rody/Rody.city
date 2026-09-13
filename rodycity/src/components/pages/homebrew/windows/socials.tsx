@@ -9,10 +9,11 @@ export default function SocialsWindow() {
     const [pos, setPos] = useState({ x: 0, y: 0 });
     const offset = useRef({ x: 0, y: 0 });
     const dragging = useRef(false);
+    const [open, setOpen] = useState(true);
 
   function down(e: React.PointerEvent) {
     dragging.current = true;
-    offset.current = { x: e.clientX - pos.x, y: e.clientY - pos.y };
+    offset.current = { x: e.clientX - pos.x, y: e.clientY - offset.current.y };
     e.currentTarget.setPointerCapture(e.pointerId);
   }
   function move(e: React.PointerEvent) {
@@ -20,14 +21,16 @@ export default function SocialsWindow() {
     setPos({ x: e.clientX - offset.current.x, y: e.clientY - offset.current.y });
   }
   function up() { dragging.current = false; }
+
+  if (!open) return null;
    
     return (
-        <div onPointerDown={down} onPointerMove={move} onPointerUp={up}  style={{ transform: `translate(${pos.x}px, ${pos.y}px)` }}  className=" font-departure font-bold z-50  lg:scale-100 container-articles absolute m-2 text-sm right-10 top-10 nav-pc backdrop-blur-3xl md:scale-75 items-center justify-center text-left flex flex-col">
-          <nav className='w-full flex-nowrap flex items-center justify-between lg:pr-5 lg:pl-5 border-1 bg-gray-950/30  border-gray-200/10'>
+        <div style={{ transform: `translate(${pos.x}px, ${pos.y}px)` }}  className="socials-window font-departure font-bold z-50  lg:scale-100 container-articles absolute m-2 text-sm right-10 top-10 nav-pc backdrop-blur-3xl md:scale-75 items-center justify-center text-left flex flex-col">
+          <nav onPointerDown={down} onPointerMove={move} onPointerUp={up} className='w-full flex-nowrap flex items-center justify-between lg:pr-5 lg:pl-5 border-1 bg-gray-950/30  border-gray-200/10 cursor-grab active:cursor-grabbing'>
             <p className='text-sm text-gray-300 text-nowrap'>rody.city — ~/Socials</p>
             <div className='flex gap-3'>
               <p className='text-nowrap'><Link href="/">- </Link></p>
-              <p className='text-nowrap'><Link href="/papers">x </Link></p>
+              <p className='text-nowrap'><button type="button" onPointerDown={(e) => e.stopPropagation()} onClick={() => setOpen(false)}>x</button></p>
             </div>
           </nav>
           <div className='flex flex-wrap p-10 flex-col lg:flex-nowrap border-1 w-full  border-gray-200/10'>
