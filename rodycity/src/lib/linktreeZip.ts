@@ -6,8 +6,6 @@ export type SocialLink = {
     icon: string;
 };
 
-// o "molde" do linktree. mora aqui (e nao na page/sidebar) porque os 3 arquivos usam ele,
-// se ficasse no sidebar o sidebar importaria o lib e o lib o sidebar = import circular.
 export type TreeData = {
     bgImage: string;
     bannerImage: string;
@@ -18,8 +16,6 @@ export type TreeData = {
     socials: SocialLink[];
 };
 
-// tudo aqui e string: eu escrevo o codigo do projeto do user como texto e jogo no zip.
-// JSON.stringify() em volta dos valores serve de escape (aspas, \n, etc) pra nao quebrar o arquivo gerado.
 function pageTemplate(tree: TreeData) {
     return `"use client";
 
@@ -121,7 +117,6 @@ export default function RootLayout({
 `;
 }
 
-// so o css que essa pagina realmente usa (o resto do rody.city ficou de fora de proposito).
 const globalsTemplate = `@import "tailwindcss";
 
 :root {
@@ -239,8 +234,6 @@ pnpm dev       # abre em http://localhost:3000
 gerado em rody.city/linktreeCreation
 `;
 
-// pega as imagens locais (as que comecam com "/") e leva junto no zip,
-// senao o projeto do user abriria com 404 nas imagens padrao.
 async function addLocalAssets(zip: JSZip, paths: string[]) {
     const uniquePaths = [...new Set(paths.filter((path) => path.startsWith("/")))];
 
@@ -250,7 +243,6 @@ async function addLocalAssets(zip: JSZip, paths: string[]) {
             if (!response.ok) return;
             zip.file(`public${path}`, await response.blob());
         } catch {
-            // asset opcional: se falhar o download o zip sai sem ele e so isso.
         }
     }));
 }
@@ -269,8 +261,6 @@ export async function downloadLinktree(tree: TreeData) {
     await addLocalAssets(zip, [tree.bgImage, tree.bannerImage, ...tree.socials.map((social) => social.icon)]);
 
     const blob = await zip.generateAsync({ type: "blob" });
-
-    // truque padrao do browser: cria um link temporario pro blob, clica nele e joga fora.
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
 
