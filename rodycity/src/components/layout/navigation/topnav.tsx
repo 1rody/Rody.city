@@ -30,7 +30,7 @@ export default function Navigation() {
                 </nav>
             </header>
             <motion.header initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="nav-pc items-center  ">
-                <nav className=" fixed z-50 flex items-center   justify-between  w-full gap-10 mix-blend-difference text-amber-50 py-10  px-8">
+                <nav className=" fixed z-40 flex items-center    justify-between  w-full gap-10 mix-blend-difference text-amber-50 py-10  px-8">
                     <section className=" font-black flex  text-foreground right-0 p-3  z-50 mix-blend-difference font-(family-name:--font-jetbrains-mono) gap-10 ">
                         <div className=" text-xs ml-4 ">
                             {time ? time.toLocaleTimeString() : "--:--:--"}

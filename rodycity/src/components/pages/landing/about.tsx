@@ -29,8 +29,8 @@ export default function About() {
             <div className="w-full z-19 lg:-mb-8 -mb-2 bg-background overflow-hidden">
                 <Image alt="transition" src='/assets/misc/transition2.svg' width={15000} height={100}></Image>
             </div>
-            <section id='about' className='flex bg-white z-20 pt-20 flex-wrap justify-center '>
-                <section className='xl:w-2/5 lg:max-1/2 w-full font-black text-black text-center lg:text-left items-center'>
+            <section id='about' className='flex bg-white pt-20 flex-wrap justify-center '>
+                <section className='xl:w-2/5 z-50 lg:max-1/2 w-full font-black text-black text-center lg:text-left items-center'>
                     <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1}} className=' text-(length:--aux-super-text)'>WHOAMI</motion.h2>
                     <motion.article initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-black">
                         <div >
