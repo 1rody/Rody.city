@@ -12,7 +12,7 @@ html.lenis, html.lenis body { height: auto; }
 
 
 ::view-transition-old(.page-exit) {
-  animation: fade-out 5s ease-out both;
+  animation: fade-out 5s ease-out both
 }
 ::view-transition-new(.page-enter) {
   animation: fade-in 5s ease-in both;
