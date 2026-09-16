@@ -1,6 +1,6 @@
 'use client'
 
-import Link from "next/dist/client/link";
+import Link from "next/link";
 import { useState } from "react";
 
 import { downloadLinktree } from "@/src/lib/linktreeZip";
@@ -22,8 +22,8 @@ export default function Sidebar({ tree, setTree }: SidebarProps) {
         { key: "bgImage", placeholder: "Background url" },
         { key: "bannerImage", placeholder: "Banner url" },
         { key: "name", placeholder: "Your name" },
-        { key: "introductionPhrase", placeholder: "Welcome phrase" },
-        { key: "starterPhrase", placeholder: "Starter phrase" },
+        { key: "introductionPhrase", placeholder: "Short line under your name" },
+        { key: "starterPhrase", placeholder: "Greeting" },
         { key: "description", placeholder: "About you" }
     ] as const;
 
@@ -36,7 +36,6 @@ export default function Sidebar({ tree, setTree }: SidebarProps) {
     function update(key: TextField, value: string) {
         setTree({ ...tree, [key]: value });
     }
-    // .map devolve um array novo trocando so o item do index editado (mesma regra de nao mutar).
     function updateSocial(index: number, key: keyof SocialLink, value: string) {
         setTree({ ...tree, socials: tree.socials.map((social, i) => i === index ? { ...social, [key]: value } : social) });
     }
@@ -75,7 +74,7 @@ export default function Sidebar({ tree, setTree }: SidebarProps) {
                 </form>
                 <div className="flex flex-col w-full items-center gap-3 justify-center p-8">
                     <button type="button" onClick={download} disabled={building} className="bg-white rounded-xl p-2 w-full text-center text-black duration-200 disabled:opacity-50">
-                        {building ? "Building your zip..." : "Download your Linktree."}
+                        {building ? "Building zip..." : "Download linktree"}
                     </button>
                     <Link className="bg-white rounded-xl p-2 w-full text-center text-black" href="/">Back to rody.city</Link>
                 </div>

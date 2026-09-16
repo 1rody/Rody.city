@@ -1,6 +1,6 @@
 'use client'
 
-import Link from "next/dist/client/link"
+import Link from "next/link"
 import Image from 'next/image'
 
 import { motion} from 'framer-motion';
@@ -39,11 +39,7 @@ export default function About() {
                             </p>
 
                             <p>
-                                Focused on writing clean code and shaping modern user experiences, I build pixel-perfect, high-performance web applications. I bridge the gap between design systems and complex front-end architectures—leveraging modern frameworks like Next.js and Svelte to craft interfaces that are as fast as they are functional.
-                            </p>
-
-                            <p className=" mt-10 mb-30 text-gray-400 font-(family-name:--font-jetbrains-mono)">
-                                rody.city — engineered for performance, designed with purpose.
+                                I study Software Engineering at UCSal and work front-end day to day. I like simple pages that load fast, read well on any screen, and don't break. Mostly Next.js, some Svelte when the project asks for it.
                             </p>
                         </div>
                         <div className="mt-10 flex flex-col gap-10 font-(family-name:--font-jetbrains-mono) lg:overflow-y-auto lg:pr-2">
@@ -67,7 +63,7 @@ export default function About() {
                                         frustrating to use. Good UX is also judged against intent: an interface
                                         built for a specialist audience has different goals than one meant for
                                         everyone.{" "}
-                                        <Link href="/redirect" className="underline underline-offset-2">
+                                        <Link href="/papers/ui-ux" className="underline underline-offset-2">
                                             More in my paper
                                         </Link>
                                         .
@@ -95,9 +91,9 @@ export default function About() {
                         <div className="text-left pt-10 scale-75  p-6 font-bold text-white gap-5 container-text duration-200 transition-all rounded-4xl ">
                             <h1 className="font-bold">KARASU.SH</h1>
                             <div>
-                                <p>Karasu is a security company that unifies offense, defense, and intelligence — Red Team, Blue Team, and Intel. One crow, three fronts, where every offensive discovery strengthens the defense. </p>
+                                <p>Karasu is a small security project. Every finding from offense goes back into defense.</p>
                                 <br />
-                                <button className="card-btn"><a href="/projectDownloads/Karasu.zip" download={1}>Concept </a></button>
+                                <button className="card-btn"><a href="/projectDownloads/Karasu.zip" download>Concept</a></button>
                                 <button className="card-btn"><Link href="https://www.karasu.sh/">VISIT THE WEBSITE </Link></button>
                             </div>
                         </div>
@@ -108,11 +104,10 @@ export default function About() {
                             <h1 className="font-bold">ARKHAN</h1>
                             <div>
                                 <p>
-                                    Arkhan team operates as a specialized cybersecurity division within NextFur.
-                                    Our mission focuses on safeguarding digital infrastructure and mitigating emerging threats. 
+                                    Arkhan is a cybersecurity team inside NextFur. We study infra defense and document what we find.
                                 </p>
                                 <br />
-                                <button className="card-btn"><Link href="#">Concept </Link></button>
+                                <button className="card-btn"><span>Concept</span></button>
                                 <button className="card-btn"><Link href="https://www.arkhan.fun/">VISIT THE WEBSITE </Link></button>
                             </div>
                         </div>

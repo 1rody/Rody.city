@@ -3,8 +3,6 @@
 import Link from "next/link";
 import { useRef, useState } from "react";
 
-//resumo pra eu do futuro oilhja resump constantes obivamentes de pose + funcoes que pegam se esta draggin(sim nao current = true) e nisso o offset de x e definido pelo pos, o
-//ou seja o usestate define se e drag ou nao se for drag o pos muda e se o pos mudar ele executa a funcao que muda a pose das windows.
 export default function StatusWindow() {
     const [pos, setPos] = useState({ x: 0, y: 0 });
     const offset = useRef({ x: 0, y: 0 });
@@ -28,13 +26,11 @@ export default function StatusWindow() {
 
 
     return (
-        // drag fica só na barra de título (nav), não no corpo todo: clique no conteúdo/X não arrasta
         <div style={{ transform: `translate(${pos.x}px, ${pos.y}px)` }} className=" font-departure font-bold z-50 container-articles absolute m-2 text-sm backdrop-blur-3xl lg:scale-100  items-center md:scale-75 justify-center text-left flex lg:left-10 nav-pc top-120 flex-col">
           <nav onPointerDown={down} onPointerMove={move} onPointerUp={up} className='w-full flex-nowrap flex items-center z-50 justify-between lg:pr-5 lg:pl-5 border-1 bg-gray-950/30  border-gray-200/10 border-b-gray-950 cursor-grab active:cursor-grabbing'>
             <p className='text-sm text-gray-300 text-nowrap'>rody.city — STATUS</p>
             <div className='flex gap-3'>
               <p className='text-nowrap'><Link href="/">- </Link></p>
-              {/* botão X: stopPropagation impede o drag do nav de "roubar" o clique + setOpen(false) fecha de verdade */}
               <p className='text-nowrap'><button type="button" onPointerDown={(e) => e.stopPropagation()} onClick={() => setOpen(false)}>x </button></p>
             </div>
           </nav>

@@ -32,7 +32,6 @@ export default function Linktree() {
     const starterPhrase = ${JSON.stringify(tree.starterPhrase)};
     const description = ${JSON.stringify(tree.description)};
 
-    // troque as urls aqui pelas suas redes, e apague o que nao usar.
     const socials = ${JSON.stringify(tree.socials, null, 4).replace(/\n/g, "\n    ")};
 
     return (
@@ -71,7 +70,7 @@ export default function Linktree() {
                     </article>
                 </div>
                 < div className='absolute bottom-10 text-center text-white'>
-                    <p className='text-sm'>© {new Date().getFullYear()} UNSEEN LINKTREE. wanna build your own?  <Link className='text-blue-500' href='https://rody.city/linktreeCreation' target='_blank' rel='noopener noreferrer'>click here</Link></p>
+                    <p className='text-sm'>© {new Date().getFullYear()} {tree.name || "Unseen"}. Built with the unseen tree builder.</p>
                 </div>
             </section>
         </>
@@ -207,8 +206,8 @@ esse zip e um projeto **nextjs** completo com a sua linktree ja montada.
 ## rodando na sua maquina
 
 \`\`\`bash
-pnpm install   # ou npm install
-pnpm dev       # abre em http://localhost:3000
+bun install
+bun run dev       # abre em http://localhost:3000
 \`\`\`
 
 ## mudando as coisas

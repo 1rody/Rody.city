@@ -1,6 +1,6 @@
 "use client";
 
-import Link from 'next/dist/client/link';
+import Link from 'next/link';
 import { useState } from 'react';
 
 import Sidebar from '@/src/components/layout/navigation/sidebar';
@@ -13,9 +13,9 @@ export default function LinktreeCreation() {
         bgImage: "/assets/backgrounds/social.gif",
         bannerImage: "/assets/backgrounds/giphy.gif",
         name: "RODY",
-        introductionPhrase: "Welcome to my social tree!",
-        starterPhrase: "Hello, Im",
-        description: "im a web developer and designer, I love to create web solutions and functional websites.\n\nI have a passion for learning new technologies and improving my skills.",
+        introductionPhrase: "My links in one place.",
+        starterPhrase: "Hey, I'm",
+        description: "I build websites and interfaces. Currently studying Software Engineering and working with front-end and automations.",
         socials: [
             {
                 name: "Instagram",
@@ -81,7 +81,7 @@ export default function LinktreeCreation() {
                     </article>
                 </div>
                 < div className='absolute bottom-10 text-center text-white'>
-                    <p className='text-sm'>© {new Date().getFullYear()} UNSEEN LINKTREE. wanna build your own?  <Link className='text-blue-500' href='/linktreeCreation' target='_blank' rel='noopener noreferrer'>click here</Link></p>
+                    <p className='text-sm'>© {new Date().getFullYear()} {tree.name || "Unseen"}. Built with the unseen tree builder.</p>
                 </div>
             </section>
         </>

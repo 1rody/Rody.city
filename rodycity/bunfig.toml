@@ -1,0 +1,9 @@
+# Bun configuration for rodycity (migrated from pnpm)
+# Docs: https://bun.sh/docs/runtime/bunfig
+
+[install]
+# Use the text lockfile (bun.lock) committed to the repo
+lockfile = true
+# Keep Next.js / native postinstall scripts working
+# (Bun runs "trustedDependencies" scripts; add entries here only if a dep warns)
+# trustedDependencies = []

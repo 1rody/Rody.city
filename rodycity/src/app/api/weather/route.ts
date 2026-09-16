@@ -24,7 +24,7 @@ export async function GET(request: Request) {
         const currentTemp = data.properties.timeseries[0].data.instant.details.air_temperature;
 
         return NextResponse.json({ temp: currentTemp });
-    } catch (error) {
+    } catch {
         return NextResponse.json({ error: 'Erro interno no servidor' }, { status: 500 });
     }
 }

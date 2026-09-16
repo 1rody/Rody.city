@@ -1,20 +1,20 @@
 "use client";
 
-import Link from 'next/dist/client/link';
+import Link from 'next/link';
 import Image from 'next/image'
 
 import '@/src/styles/components/ui/bg.css'
 
 export default function socials() {
 
-    const bgInage = "/assets/backgrounds/social.gif";
+    const bgImage = "/assets/backgrounds/social.gif";
     const bannerImage = "/assets/backgrounds/giphy.gif";
 
     const name = "RODY";
-    const introductionPhrase = "Welcome to my social tree!";
+    const introductionPhrase = "My links in one place.";
 
-    const description = "im a web developer and designer, I love to create web solutions and functional websites.  <br /> <br />I have a passion for learning new technologies and improving my skills.";
-    const starterPhrase = "Hello, Im";
+    const description = "I build websites and interfaces. Currently studying Software Engineering and working with front-end and automations.";
+    const starterPhrase = "Hey, I'm";
 
     const socials = [
             {
@@ -39,14 +39,14 @@ export default function socials() {
             },
             {
                 name: "Pinterest",
-                url: "https://www.pinterest.com/1r0dy_/?invite_code=1234567890&sender=1234567890",
+                url: "https://www.pinterest.com/1r0dy_/",
                 icon: "/assets/icons/icons8-pinterest.svg"
             } 
         ];
 
     return (
         <>
-            <Image width={0} height={0} src={bgInage} className='w-full h-screen blur-sm dark:opacity-40' alt="Background image" />
+            <Image width={0} height={0} src={bgImage} className='w-full h-screen blur-sm dark:opacity-40' alt="Background image" />
             <section id="socials-container" className="h-screen absolute z-2 scale-95 lg:scale-100 w-full flex items-center justify-center">
                 <div className=" backdrop-blur-xl w-100 duration-200 glassmorphism-secondary items-center justify-center rounded-4xl flex flex-col">
                     <div className='flex flex-col w-full items-center justify-center p-5'>
@@ -80,7 +80,7 @@ export default function socials() {
                     </article>
                 </div>
                 < div className='absolute bottom-10 text-center text-white'>
-                    <p className='text-sm'>© {new Date().getFullYear()} UNSEEN LINKTREE. wanna build your own?  <Link className='text-blue-500' href='/linktreeCreation' target='_blank' rel='noopener noreferrer'>click here</Link></p>
+                    <p className='text-sm'>© {new Date().getFullYear()} {name}. Made with the unseen linktree builder — <Link className='text-blue-500' href='/linktreeCreation' target='_blank' rel='noopener noreferrer'>make yours</Link></p>
                 </div>
             </section>
         </>

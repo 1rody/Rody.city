@@ -4,8 +4,6 @@ export async function GET() {
     const INVITE = "WVcRhXG86b";
 
     try {
-
-        // resumo nesse bloco ai tem a const que fecha a url do discord pegando o token e definindo a const response
         const response = await fetch(`https://discord.com/api/v10/invites/${INVITE}?with_counts=true`
 , {
 
@@ -21,7 +19,7 @@ export async function GET() {
             online: data.approximate_presence_count,
             total: data.approximate_member_count,
         });
-    }catch (error) {
+    }catch {
         return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
     }
 }

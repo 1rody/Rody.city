@@ -3,7 +3,7 @@ import { ViewTransition } from 'react'
 
 import SmoothScroll from '@/src/components/layout/smoothScroll'
 
-import { Geist, Geist_Mono, JetBrains_Mono, Chakra_Petch, Handjet, Climate_Crisis, Archivo_Black,  } from "next/font/google";
+import { JetBrains_Mono, Chakra_Petch, Handjet, Climate_Crisis, Archivo_Black, } from "next/font/google";
 import localFont from "next/font/local";
 import "@/src/styles/globals.css";
 
@@ -36,25 +36,15 @@ const ArchivoBlack = Archivo_Black({
   weight: ["400"],
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "RODY | DEPLOY YOUR IDEAS",
-  description: "Developed by Rodolfo falcao, with figma, nextjs, tailwindcss and other technologies...",
+  metadataBase: new URL("https://rody.city"),
+  title: "Rody — Front-end & UI",
+  description: "Portfolio and papers by Rodolfo Falcão: front-end work, UI notes and experiments.",
 };
 
 export default function RootLayout({
@@ -63,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} ${chakraPetch.variable} ${HandjetFont.variable} ${climateCrisis.variable} ${departureMono.variable}  ${ArchivoBlack.variable} h-full antialiased`}>
+    <html lang="en" className={`${jetbrainsMono.variable} ${chakraPetch.variable} ${HandjetFont.variable} ${climateCrisis.variable} ${departureMono.variable}  ${ArchivoBlack.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <ViewTransition update="page">
           <SmoothScroll>

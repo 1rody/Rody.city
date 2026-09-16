@@ -35,10 +35,10 @@ export default function Profile() {
                                 </div>
                                 <div className='p-3'>
                                     <p>
-                                        WELCOME TO MY PROFILE! <br /><br />
+                                        This is my corner of the site. <br /><br />
 
-                                        <Link onClick={playSwoosh} onMouseEnter={playHover} className='hover:text-red-500' href='/'>- BACK TO LANDING</Link><br />
-                                        <Link onClick={playSwoosh} onMouseEnter={playHover} className='hover:text-red-500' href='/'>- BACK CHECK MY PAPERS</Link>
+                                        <Link onClick={playSwoosh} onMouseEnter={playHover} className='hover:text-red-500' href='/'>- back to landing</Link><br />
+                                        <Link onClick={playSwoosh} onMouseEnter={playHover} className='hover:text-red-500' href='/homebrew'>- check my papers</Link>
                                     </p>
                                 </div>
                             </article>
@@ -49,9 +49,9 @@ export default function Profile() {
                                 </div>
                                 <div className='p-3'>
                                     <p>
-                                        CHECK MY DISCORD SERVER. <br /><br />
+                                        I run a small Discord server. <br /><br />
 
-                                        <Link onClick={playSwoosh} onMouseEnter={playHover} className='hover:text-red-500' href='/'>- Discord server</Link><br />
+                                        <Link onClick={playSwoosh} onMouseEnter={playHover} className='hover:text-red-500' href='/homebrew'>- discord server</Link><br />
                                     </p>
                                 </div>
                             </article>

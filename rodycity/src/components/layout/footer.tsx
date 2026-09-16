@@ -1,7 +1,7 @@
 'use client'
 
 import '@/src/styles/components/footer/footer.css'
-import Link from 'next/dist/client/link'
+import Link from 'next/link'
 
 export default function Footer() {
     interface Social {
@@ -9,10 +9,10 @@ export default function Footer() {
         url: string;
     }
     const socials: Social[] = [
-            {name: "Github", url: "https://github.com/1rody/"},
+            {name: "Github", url: "https://github.com/1R0-DY"},
             {name: "X", url: "https://x.com/1R0_DY"},
-            {name: "Linkedin", url: "https://www.linkedin.com/in/rodolfo-falc%C3%A3o-03b27a379/"},
-            {name: "Pinterest", url: "https://br.pinterest.com/1R0_DY/"},
+            {name: "Linkedin", url: "https://www.linkedin.com/in/rody-1r0-dy/"},
+            {name: "Pinterest", url: "https://www.pinterest.com/1r0dy_/"},
     ];
     return (
         <>
