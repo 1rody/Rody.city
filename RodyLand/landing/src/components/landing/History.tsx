@@ -1,15 +1,8 @@
 'use client'
-
-//basic imports
-import Link from "next/link";
-import Image from "next/image";
-
-//other imports
-
 export default function History() {
     return (
-        <section id="history" className="relative z-5 flex min-h-[calc(100vh-160px)] w-full items-center overflow-hidden bg-background p-10 shadow-2xl sticky top-[160px]">
-            <div id="my-perspective-on-web" className="flex flex-col text-left gap-4 items-center justify-center w-1/2">
+        <section id="history" className="relative lg:flex-nowrap flex-wrap z-5 flex min-h-screen top-[160px] w-full items-center overflow-hidden bg-background p-10 shadow-2xl sticky ">
+            <div id="my-perspective-on-web" className="flex flex-col text-left gap-4 items-center justify-center lg:w-1/2 w-full">
                 <h2 className="text-9xl font-black">
                     making <br />
                     systems<br />
@@ -18,9 +11,9 @@ export default function History() {
                     for you
                 </h2>
             </div>
-            <div id="history-line" className="flex flex-col text-left w-1/2">
+            <div id="history-line" className="flex flex-col text-left lg:w-1/2 w-full">
                 <div className="h-3 w-3  bg-white"></div>
-                <div className="h-full ml-1 w-full p-3 border-l-1  border-gray-300">
+                <div className="h-full ml-1 w-full p-3 border-l-1  lg:max-w-2/4 border-gray-300">
                     <p>
                             <span className="font-bold">2026 — NOW</span> <br />
                             Working on Jurasolvo, staff member at NEXTFUR (commissions open), and studying at UCSAL
@@ -29,7 +22,7 @@ export default function History() {
                     </p>
                 </div>
                 <div className="h-3 w-3  bg-white"></div>
-                <div className="h-full ml-1 w-full p-3 border-l-1  border-gray-300">
+                <div className="h-full ml-1 w-full p-3 border-l-1 lg:max-w-2/4 border-gray-300">
                     <p>
                             <span className="font-bold">2026 — NOW</span> <br />
                             Working on Jurasolvo, staff member at NEXTFUR (commissions open), and studying at UCSAL
@@ -38,7 +31,7 @@ export default function History() {
                     </p>
                 </div>
                 <div className="h-3 w-3  bg-white"></div>
-                <div className="h-full ml-1 w-full p-3 border-l-1  border-gray-300">
+                <div className="h-full ml-1 w-full p-3 border-l-1 lg:max-w-2/4 border-gray-300">
                     <p>
                             <span className="font-bold">2026 — NOW</span> <br />
                             Working on Jurasolvo, staff member at NEXTFUR (commissions open), and studying at UCSAL
@@ -47,7 +40,7 @@ export default function History() {
                     </p>
                 </div>
                 <div className="h-3 w-3  bg-white"></div>
-                <div className="h-full ml-1 w-full p-3 border-l-1  border-gray-300">
+                <div className="h-full ml-1 w-full p-3 border-l-1 lg:max-w-2/4 border-gray-300">
                     <p>
                             <span className="font-bold">2026 — NOW</span> <br />
                             Working on Jurasolvo, staff member at NEXTFUR (commissions open), and studying at UCSAL
