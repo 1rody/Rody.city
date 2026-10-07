@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function History() {
     return (
-        <section id="history" className="no-select overflow-hidden flex h-screen w-full items-center lg:flex-nowrap flex-wrap items-center justify-center gap-4 text-center">
+        <section id="history" className="relative z-5 flex min-h-[calc(100vh-160px)] w-full items-center overflow-hidden bg-background p-10 shadow-2xl sticky top-[160px]">
             <div id="my-perspective-on-web" className="flex flex-col text-left gap-4 items-center justify-center w-1/2">
                 <h2 className="text-9xl font-black">
                     making <br />

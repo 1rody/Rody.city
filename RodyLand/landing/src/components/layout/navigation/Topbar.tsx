@@ -27,10 +27,13 @@ export default function Topbar() {
                     </div> 
                 </nav>
             </header>
-            <section id="menu" className="hidden  p-10 text-black z-35 sideswap fixed right-0 top-0  w-1/4 h-full bg-white bg-opacity-90 ">
+            <section id="menu" className="hidden  border-l-1 border-black p-6 text-black z-35 sideswap fixed right-0 top-0  w-1/4 h-full bg-white bg-opacity-90 ">
+                <div className="flex items-center gap-3 w-full justify-center ">
                     <p className="text-3xl font-black">
                         NAVIGATION
                     </p>
+                    <div className="w-full items-center justify-center border-1 border-black border-dashed"></div>
+                </div>
                 <ol className="flex flex-col gap-4 p-10 text-2xl">
                     <li className="hover:bg-gray-200 active:scale-95 w-fit flex duration-200">
                         <Link href="/">
@@ -53,9 +56,12 @@ export default function Topbar() {
                         </Link>
                     </li>
                 </ol>
+                <div className="flex items-center gap-3 w-full justify-center ">
                     <p className="text-3xl font-black">
                         GET IN CONTACT
                     </p>
+                    <div className="w-full items-center justify-center border-1 border-black border-dashed"></div>
+                </div>
                 <ol  className="flex flex-col gap-4 p-10 text-2xl">
                     <li className="hover:bg-gray-200 active:scale-95 w-fit flex duration-200">
                         <Link href="/contact">

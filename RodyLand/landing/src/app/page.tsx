@@ -1,6 +1,6 @@
 'use client'
 
-import Hero from "@/src/components/landing/hero";
+import Hero from "@/src/components/landing/Hero";
 import Topbar from "@/src/components/layout/navigation/Topbar";
 import History from "@/src/components/landing/History";
 
