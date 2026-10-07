@@ -1,0 +1,12 @@
+@keyframes sideSwap {
+     0% {
+         transform: translateX(100%);
+     }
+     100% {
+         transform: translateX(0);
+     }
+ }
+
+.sideswap {
+     animation: sideSwap .3s ease-in;
+ }
