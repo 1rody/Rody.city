@@ -1,9 +1,9 @@
 'use client'
 export default function History() {
     return (
-        <section id="history" className="relative lg:flex-nowrap flex-wrap z-5 flex min-h-screen top-[160px] w-full items-center overflow-hidden bg-background p-10 shadow-2xl sticky ">
-            <div id="my-perspective-on-web" className="flex flex-col text-left gap-4 items-center justify-center lg:w-1/2 w-full">
-                <h2 className="text-9xl font-black">
+        <section id="history" className="relative lg:flex-nowrap flex-wrap z-5 flex min-h-screen top-[60px] w-full items-center overflow-hidden bg-background p-10 shadow-5xl lg:sticky ">
+            <div id="my-perspective-on-web" className="flex flex-col lg:mt-30 lg:mb-70 text-left gap-4 items-center justify-center lg:w-1/2 w-full">
+                <h2 className="lg:text-9xl lg:mt-0 lg:mb-0 mb-20 md:mb-20 md:text-8xl md:w-full text-7xl font-black">
                     making <br />
                     systems<br />
                     that<br />
@@ -11,7 +11,7 @@ export default function History() {
                     for you
                 </h2>
             </div>
-            <div id="history-line" className="flex flex-col text-left lg:w-1/2 w-full">
+            <div id="history-line" className="flex flex-col mb-20 text-left lg:w-1/2 w-full">
                 <div className="h-3 w-3  bg-white"></div>
                 <div className="h-full ml-1 w-full p-3 border-l-1  lg:max-w-2/4 border-gray-300">
                     <p>

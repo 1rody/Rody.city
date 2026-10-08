@@ -6,3 +6,65 @@
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;           /* Non-prefixed version, currently */              
 }
+
+
+/* Stars background animation, inspired by uiverse stars bg ref: https://uiverse.io/kiranmayee-abbireddy/average-insect-70 */
+.pixel-sky .stars {
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat;
+  pointer-events: none;
+}
+
+
+.pixel-sky .stars-2 {
+  background-image: radial-gradient(1.5px 1.5px at 20% 40%, #ffffff7a, transparent),
+    radial-gradient(1.5px 1.5px at 60% 85%, #ffffff84, transparent),
+    radial-gradient(1.5px 1.5px at 85% 65%, #ffffff5b, transparent);
+  background-size: 300px 300px;
+  animation: twinkle 5s ease-in-out infinite 1s;
+}
+
+.pixel-sky .stars-3 {
+  background-image: radial-gradient(2px 2px at 40% 70%, #ffffff7a, transparent),
+    radial-gradient(2px 2px at 10% 80%, #ffffff84, transparent),
+    radial-gradient(2px 2px at 80% 40%, #ffffff5b, transparent);
+  background-size: 400px 400px;
+  animation: twinkle 7s ease-in-out infinite 2s;
+}
+
+.pixel-sky .meteor {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #fff;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.pixel-sky .meteor::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+
+.pixel-sky .m1 {
+  top: 10%;
+  left: 110%;
+  animation: shoot 8s linear infinite;
+}
+.pixel-sky .m2 {
+  top: 30%;
+  left: 110%;
+  animation: shoot 12s linear infinite 4s;
+}
+.pixel-sky .m3 {
+  top: 50%;
+  left: 110%;
+  animation: shoot 10s linear infinite 2s;
+}

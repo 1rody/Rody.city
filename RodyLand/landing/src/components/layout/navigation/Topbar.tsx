@@ -11,9 +11,19 @@ import toggleMenu from "@/src/utils/ToggleMenu";
 import { Menu } from "lucide-react";
 
 export default function Topbar() {
+    const [localTime, setLocalTime] = useState<Date | null>(null)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setLocalTime(new Date());
+        }, 1000);
+        return () => clearInterval(interval);
+    }
+    , []);
+
     return (
         <>
-            <header className="fixed border-b-1 border-white/14 bg-background top-0 left-0 w-full z-30 ">    
+            <header className="fixed border-b-1 border-white/14  mix-blend-difference  top-0 left-0 w-full z-30 ">    
                 <nav className="flex  items-center justify-between ">   
                     <Link href="/" className="flex border-r border-white/14 p-3 items-center gap-2">
                         <Image className="w-7" width={100} height={100} src="/assets/icons/RodyLogo.svg" alt="Logo" />
@@ -34,7 +44,7 @@ export default function Topbar() {
                     </div> 
                 </nav>
             </header>
-            <section id="menu" className="hidden md:w-1/3 w-full  border-l-1 border-black p-6 text-black z-50 md:z-39 lg:z-39 sideswap fixed right-0 top-0  lg:w-1/4 h-full bg-white bg-opacity-90 ">
+            <section id="menu" className="hidden md:w-2/4 w-full  border-l-1 border-black p-6 text-black z-50 md:z-39 lg:z-39 sideswap fixed right-0 top-0  lg:w-1/6 h-full bg-white bg-opacity-90 ">
                 <div className="flex items-center gap-3 w-full justify-center ">
                     <p className="text-3xl font-black">
                         NAVIGATION
@@ -89,6 +99,9 @@ export default function Topbar() {
                         </Link>
                     </li>
                 </ol>
+                  <div className="flex items-center justify-center gap-5 p-5 text-black font-black text-3xl absolute bottom-0 ">
+                        <p className="">CLOCK {localTime?.toLocaleTimeString()}</p>
+                  </div>
             </section>
         </>
 
