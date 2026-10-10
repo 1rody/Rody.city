@@ -8,6 +8,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 import toggleMenu from "@/src/utils/ToggleMenu";
+import hideMenu from "@/src/utils/hideMenu";
 import { Menu } from "lucide-react";
 
 export default function Topbar() {
@@ -38,35 +39,32 @@ export default function Topbar() {
                         </ol>
                     </div>
                     <div className="border-l border-white/14 p-3">
-                        <button id="menubutton" onClick={toggleMenu} className="text-white  font-bold py-2 px-4 active:scale-95 duration-200 hover:bg-white hover:text-black transition-colors duration-300">
+                        <button id="menubutton" onMouseEnter={toggleMenu} className="text-white  font-bold py-2 px-4 active:scale-95 duration-200 hover:bg-white hover:text-black transition-colors duration-300">
                             <Menu />
                         </button>
                     </div> 
                 </nav>
             </header>
-            <section id="menu" className="hidden md:w-2/4 w-full  border-l-1 border-black p-6 text-black z-50 md:z-39 lg:z-39 sideswap fixed right-0 top-0  lg:w-1/6 h-full bg-white bg-opacity-90 ">
+            <section id="menu" onMouseLeave={hideMenu} className="hidden overflow-hidden md:w-2/4 w-full  border-l-1 border-black p-6 text-black z-50 md:z-39 lg:z-39 sideswap fixed right-0 top-0  lg:w-1/6 h-full bg-white bg-opacity-90 ">
                 <div className="flex items-center gap-3 w-full justify-center ">
                     <p className="text-3xl font-black">
                         NAVIGATION
                     </p>
                     <div className="w-full items-center justify-center border-1 border-black border-dashed"></div>
-                        <button id="menubutton" onClick={toggleMenu} className="text-black flex  font-bold active:scale-95 duration-200  py-2 px-4 hover:bg-black hover:text-white transition-colors duration-300">
-                            CLOSE
-                        </button>
                 </div>
                 <ol className="flex flex-col gap-4 p-10 text-2xl">
                     <li className="hover:bg-gray-200 active:scale-95 w-fit flex duration-200">
-                        <Link href="/">
+                        <Link href="#about" onClick={hideMenu}>
                             ABOUT
                         </Link>
                     </li>
                     <li className="hover:bg-gray-200 active:scale-95 w-fit flex duration-200">
-                        <Link href="/projects">
+                        <Link href="#projects" onClick={hideMenu}>
                             PROJECTS
                         </Link>
                     </li>
                     <li className="hover:bg-gray-200 active:scale-95 w-fit flex duration-200">
-                        <Link href="/socials">
+                        <Link href="/socials" >
                             SOCIALS
                         </Link>
                     </li>
@@ -84,17 +82,17 @@ export default function Topbar() {
                 </div>
                 <ol  className="flex flex-col gap-4 p-10 text-2xl">
                     <li className="hover:bg-gray-200 active:scale-95 w-fit flex duration-200">
-                        <Link href="/contact">
-                            github
+                        <Link href="#contact" onClick={hideMenu}>
+                            Send a message
                         </Link>
                     </li>
                     <li className="hover:bg-gray-200 active:scale-95 w-fit flex duration-200">
-                        <Link href="/contact">
+                        <Link href="/socials">
                             Discord
                         </Link>
                     </li>
                     <li className="hover:bg-gray-200 active:scale-95 w-fit flex duration-200">
-                        <Link href="/contact">
+                        <Link href="/socials">
                             Linkedin
                         </Link>
                     </li>

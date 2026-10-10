@@ -1,8 +1,13 @@
 'use client'
+//base imports
+import Image from "next/image";
+
 
 export default function About() {
     return (
-        <section id="about" className="bg-white z-6 p-5 relative flex-col  w-full flex items-center justify-center">
+        <>
+        <Image className=" z-6 -mb-1 relative" width={3000} height={100} alt="Transition image" src="/assets/backgrounds/TransitionStroke.svg" />
+        <section id="about" className="bg-white z-6 relative flex-col  w-full flex items-center justify-center">
             <div className="w-full lg:flex-nowrap flex-wrap flex items-center justify-center">
                 <div className="lg:w-1/4 md:w-1/4 w-full  border-l-1 h-screen p-5 flex flex-col items-center justify-center border-black">
                     <section
@@ -76,5 +81,6 @@ export default function About() {
                 </section>
             </div>
         </section>
+        </>
     )
 }

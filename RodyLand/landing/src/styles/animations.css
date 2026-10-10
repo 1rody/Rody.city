@@ -11,7 +11,17 @@
      animation: sideSwap .3s ease-in;
  }
 
-
+ @keyframes reverseSwao {
+     0% {
+         transform: translateX(0);
+     }
+     100% {
+         transform: translateX(80%);
+     }
+ }
+.menu-hidding {
+       animation: reverseSwao .3s ease-out;
+}
 @keyframes twinkle {
   0%,
   100% {
@@ -38,4 +48,17 @@
     transform: translateX(-1500px) translateY(1000px) rotate(-35deg);
     opacity: 0;
   }
+}
+
+@keyframes anim-scrolling {
+      from{
+        transform: translatey(0rem);
+        transform: translatex(0rem);
+    }
+    to {
+        transform: translatex(-400rem);
+    }
+}
+.anim-scrolling {
+  animation: anim-scrolling 50s ease-in-out infinite;
 }
